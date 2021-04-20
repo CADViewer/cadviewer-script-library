@@ -1,5 +1,7 @@
 # cadviewer-script-library
 
+Use this version with global DOM scope with back-end conversion scripts for PHP, .NET, .NET Core, Servlets, Laravel and NodeJS.  
+
 ## Documentation 
 
 -   [CADViewer Techdocs and Installation Guide](https://cadviewer.com/cadviewertechdocs/download)
