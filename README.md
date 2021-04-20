@@ -5,10 +5,7 @@
 -   [CADViewer Techdocs and Installation Guide](https://cadviewer.com/cadviewertechdocs/download)
 
 
-<br>
-<br>
-
-## HOW TO INSTALL CADVIEWER 
+## How To Install CADViewer 
 
 * [Download **CADViewer**](/alldownloads/cadviewer), the CADViewer download comes with CADViewer and a base folder structure with drawings, and html sample(s).
 * Modify or move the CADViewer folderstructure specific to your back-end technology and do other specifics associated with your platform.
