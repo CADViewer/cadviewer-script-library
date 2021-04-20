@@ -1,6 +1,6 @@
 # cadviewer-script-library
 
-Use this version with global DOM scope with back-end conversion scripts for PHP, .NET, .NET Core, Servlets, Laravel and NodeJS.  
+Use this version with global DOM scope with back-end conversion scripts for PHP, .NET, .NET Core, Servlets, Laravel and NodeJS.  For front-end frameworks ReactJS, Angular and VueJS, use npm installer: **npm i cadviewer**.  
 
 ## Documentation 
 
