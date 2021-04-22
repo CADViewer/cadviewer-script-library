@@ -1,27 +1,11 @@
-FangSong_GB2312 ==> /home/cadviewer/onlinedemo.cadviewer.com/cadviewer_6_1_0/converters/ax2020/linux/fonts/simfang.ttf
-fangsong_gb2312 ==> /home/cadviewer/onlinedemo.cadviewer.com/cadviewer_6_1_0/converters/ax2020/linux/fonts/SIMSUN.TTC
-fangsong ==> /home/cadviewer/onlinedemo.cadviewer.com/cadviewer_6_1_0/converters/ax2020/linux/fonts/SIMSUN.TTC
-FangSong ==> /home/cadviewer/onlinedemo.cadviewer.com/cadviewer_6_1_0/converters/ax2020/linux/fonts/simfang.ttf
-simfang ==> /home/cadviewer/onlinedemo.cadviewer.com/cadviewer_6_1_0/converters/ax2020/linux/fonts/simfang.ttf
-simhei ==> /home/cadviewer/onlinedemo.cadviewer.com/cadviewer_6_1_0/converters/ax2020/linux/fonts/CHINESE.SIMHEI.TTF
-hygothic-medium ==> /home/cadviewer/onlinedemo.cadviewer.com/cadviewer_6_1_0/converters/ax2020/linux/fonts/korean.h2gtrm.ttf
-ARIAL.ttf ==> /home/cadviewer/onlinedemo.cadviewer.com/cadviewer_6_1_0/converters/ax2020/linux/fonts/ARIAL.ttf
-arial ==> /home/cadviewer/onlinedemo.cadviewer.com/cadviewer_6_1_0/converters/ax2020/linux/fonts/ARIAL.ttf
-ms gothic ==> /home/cadviewer/onlinedemo.cadviewer.com/cadviewer_6_1_0/converters/ax2020/linux/fonts/MS-Gothic.ttf
-ms ui gothic ==> /home/cadviewer/onlinedemo.cadviewer.com/cadviewer_6_1_0/converters/ax2020/linux/fonts/MS-UIGothic.ttf
-ms pgothic ==> /home/cadviewer/onlinedemo.cadviewer.com/cadviewer_6_1_0/converters/ax2020/linux/fonts/MS-PGothic.ttf
-yu gothic ==> /home/cadviewer/onlinedemo.cadviewer.com/cadviewer_6_1_0/converters/ax2020/linux/fonts/YUGOTHR.TTC
-yu gothic medium ==> /home/cadviewer/onlinedemo.cadviewer.com/cadviewer_6_1_0/converters/ax2020/linux/fonts/YUGOTHM.TTC
-yu gothic bold ==> /home/cadviewer/onlinedemo.cadviewer.com/cadviewer_6_1_0/converters/ax2020/linux/fonts/YUGOTHB.TTC
-yu gothic light ==> /home/cadviewer/onlinedemo.cadviewer.com/cadviewer_6_1_0/converters/ax2020/linux/fonts/YUGOTHL.TTC
-simsun ==> /home/cadviewer/onlinedemo.cadviewer.com/cadviewer_6_1_0/converters/ax2020/linux/fonts/SIMSUN.TTC
-DejaVuSans ==> /home/cadviewer/onlinedemo.cadviewer.com/cadviewer_6_1_0/converters/ax2020/linux/fonts/SIMSUN.TTC
-david ==> /home/cadviewer/onlinedemo.cadviewer.com/cadviewer_6_1_0/converters/ax2020/linux/fonts/DAVID.TTF
-davidbd ==> /home/cadviewer/onlinedemo.cadviewer.com/cadviewer_6_1_0/converters/ax2020/linux/fonts/DAVIDBD.TTF
-ms shell dlg ==> /home/cadviewer/onlinedemo.cadviewer.com/cadviewer_6_1_0/converters/ax2020/linux/fonts/SIMSUN.TTC
-malgun gothic ==> /home/cadviewer/onlinedemo.cadviewer.com/cadviewer_6_1_0/converters/ax2020/linux/fonts/MS-Gothic.ttf
-\U+5B8B\U+4F53 ==> /home/cadviewer/onlinedemo.cadviewer.com/cadviewer_6_1_0/converters/ax2020/linux/fonts/SIMSUN.TTC
-\U+9ED1\U+4F53 ==> /home/cadviewer/onlinedemo.cadviewer.com/cadviewer_6_1_0/converters/ax2020/linux/fonts/SIMSUN.TTC
-
-
-
+archs ==> simfang.ttf 
+nsimsun ==>  simfang.ttf 
+b体 ==>  simfang.ttf 
+b_gb2312 ==>  simfang.ttf 
+fangsong_gb2312 ==>  simfang.ttf 
+fangsong ==>  simfang.ttf
+仿宋_GB2312 ==> simfang.ttf
+romans.shx ==>romans__.ttf @1.1
+romanx.shx ==>romans__.ttf @1.1
+[stroke]
+techno_m.shx
