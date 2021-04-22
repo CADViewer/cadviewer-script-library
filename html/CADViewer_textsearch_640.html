@@ -34,7 +34,7 @@
 
 	<script src="../app/js/bootstrap-multiselect.js" type="text/javascript" ></script>
 	<link href="../app/css/bootstrap-multiselect.css" rel="stylesheet" type="text/css" />
-	<link href="../app/css/cvjs_6.1.0.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="../app/css/cvjs_6.4.css" media="screen" rel="stylesheet" type="text/css" />
 
 	<script src="../app/js/library_js_svg_path.js" type="text/javascript"></script>			
 	<script src="../app/js/snap.svg-min.js" type="text/javascript" ></script>
@@ -449,7 +449,7 @@ function tooltip_objects(){
 	// Callback Method on Creation and Delete 
 	function cvjs_graphicalObjectOnChange(type, graphicalObject, spaceID){
 	  // do something with the graphics object created! 
-		window.alert(" cvjs_graphicalObjectOnChange: "+type+" "+graphicalObject+" "+spaceID+" indexSpace: "+graphicalObject.toLowerCase().indexOf("space"));
+		console.log(" cvjs_graphicalObjectOnChange: "+type+" "+graphicalObject+" "+spaceID+" indexSpace: "+graphicalObject.toLowerCase().indexOf("space"));
 
  /*     UPDATE SERVER WITH REDLINES ON CHANGE       
         if (graphicalObject.toLowerCase().indexOf('redline')>-1 && !type.toLowerCase().indexOf('click')==0 ){
