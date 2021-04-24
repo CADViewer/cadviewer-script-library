@@ -74,8 +74,11 @@
 
 		// Pass over the location of the installation, will update the internal paths
 		cvjs_setServerLocationURL(ServerLocation, ServerUrl);
-        // cvjs_setServerBackEndUrl(ServerBackEndUrl);
-        cvjs_setHandlerSettings("PHP", "floorPlan");
+        cvjs_setServerBackEndUrl(ServerBackEndUrl);
+        cvjs_setHandlerSettings("PHP", "floorPlan");  // remove for nodejs server
+				
+		// uncomment if you want to use NodeJS cadviewer-conversion-server as backend
+		//cvjs_setHandlers_FrontEnd("NodeJS", "JavaScript", "floorPlan");
 
 		// Set CADViewer with full CADViewer Pro features
 		cvjs_CADViewerPro(true);
@@ -2031,6 +2034,12 @@ console.log("REMOVE: generic_dblclick_method_01: x="+x+" y="+y+" svg_x="+svg_x+"
 
 
 // ENABLE ALL API EVENT HANDLES FOR AUTOCAD Handles
+
+var selected_handles = [];
+var handle_selector = false;
+var current_selected_handle = "";
+
+
 function cvjs_mousedown(id, handle, entity){
 
 }

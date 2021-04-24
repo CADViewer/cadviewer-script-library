@@ -68,8 +68,11 @@
 		cvjs_CADViewerPro(true);
 
 		cvjs_setServerLocationURL(ServerLocation, ServerUrl);
-        // cvjs_setServerBackEndUrl(ServerBackEndUrl);
-        cvjs_setHandlerSettings("PHP", "floorPlan");
+        cvjs_setServerBackEndUrl(ServerBackEndUrl);
+        cvjs_setHandlerSettings("PHP", "floorPlan");  // remove for nodejs server
+				
+		// uncomment if you want to use NodeJS cadviewer-conversion-server as backend
+		//cvjs_setHandlers_FrontEnd("NodeJS", "JavaScript", "floorPlan");
 
 		cvjs_debugMode(true);
 		
@@ -671,6 +674,12 @@ var  highlight_purple_borders = {
 
 
 // ENABLE ALL API EVENT HANDLES FOR AUTOCAD Handles
+
+var selected_handles = [];
+var handle_selector = false;
+var current_selected_handle = "";
+
+
 function cvjs_mousedown(id, handle, entity){
 
 }

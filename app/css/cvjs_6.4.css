@@ -1448,6 +1448,8 @@ table.cvjs_floorPlanMagnifyingGlassTable {
 	padding: 0px !important;
 	border-spacing: 0px;
 	border-collapse: separate;
+	text-align: left;
+
 }
 
 table.cvjs_floorPlanMagnifyingGlassTable tr {
@@ -1733,12 +1735,16 @@ table.layerListTable {
 	padding: 0px;
 	border-spacing: 0px;
 	border-collapse: separate;
+	text-align: left;
+
 }
 
 table.layerListTable tr {
 	height: 22px ;
 	z-index:1010;
 	align-items: top;
+	text-align: left;
+
 }
 
 
@@ -1751,6 +1757,8 @@ table.layerListTable td {
 	border-left: 0px;	
 	padding: 0px ;
 	vertical-align:top;
+	text-align: left;
+
 
 }
 
@@ -1819,6 +1827,8 @@ table.pagechangeListTable {
 	padding: 0px !important;
 	border-spacing: 0px;
 	border-collapse: separate;
+	text-align: left;
+
 }
 
 table.pagechangeListTable tr {
@@ -1914,6 +1924,8 @@ table.textsearchModalTable {
 	padding: 0px !important;
 	border-spacing: 0px;
 	border-collapse: separate;
+	text-align: left;
+
 }
 
 table.textsearchModalTable tr {
@@ -1989,6 +2001,8 @@ table.spaceobjectchangeModalTable {
 	padding: 0px !important;
 	border-spacing: 0px;
 	border-collapse: separate;
+	text-align: left;
+
 }
 
 table.spaceobjectchangeModalTable tr {
@@ -2033,6 +2047,8 @@ table.info_messageModal_2Table {
 	padding: 0px !important;
 	border-spacing: 0px;
 	border-collapse: separate;
+	text-align: left;
+
 }
 
 table.info_messageModal_2Table tr {
@@ -2239,6 +2255,8 @@ table.calibrateModalTable {
 	padding: 0px !important;
 	border-spacing: 0px;
 	border-collapse: separate;
+	text-align: left;
+
 }
 
 table.calibrateModalTable tr {
@@ -2407,6 +2425,8 @@ table.measurementModalTable {
 	padding: 0px !important;
 	border-spacing: 0px;
 	border-collapse: separate;
+	text-align: left;
+
 }
 
 table.measurementModalTable tr {
@@ -2520,7 +2540,9 @@ table.measurementModalTable td {
 	 font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	 font-size: 14px;
 	 /* line-height: 1.42857143; */
-	 color: #333	
+	 color: #333;
+	 text-align: left;
+	
 }
 
 .printModalTextbox{
@@ -2594,6 +2616,8 @@ table.printModalTable {
 	padding: 0px !important;
 	border-spacing: 0px;
 	border-collapse: separate;
+	text-align: left;
+
 
 	 font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;
 	 font-size: 9px !important;
@@ -2854,6 +2878,8 @@ table.thicknessModalTable {
 	padding: 0px !important;
 	border-spacing: 0px;
 	border-collapse: separate;
+	text-align: left;
+
 }
 
 table.thicknessModalTable tr {
@@ -2940,6 +2966,8 @@ table.documentPageChangeModalTable {
 	padding: 0px !important;
 	border-spacing: 0px;
 	border-collapse: separate;
+	text-align: left;
+
 }
 
 table.documentPageChangeModalTable tr {
@@ -3050,6 +3078,8 @@ table.collabStartModalTable {
 	padding: 0px !important;
 	border-spacing: 0px;
 	border-collapse: separate;
+	text-align: left;
+
 }
 
 table.collabStartModalTable tr {
@@ -3167,6 +3197,8 @@ table.colorModalTable {
 	padding: 0px !important;
 	border-spacing: 0px;
 	border-collapse: separate;
+	text-align: left;
+
 }
 
 table.colorModalTable tr {
@@ -3237,6 +3269,8 @@ table.ellipseModalTable {
 	padding: 0px !important;
 	border-spacing: 0px;
 	border-collapse: separate;
+	text-align: left;
+
 		
 }
 
@@ -3308,6 +3342,8 @@ table.creationModalTable {
 	padding: 0px !important;
 	border-spacing: 0px;
 	border-collapse: separate;
+	text-align: left;
+
 		
 }
 
@@ -3378,6 +3414,8 @@ table.publishPDFModalTable {
 	padding: 0px !important;
 	border-spacing: 0px;
 	border-collapse: separate;
+	text-align: left;
+
 }
 
 table.publishPDFModalTable tr {
@@ -4286,7 +4324,9 @@ tr.mySpecialTable {
 		 font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	 font-size: 14px;
 	 /* line-height: 1.42857143; */
-	 color: #333
+	 color: #333;
+	 text-align: left;
+
 }
 
 
@@ -4297,12 +4337,17 @@ table.backgroundModalTable {
 	padding: 0px ;
 	border-spacing: 0px;
 	border-collapse: separate;
+	text-align: left;
+
+
 }
 
 table.backgroundModalTable tr {
 	height: 22px ;
 	z-index:1010;
 	align-items: top;
+	text-align: left;
+
 }
 
 
@@ -4315,6 +4360,8 @@ table.backgroundModalTable td {
 	border-left: 0px;	
 	padding: 0px ;
 	vertical-align:top;
+	text-align: left;
+
 
 }
 
@@ -4480,7 +4527,9 @@ table.backgroundModalTable td {
 	 font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	 font-size: 14px;
 	 /* line-height: 1.42857143; */
-	 color: #333
+	 color: #333;
+	 text-align: left;
+
 		
 }
 
@@ -4491,12 +4540,16 @@ table.redlinetextModalTable {
 	padding: 0px !important;
 	border-spacing: 0px;
 	border-collapse: separate;
+	text-align: left;
+
 }
 
 table.redlinetextModalTable tr {
 	height: 22px ;
 	z-index:1010;
 	align-items: top;
+	text-align: left;
+
 }
 
 
@@ -4509,6 +4562,8 @@ table.redlinetextModalTable td {
 	border-left: 0px;	
 	padding: 0px !important;
 	vertical-align:top;
+	text-align: left;
+
 
 }
 
@@ -4588,12 +4643,16 @@ table.linethicknessModalTable {
 	padding: 0px !important;
 	border-spacing: 0px;
 	border-collapse: separate;
+	text-align: left;
+
 }
 
 table.linethicknessModalTable tr {
 	height: 22px ;
 	z-index:1010;
 	align-items: top;
+	text-align: left;
+
 }
 
 
@@ -4606,6 +4665,8 @@ table.linethicknessModalTable td {
 	border-left: 0px;	
 	padding: 0px !important;
 	vertical-align:top;
+	text-align: left;
+
 
 }
 
@@ -5611,6 +5672,8 @@ table.waitlooperTable {
 	padding: 0px ;
 	border-spacing: 0px;
 	border-collapse: separate;
+	text-align: left;
+
 }
 
 table.waitlooperTable tr {
@@ -5641,6 +5704,8 @@ table.cvjs_serverFileLoadModalTable {
 	padding: 0px !important;
 	border-spacing: 0px;
 	border-collapse: separate;
+	text-align: left;
+
 }
 
 table.cvjs_serverFileLoadModalTable tr {
@@ -5771,6 +5836,8 @@ table.mergeDXFModalTable {
 	padding: 0px !important;
 	border-spacing: 0px;
 	border-collapse: separate;
+	text-align: left;
+
 }
 
 table.mergeDXFModalTable tr {
@@ -6385,6 +6452,8 @@ table.settingsModalTable {
 	padding: 0px !important;
 	border-spacing: 0px;
 	border-collapse: separate;
+	text-align: left;
+
 }
 
 table.settingsModalTable tr {

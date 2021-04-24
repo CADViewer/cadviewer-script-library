@@ -75,8 +75,11 @@
 		// Set CADViewer with full CADViewer Pro features
 
 		cvjs_setServerLocationURL(ServerLocation, ServerUrl);
-        // cvjs_setServerBackEndUrl(ServerBackEndUrl);
-        cvjs_setHandlerSettings('PHP', 'floorPlan');
+        cvjs_setServerBackEndUrl(ServerBackEndUrl);
+        cvjs_setHandlerSettings("PHP", "floorPlan");  // remove for nodejs server
+				
+		// uncomment if you want to use NodeJS cadviewer-conversion-server as backend
+		//cvjs_setHandlers_FrontEnd("NodeJS", "JavaScript", "floorPlan");
 
 		cvjs_CADViewerPro(true);
 		cvjs_debugMode(true);

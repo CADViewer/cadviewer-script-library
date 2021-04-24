@@ -66,8 +66,11 @@
 		cvjs_CADViewerPro(true);
 
 		cvjs_setServerLocationURL(ServerLocation, ServerUrl);
-        // cvjs_setServerBackEndUrl(ServerBackEndUrl);
-        cvjs_setHandlerSettings("PHP", "floorPlan");
+        cvjs_setServerBackEndUrl(ServerBackEndUrl);
+        cvjs_setHandlerSettings("PHP", "floorPlan");  // remove for nodejs server
+				
+		// uncomment if you want to use NodeJS cadviewer-conversion-server as backend
+		//cvjs_setHandlers_FrontEnd("NodeJS", "JavaScript", "floorPlan");
 
 		cvjs_debugMode(true);
 		
@@ -741,6 +744,73 @@ var  highlight_purple_borders = {
 		}
 
     }
+
+
+
+
+// ENABLE ALL API EVENT HANDLES FOR AUTOCAD Handles
+
+var selected_handles = [];
+var handle_selector = false;
+var current_selected_handle = "";
+
+function cvjs_mousedown(id, handle, entity){
+
+}
+
+function cvjs_click(id, handle, entity){
+
+    console.log("click "+id+"  "+handle);
+    // if we click on an object, then we add to the handle list
+    if (handle_selector){
+        selected_handles.push({id,handle});
+        current_selected_handle = handle;
+    }
+
+	// tell to update the Scroll bar 
+	//vqUpdateScrollbar(id, handle);
+	// window.alert("We have clicked an entity: "+entity.substring(4)+"\r\nThe AutoCAD Handle id: "+handle+"\r\nThe svg id is: "+id+"\r\nHighlight SQL pane entry");
+}
+
+function cvjs_dblclick(id, handle, entity){
+
+	console.log("mysql dblclick "+id+"  "+handle);
+	window.alert("We have double clicked entity with AutoCAD Handle: "+handle+"\r\nThe svg id is: "+id);
+}
+
+function cvjs_mouseout(id, handle, entity){
+
+    console.log("mysql mouseout "+id+"  "+handle);
+    
+    if (current_selected_handle == handle){
+        // do nothing
+    }
+    else{
+        cvjs_mouseout_handleObjectStyles(id, handle);
+    }
+}
+
+function cvjs_mouseover(id, handle, entity){
+
+	console.log("mysql mouseover "+id+"  "+handle+"  "+jQuery("#"+id).css("color"))
+	//cvjs_mouseover_handleObjectPopUp(id, handle);	
+}
+
+function cvjs_mouseleave(id, handle, entity){
+
+	console.log("mysql mouseleave "+id+"  "+handle+"  "+jQuery("#"+id).css("color"));
+}
+
+
+function cvjs_mouseenter(id, handle, entity){
+//	cvjs_mouseenter_handleObjectStyles("#a0a000", 4.0, 1.0, id, handle);
+//	cvjs_mouseenter_handleObjectStyles("#ffcccb", 5.0, 0.7, true, id, handle);
+
+	cvjs_mouseenter_handleObjectStyles("#F00", 2.0, 1.0, true, id, handle);	
+}
+
+// END OF MOUSE OPERATION
+
 
 
 
