@@ -4524,8 +4524,8 @@
 				<AllLayerOn> Calques activés </AllLayerOn>
 				<AllLayerOff> Désactivés </AllLayerOff>
 				<SwapLayers> Permuter </SwapLayers>
-				<On>Oui</On>
-				<Off>Non</Off>
+				<On>OUI</On>
+				<Off>NON</Off>
 				<BaseAndXref> Dessin de base </BaseAndXref>
 				<Xref> Xref: </Xref>
 				</LayerListModal>			
@@ -4533,8 +4533,8 @@
 				<Header> Modifier la page de dessin </Header>
 				<Search> Recherche </Search>
 				<Sort> Trier par nom </Sort>
-				<On>Oui</On>
-				<Off>Non</Off>
+				<On>OUI</On>
+				<Off>NON</Off>
 			</PageChangeListModal>
 			<LayerListSpaceModal>
 				<Header>Liste des calques - Objets spatiaux</Header>
@@ -4543,8 +4543,8 @@
 				<AllLayerOn> Calques activés </AllLayerOn>
 				<AllLayerOff> Désactivés </AllLayerOff>
 				<SwapLayers> Permuter </SwapLayers>
-				<On>Oui</On>
-				<Off>Non</Off>
+				<On>OUI</On>
+				<Off>NON</Off>
 				<NotAssigned> Non attribué </NotAssigned>
 				<TextLayer> Calque de texte </TextLayer>
 				<RoomLayer> Couche de la pièce </RoomLayer>
