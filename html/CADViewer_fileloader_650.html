@@ -124,7 +124,7 @@
 //		cvjs_setTopMenuXML("floorPlan", "cadviewer_verticalmeasurementbar_01.xml"); //cvjs_setTopMenuXML("floorPlan", "cadviewer_full_commands_01.xml", "/app/cv/cv-pro/menu_config/");
 //		cvjs_displayZoomIconBar(false, "floorPlan");
 // 		cvjs_measurementLinesScaleFactor(1.0);
-				
+/*      end vertical icon bar */				
 		
 		
 		// Initialize CADViewer  - needs the div name on the svg element on page that contains CADViewerJS and the location of the
@@ -242,14 +242,16 @@
 		// settings of Converter Path, Controller and Converter Name are done in the XXXHandlerSettings.js files
 
 		cvjs_conversion_clearAXconversionParameters();
-//		cvjs_conversion_addAXconversionParameter("last", "");		 
-		cvjs_conversion_addAXconversionParameter("firstlayout", "");		 
+		cvjs_conversion_addAXconversionParameter("last", "");		 
+//		cvjs_conversion_addAXconversionParameter("firstlayout", "");		 
 		cvjs_conversion_addAXconversionParameter("fpath", ServerLocation + "/converters/ax2020/windows/fonts/");		 
 
 	
-		cvjs_conversion_addAXconversionParameter ("RL", "IDB");
-		cvjs_conversion_addAXconversionParameter ("TL", "IDB_REF");	
-	
+//		cvjs_conversion_addAXconversionParameter ("RL", "IDB");
+//		cvjs_conversion_addAXconversionParameter ("TL", "IDB_REF");	
+
+//		cvjs_conversion_addAXconversionParameter ("hlall", "");	
+		
 	
 		// NOTE ABOVE: THESE SETTINGS ARE FOR SERVER CONTROLS FOR CONVERTING DWG, DXF, DWF files
 
@@ -293,35 +295,16 @@
 			cvjs_setCurrentStickyNoteValues_NameUserId(user_name, user_id );
 			cvjs_setCurrentRedlineValues_NameUserid(user_name, user_id);
 			
+			/*  If drag-background to front,  so spaceobject or handle interaction
 			cvjs_dragBackgroundToFront_SVG("floorPlan");					
-			cvjs_initZeroWidthHandling("floorPlan", 1.0);		
+			*/
 
-
-
-			// set the location of Space Objects to LOAD
-			//cvjs_setSpaceObjectUrl(ServerUrl + "content/spaceObjects/space_Asbestos_drawing_01.js");
-			
-			// load the Space Objects directly onto drawing
-			//cvjs_loadSpaceObjects("floorPlan");
-
-
-			// cvjs_supressPopUpModal_callback_JS = true;
-
-			// API settings of objects, based path and id parameters
-//			cvjs_addSingleSpaceObject(floorplan_div, currentNode_name, currentNode_id, currentNode_layer, currentNode_group, currentNode_attributes, currentNode_attributeStatus, currentNode_type, currentNode_tags, currentNode_occupancy, currentNode_Path);			
-
-//			cvjs_addSingleSpaceObject("floorPlan", "49", "49", "cvjs_Data_Layer", "", [], "unpopulated", "Space", {}, "", "M299.92796267123947,370.30785391743325h132.98332751331424v159.29553670044058h-132.98332751331424v-159.29553670044058 Z  ");						
-//			cvjs_addSingleSpaceObject("floorPlan", "05A", "05A", "cvjs_Data_Layer", "", [], "unpopulated", "Space", {}, "", "M1288.8172466696972,594.6765892238209L1442.1779953055138,595.2090918232508L1442.7104979049436,674.5519791383086L1567.3161061715448,674.5519791383086L1567.3161061715448,760.8174002459556L1442.1779953055138,761.3499028453855L1442.7104979049436,814.6001627883774L1418.2153783311674,839.6277849615836L1311.7148584451836,839.0952823621537L1287.7522414708371,815.6651679872373L1288.8172466696972,594.6765892238209L1288.8172466696972,594.6765892238209L1288.8172466696972,594.1440866243909L1288.8172466696972,594.6765892238209 ");						
-			
-			
-			// Sample coloring of a few spaces - 
-
-			// ensure the roomlayer is cleared (and declared)
-			//roomLayer1 = cvjs_clearLayer(roomLayer1);
-
-			//cvjs_highlightSpaceObjectIdDiv( '05A' , highlight_colorgrade_yellow_1 , roomLayer1, "floorPlan");
-			//cvjs_highlightSpaceObjectIdDiv( '49' , highlight_colorgrade_red_1 , roomLayer1, "floorPlan");
-	
+			// Use process handles, if -hlall has been set in conversion to expose AutoCAD DWG Handles
+			var processHandles = false;
+			if (processHandles){
+				cvjs_processHandleObjects();
+				cvjs_handleObjectsParceBlocks(false);
+			}
 
 
 
@@ -630,7 +613,7 @@ function cvjs_mouseenter(id, handle, entity){
 //	cvjs_mouseenter_handleObjectStyles("#a0a000", 4.0, 1.0, id, handle);
 //	cvjs_mouseenter_handleObjectStyles("#ffcccb", 5.0, 0.7, true, id, handle);
 
-	cvjs_mouseenter_handleObjectStyles("#F00", 2.0, 1.0, true, id, handle);	
+	cvjs_mouseenter_handleObjectStyles("#F00", 10.0, 1.0, true, id, handle);	
 }
 
 // END OF MOUSE OPERATION
