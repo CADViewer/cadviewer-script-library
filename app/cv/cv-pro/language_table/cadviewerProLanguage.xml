@@ -4730,7 +4730,7 @@
 			<WaitModal>
 				<Printing> Impression </Printing>
 				<Thumbnails> Enregistrement </Thumbnails>
-				<BatchPDF> Imprimer au format PDF </BatchPDF>
+				<BatchPDF> Imprimer au PDF </BatchPDF>
 				<MergeDWG> Impression </MergeDWG>
 			</WaitModal>			
 	</languages>	
