@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html >
 <head>
 
@@ -53,13 +53,16 @@
 	<script type="text/javascript">
 
 	// Location of installation folders
+
     var ServerBackEndUrl = "";
     var ServerUrl = "http://localhost/cadviewer/";
     var ServerLocation = "c:/xampp/htdocs/cadviewer/";
 
 
+
 	// PATH and FILE to be loaded, can be in formats DWG, DXF, DWF, SVG , JS, DGN, PCF, JPG, GIF, PNG
 	var FileName = ServerUrl + "/content/drawings/dwg/Asbestos_drawing_01.dwg";		
+	var FileName = ServerUrl + "/content/drawings/dwg/measure_template.dwg";		
 
 
 
@@ -71,15 +74,16 @@
 		cvjs_CADViewerPro(true);
 		cvjs_debugMode(true);
 		
-		// Pass over the location of the installation, will update the internal paths
-		cvjs_setServerLocationURL(ServerLocation, ServerUrl);
+        // Pass over the location of the installation, will update the internal paths
+  		cvjs_setServerLocationURL(ServerLocation, ServerUrl);
         cvjs_setServerBackEndUrl(ServerBackEndUrl);
         cvjs_setHandlerSettings("PHP", "floorPlan");  // remove for nodejs server
-				
+
+
+
 		// uncomment if you want to use NodeJS cadviewer-conversion-server as backend
 		//cvjs_setHandlers_FrontEnd("NodeJS", "JavaScript", "floorPlan");
-		
-						
+								
 				
 		cvjs_PrintToPDFWindowRelativeSize(0.8);
 		cvjs_setFileModalEditMode(false);
@@ -215,7 +219,7 @@
 
 		// NOTE BELOW: THESE SETTINGS ARE FOR SERVER CONTROLS FOR UPLOAD OF REDLINES
 		
-		cvjs_setRedlinesAbsolutePath(ServerUrl+'/content/redlines/fileloader_610/', ServerLocation+'/content/redlines/fileloader_610/');
+		cvjs_setRedlinesAbsolutePath(ServerUrl+'/content/redlines/api_650/', ServerLocation+'/content/redlines/api_650/');
 
 		// NOTE ABOVE: THESE SETTINGS ARE FOR SERVER CONTROLS FOR UPLOAD OF REDLINES
 
@@ -243,18 +247,18 @@
 
 		cvjs_conversion_clearAXconversionParameters();
 		cvjs_conversion_addAXconversionParameter("last", "");		 
-//		cvjs_conversion_addAXconversionParameter("firstlayout", "");		 
+		cvjs_conversion_addAXconversionParameter ("hlall", "");	
 		cvjs_conversion_addAXconversionParameter("fpath", ServerLocation + "/converters/ax2020/windows/fonts/");		 
+
 
 	
 //		cvjs_conversion_addAXconversionParameter ("RL", "IDB");
 //		cvjs_conversion_addAXconversionParameter ("TL", "IDB_REF");	
+//		cvjs_conversion_addAXconversionParameter("firstlayout", "");		 
 
-//		cvjs_conversion_addAXconversionParameter ("hlall", "");	
 		
 	
 		// NOTE ABOVE: THESE SETTINGS ARE FOR SERVER CONTROLS FOR CONVERTING DWG, DXF, DWF files
-
 
 		// Load file - needs the svg div name and name and path of file to load
 		cvjs_LoadDrawing("floorPlan", FileName );
@@ -358,19 +362,80 @@
 
 /// NOTE: BELOW REDLINE SAVE LOAD CONTROLLERS
 
+
+
+
+
 // This method is linked to the save redline icon in the imagemap
 function cvjs_saveStickyNotesRedlinesUser(){
 
 	// there are two modes, user handling of redlines
 	// alternatively use the build in redline file manager
 
-	cvjs_openRedlineSaveModal("floorPlan");
+	//cvjs_openRedlineSaveModal("floorPlan");
 
 	// custom method startMethodRed to set the name and location of redline to save
 	// see implementation below
-	//startMethodRed();
+	startMethodRed();
 	// API call to save stickynotes and redlines
-	//cvjs_saveStickyNotesRedlines("floorPlan");
+
+	//cvjs_retriveRedline
+
+	var custom_content = new Object();
+	custom_content.currentDrawing    = cvjs_FileNameNoExtension;
+	custom_content.redlines = [];
+	custom_content.stickynotes = [];
+
+	for (var spc in vqRedlines){
+
+		if (vqRedlines[spc].data("deleted") == true ){
+		}
+		else{  // node exists
+		
+			if (vqRedlines[spc].data("node").indexOf("RED_")>-1){
+
+				var redline = {
+					"name": vqRedlines[spc].data("name"),
+					"id": vqRedlines[spc].data("id"),
+					"group": vqRedlines[spc].data("group"),
+					"username": vqRedlines[spc].data("username"),
+					"userid": vqRedlines[spc].data("userid"),
+					"redline_text": vqRedlines[spc].data("redline_text"),
+					"currentPage": vqRedlines[spc].data("currentPage")
+				}
+				custom_content.redlines.push(redline);
+			}
+		}
+	}
+
+	for (var spc in vqStickyNotes){
+		if (vqStickyNotes[spc].data("deleted") == true ){
+			// do nothing, the note is not there
+			//console.log("file.js deleted node "+vqStickyNotes[spc].data("node"));
+		}
+		else{  // node exists
+
+			if (vqStickyNotes[spc].data("node").indexOf("SNOTE_")>-1){
+
+				var stickynote = {
+					"name": vqStickyNotes[spc].data("name"),
+					"id": vqStickyNotes[spc].data("id"),
+					"group": vqStickyNotes[spc].data("group"),
+					"text": vqStickyNotes[spc].data("text"),
+					"userid": vqStickyNotes[spc].data("userid"),
+					"name": vqStickyNotes[spc].data("name"),
+					"date": vqStickyNotes[spc].data("date"),
+					"currentPage": vqStickyNotes[spc].data("currentPage")
+				}
+				custom_content.stickynotes.push(stickynote);					
+			}
+		}
+	}
+
+	var	api_data = JSON.stringify(custom_content);
+	console.log(api_data);
+
+	cvjs_saveStickyNotesRedlines("floorPlan", true, api_data);
 }
 
 
@@ -378,7 +443,7 @@ function cvjs_saveStickyNotesRedlinesUser(){
 function cvjs_loadStickyNotesRedlinesUser(){
 
 
-	cvjs_openRedlineLoadModal("floorPlan");
+	//cvjs_openRedlineLoadModal("floorPlan");
 
 	// first the drawing needs to be cleared of stickynotes and redlines
 	//cvjs_deleteAllStickyNotes();
@@ -386,11 +451,25 @@ function cvjs_loadStickyNotesRedlinesUser(){
 
 	// custom method startMethodRed to set the name and location of redline to load
 	// see implementation below
-	// startMethodRed();
+	 startMethodRed();
 
 	// API call to load stickynotes and redlines
-	//cvjs_loadStickyNotesRedlines("floorPlan");
+	cvjs_loadStickyNotesRedlines("floorPlan");
 }
+
+
+function startMethodRed(){
+
+	var 	v1 = ServerUrl+"content/redlines/api_650/test01.js";
+	var 	v2 = ServerLocation+"content/redlines/api_650/test01.js";
+
+	cvjs_setStickyNoteRedlineUrl(v1);
+	cvjs_setStickyNoteSaveRedlineUrl(v2);
+}
+
+
+
+
 
 /// NOTE: ABOVE REDLINE SAVE LOAD CONTROLLERS
 
@@ -615,6 +694,10 @@ function cvjs_mouseenter(id, handle, entity){
 //	cvjs_mouseenter_handleObjectStyles("#ffcccb", 5.0, 0.7, true, id, handle);
 
 	cvjs_mouseenter_handleObjectStyles("#F00", 10.0, 1.0, true, id, handle);	
+
+//	cvjs_mouseenter_handleObjectStyles("#F00", 10.0, 1.0, false, id, handle, "Hello "+id+"<br>My Custom message:"+handle);
+
+
 }
 
 // END OF MOUSE OPERATION
