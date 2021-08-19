@@ -248,7 +248,7 @@
 		cvjs_conversion_clearAXconversionParameters();
 		cvjs_conversion_addAXconversionParameter("last", "");		 
 		cvjs_conversion_addAXconversionParameter ("hlall", "");	
-		cvjs_conversion_addAXconversionParameter("fpath", ServerLocation + "/converters/ax2020/windows/fonts/");		 
+		cvjs_conversion_addAXconversionParameter("fpath", ServerLocation + "/converters/ax2022/windows/fonts/");		 
 
 
 	
@@ -365,7 +365,6 @@
 
 
 
-
 // This method is linked to the save redline icon in the imagemap
 function cvjs_saveStickyNotesRedlinesUser(){
 
@@ -379,58 +378,8 @@ function cvjs_saveStickyNotesRedlinesUser(){
 	startMethodRed();
 	// API call to save stickynotes and redlines
 
-	//cvjs_retriveRedline
 
-	var custom_content = new Object();
-	custom_content.currentDrawing    = cvjs_FileNameNoExtension;
-	custom_content.redlines = [];
-	custom_content.stickynotes = [];
-
-	for (var spc in vqRedlines){
-
-		if (vqRedlines[spc].data("deleted") == true ){
-		}
-		else{  // node exists
-		
-			if (vqRedlines[spc].data("node").indexOf("RED_")>-1){
-
-				var redline = {
-					"name": vqRedlines[spc].data("name"),
-					"id": vqRedlines[spc].data("id"),
-					"group": vqRedlines[spc].data("group"),
-					"username": vqRedlines[spc].data("username"),
-					"userid": vqRedlines[spc].data("userid"),
-					"redline_text": vqRedlines[spc].data("redline_text"),
-					"currentPage": vqRedlines[spc].data("currentPage")
-				}
-				custom_content.redlines.push(redline);
-			}
-		}
-	}
-
-	for (var spc in vqStickyNotes){
-		if (vqStickyNotes[spc].data("deleted") == true ){
-			// do nothing, the note is not there
-			//console.log("file.js deleted node "+vqStickyNotes[spc].data("node"));
-		}
-		else{  // node exists
-
-			if (vqStickyNotes[spc].data("node").indexOf("SNOTE_")>-1){
-
-				var stickynote = {
-					"name": vqStickyNotes[spc].data("name"),
-					"id": vqStickyNotes[spc].data("id"),
-					"group": vqStickyNotes[spc].data("group"),
-					"text": vqStickyNotes[spc].data("text"),
-					"userid": vqStickyNotes[spc].data("userid"),
-					"name": vqStickyNotes[spc].data("name"),
-					"date": vqStickyNotes[spc].data("date"),
-					"currentPage": vqStickyNotes[spc].data("currentPage")
-				}
-				custom_content.stickynotes.push(stickynote);					
-			}
-		}
-	}
+	var custom_content = cvjs_getRedlineStickyNoteBusinessContent();
 
 	var	api_data = JSON.stringify(custom_content);
 	console.log(api_data);
@@ -460,8 +409,8 @@ function cvjs_loadStickyNotesRedlinesUser(){
 
 function startMethodRed(){
 
-	var 	v1 = ServerUrl+"content/redlines/api_650/test01.js";
-	var 	v2 = ServerLocation+"content/redlines/api_650/test01.js";
+	var v1 = ServerUrl+"content/redlines/api_650/test01.js";
+	var v2 = ServerLocation+"content/redlines/api_650/test01.js";
 
 	cvjs_setStickyNoteRedlineUrl(v1);
 	cvjs_setStickyNoteSaveRedlineUrl(v2);
