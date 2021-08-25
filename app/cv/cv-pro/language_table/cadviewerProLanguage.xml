@@ -304,6 +304,8 @@
 					<SnapItem>End Point</SnapItem>
 					<SnapItem>Center Point</SnapItem>
 				</SnapItems>
+			<Horizontal>Horizontal:</Horizontal>
+			<Vertical>Vertical:</Vertical>
 			</MeasurementModal>
 			<BirdsEyeModal>
 				<Header>Birds-Eye Window</Header>
@@ -836,6 +838,8 @@
 					<SnapItem>Punto final</SnapItem>
 					<SnapItem>Punto central</SnapItem>   
 				</SnapItems>
+			<Horizontal>Horizontal:</Horizontal>   
+			<Vertical>Vertical:</Vertical>
 			</MeasurementModal>
 			<BirdsEyeModal>
 				<Header> Ventana de ojo de pájaro </Header>
@@ -1369,6 +1373,8 @@
 					<SnapItem>终点</SnapItem>
 					<SnapItem>中心点</SnapItem>
 				</SnapItems>
+			<Horizontal>水平:</Horizontal>  
+			<Vertical>垂直:</Vertical>
 			</MeasurementModal>  
 			<BirdsEyeModal>
 			<Header>鸟眼窗口</Header>
@@ -1902,6 +1908,8 @@
 					<SnapItem>終點</SnapItem>
 					<SnapItem>中心點</SnapItem>
 				</SnapItems>
+			<Horizontal>水平:</Horizontal>   
+			<Vertical>垂直:</Vertical>
 			</MeasurementModal> 
 			<BirdsEyeModal>
 			<Header>鳥眼窗口</Header>
@@ -2435,6 +2443,8 @@
 					<SnapItem>Ponto final</SnapItem>
 					<SnapItem>Ponto central</SnapItem>  
 				</SnapItems>
+			<Horizontal>Horizontal:</Horizontal>
+			<Vertical>Vertical:</Vertical>
 			</MeasurementModal>
 			<BirdsEyeModal>
 			<Header> Janela panorâmica </Header>
@@ -2969,6 +2979,8 @@
 					<SnapItem>끝점</SnapItem>
 					<SnapItem>중심점</SnapItem>
 				</SnapItems>
+			<Horizontal>수평:</Horizontal> 
+			<Vertical>수직:</Vertical>
 			</MeasurementModal>
 			<BirdsEyeModal>
 			<Header> 새 눈 창 </Header>
@@ -3503,6 +3515,8 @@
 					<SnapItem>Titik akhir</SnapItem>
 					<SnapItem>Titik tengah</SnapItem>
 				</SnapItems>
+			<Horizontal>Horisontal:</Horizontal>
+			<Vertical>Vertical:</Vertical>
 			</MeasurementModal>
 			<BirdsEyeModal>
 			<Header> Jendela Bird-Eyes </Header>
@@ -4035,6 +4049,8 @@
 					<SnapItem>Endpunkt</SnapItem>
 					<SnapItem>Mittelpunkt</SnapItem>
 				</SnapItems>
+			<Horizontal>Horizontal:</Horizontal>
+			<Vertical>Vertical:</Vertical>
 			</MeasurementModal>
 				<BirdsEyeModal>
 				<Header> Birds-Eye-Fenster </Header>
@@ -4568,7 +4584,9 @@
 					<SnapItem>Point final</SnapItem>
 					<SnapItem>Point central</SnapItem>
 				</SnapItems>
-			</MeasurementModal>
+				<Horizontal>Horizontal:</Horizontal>
+				<Vertical>Vertical:</Vertical>
+				</MeasurementModal>
 				<BirdsEyeModal>
 				<Header> Fenêtre à vol d'oiseau </Header>
 				</BirdsEyeModal>

@@ -6683,6 +6683,45 @@ table.settingsModalTable td {
 }
 
 
+/* 6.5.15n */
+.cvjs_measurementHorizontal{
+	width: 90px; 
+	display: inline-block;
+	position: absolute; 
+	left : 10px;
+	top : 60px;    
+	font-size: 13px;
+}
+
+.cvjs_measurementDisplayHorizontal{
+	display: inline-block;
+	position: absolute; 
+	left : 86px;
+	top : 58px    ;
+	font-size: 13px;
+}
+
+.cvjs_measurementVertical{
+	width: 90px; 
+	display: inline-block;
+	position: absolute; 
+	left : 230px;
+	top : 60px;    
+	font-size: 13px;
+}
+
+.cvjs_measurementDisplayVertical{
+	display: inline-block;
+	position: absolute; 
+	left : 290px;
+	top : 58px;    
+	font-size: 13px;
+}
+
+
+
+
+
 
 .cvjs_measurementSnap{
 	width: 100px; 
