@@ -83,6 +83,13 @@
 				<Header2>CADViewer Information</Header2>
 				<Version>CADViewer version:</Version>
 				<AXVersion>AutoXchange version:</AXVersion>
+				<UnitSystem>Unit System:</UnitSystem>
+				<NumberOfPages>Number of Pages:</NumberOfPages>
+				<CurrentLayout>Current Layout:</CurrentLayout>
+				<UnitSystemMeasurementType>Measurement Type:</UnitSystemMeasurementType>
+				<UnitSystemlengthType>Length Type:</UnitSystemlengthType>
+				<UnitSystemlengthPrecision>Length Precision:</UnitSystemlengthPrecision>
+				<UnitSystemBlockUnit>Block Unit Format:</UnitSystemBlockUnit>
 				<ComingSoon>Coming Soon!</ComingSoon>
 				<NoUnits>No units defined in drawing, please use command Calibrate Measurement first.</NoUnits>
 				<UnitLess>The originating drawing is unitless, please use command Calibrate Measurement first</UnitLess>
@@ -620,6 +627,13 @@
 				<Header2> Información de CADViewer </Header2>
 				<Version> Versión CADViewer: </Version>
 				<AXVersion> Versión de AutoXchange: </AXVersion>
+				<UnitSystem>Sistema de unidades:</UnitSystem>
+				<NumberOfPages>Número de páginas:</NumberOfPages>
+				<CurrentLayout>Diseño actual:</CurrentLayout>
+				<UnitSystemMeasurementType>Tipo de medida:</UnitSystemMeasurementType>
+				<UnitSystemlengthType>Tipo de longitud:</UnitSystemlengthType>
+				<UnitSystemlengthPrecision>Precisión de longitud:</UnitSystemlengthPrecision>
+				<UnitSystemBlockUnit>Formato de unidad de bloque:</UnitSystemBlockUnit>
 				<ComingSoon> ¡Próximamente! </ComingSoon>
 				<NoUnits> No hay unidades definidas en el dibujo, utilice el comando Calibrar medición primero. </NoUnits>
 				<UnitLess> El dibujo de origen no tiene unidades, utilice el comando Calibrar medición primero </UnitLess>
@@ -1156,6 +1170,13 @@
 			<Header2> CADViewer信息</Header2>
 			<Version> CADViewer版本：</Version>
 			<AXVersion> AutoXchange版本：</AXVersion>
+				<UnitSystem>单位制：</UnitSystem> 
+				<NumberOfPages>页数：</NumberOfPages>
+				<CurrentLayout>当前布局：</CurrentLayout>
+				<UnitSystemMeasurementType>测量类型:</UnitSystemMeasurementType>
+				<UnitSystemlengthType>长度类型：</UnitSystemlengthType>
+				<UnitSystemlengthPrecision>长度精度：</UnitSystemlengthPrecision>
+				<UnitSystemBlockUnit>块单位格式：</UnitSystemBlockUnit>
 			<ComingSoon>即将到来！</ComingSoon>
 			<NoUnits>图中未定义单位，请先使用命令校准测量。</NoUnits>
 			<UnitLess>原图是无单位的，请先使用命令校准测量</UnitLess>
@@ -1693,6 +1714,13 @@
 			<Header2> CADViewer信息</Header2>
 			<Version> CADViewer版本：</Version>
 			<AXVersion> AutoXchange版本：</AXVersion>
+				<UnitSystem>單位制：</UnitSystem> 
+				<NumberOfPages>頁數：</NumberOfPages>
+				<CurrentLayout>當前佈局：</CurrentLayout>
+				<UnitSystemMeasurementType>測量類型：</UnitSystemMeasurementType>
+				<UnitSystemlengthType>長度類型：</UnitSystemlengthType>
+				<UnitSystemlengthPrecision>長度精度：</UnitSystemlengthPrecision>
+				<UnitSystemBlockUnit>塊單位格式：</UnitSystemBlockUnit>
 			<ComingSoon>即將到來！ </ComingSoon>
 			<NoUnits>圖中未定義單位，請先使用命令校準測量。 </NoUnits>
 			<UnitLess>原圖是無單位的，請先使用命令校準測量</UnitLess>
@@ -2230,6 +2258,13 @@
 				<Header2> Informações sobre o CADViewer </Header2>
 				<Version> Versão do CADViewer: </Version>
 				<AXVersion> Versão do AutoXchange: </AXVersion>
+				<UnitSystem>Sistema de unidade:</UnitSystem> 
+				<NumberOfPages>Número de páginas:</NumberOfPages>
+				<CurrentLayout>Layout atual:</CurrentLayout>
+				<UnitSystemMeasurementType>Tipo de medição:</UnitSystemMeasurementType>
+				<UnitSystemlengthType>Tipo de comprimento:</UnitSystemlengthType>
+				<UnitSystemlengthPrecision>Precisão de comprimento:</UnitSystemlengthPrecision>
+				<UnitSystemBlockUnit>Formato de unidade de bloco:</UnitSystemBlockUnit>
 				<ComingSoon> Em breve! </ComingSoon>
 				<NoUnits> Nenhuma unidade definida no desenho, use o comando Calibrar medição primeiro. </NoUnits>
 				<UnitLess> O desenho de origem é sem unidade, use o comando Calibrar medição primeiro </UnitLess>
@@ -2767,6 +2802,13 @@
 				<Header2> CADViewer 정보 </Header2>
 				<Version> CADViewer 버전 : </Version>
 				<AXVersion> AutoXchange 버전 : </AXVersion>
+				<UnitSystem>단위 체계:</UnitSystem> 
+				<NumberOfPages>페이지 수:</NumberOfPages>
+				<CurrentLayout>현재 레이아웃:</CurrentLayout>
+				<UnitSystemMeasurementType>측정 유형:</UnitSystemMeasurementType>
+				<UnitSystemlengthType>길이 유형:</UnitSystemlengthType>
+				<UnitSystemlengthPrecision>길이 정밀도:</UnitSystemlengthPrecision>
+				<UnitSystemBlockUnit>블록 단위 형식:</UnitSystemBlockUnit>
 				<ComingSoon> 출시 예정! </ComingSoon>
 				<NoUnits> 도면에 정의 된 단위가 없습니다. 먼저 측정 교정 명령을 사용하십시오. </NoUnits>
 				<UnitLess> 원래 도면은 단위가 없습니다. 먼저 측정 보정 명령을 사용하십시오. </UnitLess>
@@ -3306,6 +3348,13 @@
 			<Header2> Informasi CADViewer </Header2>
 			<Version> Versi CADViewer: </Version>
 			<AXVersion> Versi AutoXchange: </AXVersion>
+				<UnitSystem>Sistem Satuan:</UnitSystem> 
+				<NumberOfPages>Jumlah Halaman:</NumberOfPages>
+				<CurrentLayout>Tata Letak Saat Ini:</CurrentLayout>
+				<UnitSystemMeasurementType>Tipe Pengukuran:</UnitSystemMeasurementType>
+				<UnitSystemlengthType>Tipe Panjang:</UnitSystemlengthType>
+				<UnitSystemlengthPrecision>Presisi Panjang:</UnitSystemlengthPrecision>
+				<UnitSystemBlockUnit>Format Unit Blok:</UnitSystemBlockUnit>
 			<ComingSoon> Segera Hadir! </ComingSoon>
 			<NoUnits> Tidak ada unit yang ditentukan dalam gambar, harap gunakan perintah Kalibrasi Pengukuran terlebih dahulu. </NoUnits>
 			<UnitLess> Gambar asal tidak memiliki unit, harap gunakan perintah Kalibrasi Pengukuran terlebih dahulu </UnitLess>
@@ -3841,7 +3890,14 @@
 				<Header> CADViewer-Informationen </Header>
 				<Header2> CADViewer-Informationen </Header2>
 				<Version> CADViewer-Version: </Version>
-				<AXVersion> AutoXchange-Version: </AXVersion>
+				<AXVersion> AutoXchange-Version: </AXVersion>				
+				<UnitSystem>Einheitensystem:</UnitSystem> 
+				<NumberOfPages>Seitenanzahl:</NumberOfPages>
+				<CurrentLayout>Aktuelles Layout:</CurrentLayout>
+				<UnitSystemMeasurementType>Messtyp:</UnitSystemMeasurementType>
+				<UnitSystemlengthType>Längentyp:</UnitSystemlengthType>
+				<UnitSystemlengthPrecision>Längenpräzision:</UnitSystemlengthPrecision>
+				<UnitSystemBlockUnit>Blockeinheitenformat:</UnitSystemBlockUnit>
 				<ComingSoon> Bald erhältlich! </ComingSoon>
 				<NoUnits> In der Zeichnung sind eine Einheiten definiert. Verwenden Sie zuerst den Befehl Calibrate Measurement. </NoUnits>
 				<UnitLess> Die ursprüngliche Zeichnung ist einheitlos. Verwenden Sie zuerst den Befehl Calibrate Measurement </UnitLess>
@@ -4380,6 +4436,13 @@
 				<Header2> Informations CADViewer </Header2>
 				<Version> Version de CADViewer: </Version>
 				<AXVersion> Version d'AutoXchange: </AXVersion>
+				<UnitSystem>Système d'unités:</UnitSystem> 
+				<NumberOfPages>Nombre de pages:</NumberOfPages>
+				<CurrentLayout>Disposition actuelle:</CurrentLayout>
+				<UnitSystemMeasurementType>Type de mesure:</UnitSystemMeasurementType>
+				<UnitSystemlengthType>Type de longueur:</UnitSystemlengthType>
+				<UnitSystemlengthPrecision>Précision de longueur:</UnitSystemlengthPrecision>
+				<UnitSystemBlockUnit>Bloc Format d'unité:</UnitSystemBlockUnit>
 				<ComingSoon> Prochainement! </ComingSoon>
 				<NoUnits> Aucune unité définie dans le dessin, veuillez d'abord utiliser la commande Calibrer la mesure. </NoUnits>
 				<UnitLess> Le dessin d'origine est sans unité, veuillez d'abord utiliser la commande Calibrer la mesure </UnitLess>

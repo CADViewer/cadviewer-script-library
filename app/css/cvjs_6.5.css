@@ -7,6 +7,47 @@
     border: 4px dotted red;
 }
 
+
+
+.cvjs_coordinateX_menu{
+	color: #000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: none;
+	margin: 0;
+	margin-top:4px;
+	position: absolute;
+	left:12px;
+	cursor: pointer;
+	text-align:left;
+	vertical-align:top;
+	width: 230px;
+	z-index: 980;
+
+}
+
+.cvjs_coordinateY_menu{
+	color: #000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	position: absolute;
+	font-weight: none;
+	margin: 0;
+	margin-top:4px;
+	left:230px;
+	cursor: pointer;
+	text-align:left;
+	vertical-align:top;
+	width: 210px;
+	z-index: 980;
+
+}
+
+
+
+
+
+
 #cvjs_tool_tip{
 	 position : absolute;
 	 border : 1px solid gray;

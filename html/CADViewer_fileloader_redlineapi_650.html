@@ -24,7 +24,7 @@
 	<link href="../app/css/jquery-ui-1.11.4.min.css" media="screen" rel="stylesheet" type="text/css" />
 
 
-  <script src="../app/cv/cv-pro/cadviewer_6.5.16h.min.js" type="text/javascript" ></script> 
+  <script src="../app/cv/cv-pro/cadviewer_6.5.22b.min.js" type="text/javascript" ></script> 
 	<script src="../app/cv/cv-custom_commands/CADViewer_custom_commands.js" type="text/javascript" ></script>
 
 	<script src="../app/cv/cvlicense.js" type="text/javascript" ></script>
@@ -129,6 +129,11 @@
 //		cvjs_displayZoomIconBar(false, "floorPlan");
 // 		cvjs_measurementLinesScaleFactor(1.0);
 /*      end vertical icon bar */				
+		
+		
+		// Display Coordinates
+		cvjs_DisplayCoordinatesMenu("floorPlan",true);
+		
 		
 		
 		// Initialize CADViewer  - needs the div name on the svg element on page that contains CADViewerJS and the location of the
