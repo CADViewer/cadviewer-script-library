@@ -42,6 +42,7 @@
 			<command>cvjs_undoDeleteLastRedline</command>
 			<command>cvjs_clearCurrentRedline</command>
 			<command>cvjs_mergeDXFDWG</command>
+			<command>cvjs_mergeQR</command>			
 		</page>
 		<page>
 			<command>cvjs_insertImageLink</command>
