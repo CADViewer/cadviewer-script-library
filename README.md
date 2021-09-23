@@ -36,4 +36,25 @@ Use this version with global DOM scope with back-end conversion scripts and CAD 
 	* ReactJS: [Settings for CADViewer_ReactJS01.js](https://cadviewer.com/cadviewertechdocs/handlers/reactjs#cadviewer_reactjs01.js---source-code)
 * Try out the samples and build your own application!
  
+ 
+ 
+ 
+ ## Troubleshooting
+
+One issue that often appears in installations is that interface icons do not display properly:
+
+![Icons](https://cadviewer.com/cadviewertechdocs/images/missing_icons.png "Icons missing")
+
+Typically the variables *ServerUrl*, *ServerLocation* or *ServerBackEndUrl* in the controlling **HTML**  document in ***/cadviewer/html/*** are not set to reflect the front-end server url or port.
+
+<pre style="line-height: 110%">
+
+
+    var ServerBackEndUrl = "";  // or what is appropriate for my server; used for NodeJS server only
+    var ServerUrl = "http://localhost/cadviewer/";   // or what is appropriate for my server
+    var ServerLocation = "c:/xampp/htdocs/cadviewer/"; // or what is appropriate for my server
+</pre>
+
+ 
+ 
 **Have Fun!**  - and get in [touch](mailto:developer@tailormade.com)  with us!
