@@ -24,7 +24,7 @@
 
 	<script src="../app//cv/cv-core/axuploader_2_19.js" type="text/javascript" ></script>
 
-  <script src="../app/cv/cv-pro/cadviewer_6.5.25a.min.js" type="text/javascript" ></script> 
+  <script src="../app/cv/cv-pro/cadviewer_6.6.02d.min.js" type="text/javascript" ></script> 
 	
 	<script src="../app/cv/cv-custom_commands/CADViewer_custom_commands.js" type="text/javascript" ></script>
 
@@ -55,9 +55,10 @@
 	// PATH and FILE to be loaded, can be in formats DWG, DXF, DWF, SVG , JS, DGN, PCF, JPG, GIF, PNG
 
 	// Location of installation folders
-    var ServerBackEndUrl = "";
+    var ServerBackEndUrl = "http://localhost/cadviewer/";
     var ServerUrl = "http://localhost/cadviewer/";
     var ServerLocation = "c:/xampp/htdocs/cadviewer/";
+    var ServerLocation = "getServerLocationFromScript";
 
 
 	var FileName = ServerUrl + "/content/drawings/dwg/hq17_.dwg";	
@@ -69,8 +70,8 @@
 		// Set CADViewer with full CADViewer Pro features
 		cvjs_CADViewerPro(true);
 
-		cvjs_setServerLocationURL(ServerLocation, ServerUrl);
-        cvjs_setServerBackEndUrl(ServerBackEndUrl);
+		cvjs_setAllServerURLsLocation(ServerBackEndUrl, ServerUrl, ServerLocation);
+
         cvjs_setHandlerSettings("PHP", "floorPlan");  // remove for nodejs server
 				
 		// uncomment if you want to use NodeJS cadviewer-conversion-server as backend

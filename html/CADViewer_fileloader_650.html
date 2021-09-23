@@ -24,7 +24,7 @@
 	<link href="../app/css/jquery-ui-1.11.4.min.css" media="screen" rel="stylesheet" type="text/css" />
 
 
-  <script src="../app/cv/cv-pro/cadviewer_6.5.25a.min.js" type="text/javascript" ></script> 
+  <script src="../app/cv/cv-pro/cadviewer_6.6.02d.min.js" type="text/javascript" ></script> 
 	<script src="../app/cv/cv-custom_commands/CADViewer_custom_commands.js" type="text/javascript" ></script>
 
 	<script src="../app/cv/cvlicense.js" type="text/javascript" ></script>
@@ -54,9 +54,10 @@
 	<script type="text/javascript">
 
 	// Location of installation folders
-    var ServerBackEndUrl = "";
+    var ServerBackEndUrl = "http://localhost/cadviewer/";
     var ServerUrl = "http://localhost/cadviewer/";
     var ServerLocation = "c:/xampp/htdocs/cadviewer/";
+    var ServerLocation = "getServerLocationFromScript";
 
 
 	// PATH and FILE to be loaded, can be in formats DWG, DXF, DWF, SVG , JS, DGN, PCF, JPG, GIF, PNG
@@ -73,8 +74,8 @@
 		cvjs_debugMode(true);
 		
 		// Pass over the location of the installation, will update the internal paths
-		cvjs_setServerLocationURL(ServerLocation, ServerUrl);
-        cvjs_setServerBackEndUrl(ServerBackEndUrl);
+		cvjs_setAllServerURLsLocation(ServerBackEndUrl, ServerUrl, ServerLocation);
+
         cvjs_setHandlerSettings("PHP", "floorPlan");  // remove for nodejs server
 				
 		// uncomment if you want to use NodeJS cadviewer-conversion-server as backend
