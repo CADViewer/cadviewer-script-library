@@ -25,7 +25,7 @@
 
 	<script src="../app//cv/cv-core/axuploader_2_19.js" type="text/javascript" ></script>
 
-  <script src="../app/cv/cv-pro/cadviewer_6.6.02d.min.js" type="text/javascript" ></script> 
+  <script src="../app/cv/cv-pro/cadviewer_6.6.03b.min.js" type="text/javascript" ></script> 
 	
 	<script src="../app/cv/cv-custom_commands/CADViewer_custom_commands.js" type="text/javascript" ></script>
 
@@ -75,18 +75,17 @@
 	$(document).ready(function()
 		{	
 		
+		// Set CADViewer with full CADViewer Pro features
+		cvjs_CADViewerPro(true);
 		cvjs_debugMode(true);
 		//cvjs_setFileLoadTimeOut("floorPlan", 180);    // 
 
-		cvjs_setAllServerURLsLocation(ServerBackEndUrl, ServerUrl, ServerLocation);
 
-        cvjs_setHandlerSettings("PHP", "floorPlan");  // remove for nodejs server
+		cvjs_setAllServerPaths_and_Handlers(ServerBackEndUrl, ServerUrl, ServerLocation, "PHP", "JavaScript", "floorPlan");
 				
 		// uncomment if you want to use NodeJS cadviewer-conversion-server as backend
 		//cvjs_setHandlers_FrontEnd("NodeJS", "JavaScript", "floorPlan");
 
-		// Set CADViewer with full CADViewer Pro features
-		cvjs_CADViewerPro(true);
 		
 
 		// IF CADVIEWER IS OPENED WITH A URL  http://localhost/cadviewer/html/CADViewer_sample_610.html?drawing_name=../content/drawings/dwg/hq17.dwg
