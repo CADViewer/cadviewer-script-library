@@ -22,9 +22,9 @@
 	<script src="../app/js/jquery-ui-1.11.4.min.js" type="text/javascript"></script>
 	<link href="../app/css/jquery-ui-1.11.4.min.css" media="screen" rel="stylesheet" type="text/css" />
 
-	<script src="../app//cv/cv-core/axuploader_2_19.js" type="text/javascript" ></script>
+	 
 
-  <script src="../app/cv/cv-pro/cadviewer_6.7.43c.min.js" type="text/javascript" ></script> 
+  <script src="../app/cv/cv-pro/cadviewer_6.7.44b.min.js" type="text/javascript" ></script> 
 	
 	<script src="../app/cv/cv-custom_commands/CADViewer_custom_commands.js" type="text/javascript" ></script>
 
@@ -199,6 +199,13 @@
 		// NOTE BELOW: THESE SETTINGS ARE FOR SERVER CONTROLS FOR CONVERTING DWG, DXF, DWF files
 
 		// settings of Converter Path, Controller and Converter Name are done in the XXXHandlerSettings.js files
+
+
+		cvjs_setInsertImageObjectsAbsolutePath(ServerUrl+'drawings/demo/inserted_image_objects/', ServerLocation+'/drawings/demo/inserted_image_objects/');
+
+
+
+
 
 		cvjs_conversion_clearAXconversionParameters();
 		cvjs_conversion_addAXconversionParameter("last", "");		 
