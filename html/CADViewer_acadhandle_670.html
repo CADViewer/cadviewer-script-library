@@ -1,15 +1,14 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html >
 <head>
 
-    <title>CADViewer</title>
+    <title>CADViewer - AutoCAD Handles</title>
     <link rel="icon" href="https://cadviewer.com/images/cvlogo.png">
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="generator" content="TMS" />
-    <meta name="created" content="Fri, 17 Apr 2020 07:14:30 GMT" />
-    <meta name="description" content="Tailor Made Software  - CADViewer Online Sample " />
+    <meta name="created" content="Sun, 22 Sep 2020 12:14:30 GMT" />
+    <meta name="description" content="Tailor Made Software  - Try CADViewer Online - Measurements" />
     <meta name="keywords" content="" />
-
 
 	<script src="../app/js/jquery-2.2.3.js" type="text/javascript"></script>
 	<script src="../app/js/jquery.qtip.min.js" type="text/javascript"></script>
@@ -17,23 +16,28 @@
 
 	<script src="../app/js/popper.js" type="text/javascript"></script>
 
+
 	<script src="../app/js/bootstrap.min.js" type="text/javascript"></script>
 	<link href="../app/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css" />
 
+	
 	<script src="../app/js/jquery-ui-1.11.4.min.js" type="text/javascript"></script>
 	<link href="../app/css/jquery-ui-1.11.4.min.css" media="screen" rel="stylesheet" type="text/css" />
 
+	<script src="../app//cv/cv-core/axuploader_2_19.js" type="text/javascript" ></script>
 
-    <script src="../app/cv/cv-pro/cadviewer_6.6.15a.min.js" type="text/javascript" ></script> 
+  <script src="../app/cv/cv-pro/cadviewer_6.7.43c.min.js" type="text/javascript" ></script> 
+
+
 	<script src="../app/cv/cv-custom_commands/CADViewer_custom_commands.js" type="text/javascript" ></script>
 
 	<script src="../app/cv/cvlicense.js" type="text/javascript" ></script>
-	<script src="../app//cv/cv-core/axuploader_2_19.js" type="text/javascript" ></script>
 
 	<script src="../app/js/bootstrap-multiselect.js" type="text/javascript" ></script>
 	<link href="../app/css/bootstrap-multiselect.css" rel="stylesheet" type="text/css" />
 
 	<link href="../app/css/cvjs_6.5.css" media="screen" rel="stylesheet" type="text/css" />
+
 
 	<script src="../app/js/library_js_svg_path.js" type="text/javascript"></script>			
 	<script src="../app/js/snap.svg-min.js" type="text/javascript" ></script>
@@ -53,49 +57,42 @@
 	
 	<script type="text/javascript">
 
-		// Location of installation folders
+
+	// Location of installation folders
+	// Location of installation folders
     var ServerBackEndUrl = "http://localhost/cadviewer/";
     var ServerUrl = "http://localhost/cadviewer/";
     var ServerLocation = "c:/xampp/htdocs/cadviewer/";
-
-
-    // Use getServerLocationFromScript_XX to add your variables, getServerLocationFromScript and getServerLocationFromScript_00 are reserved
-	var ServerLocation = "getServerLocationFromScript_00";
-	var ServerLocation = "getServerLocationFromScript";
-
-
-	var RedlinesServerLocation = "getServerLocationFromScript_02";
-	var FileModalServerLocation = "getServerLocationFromScript_03";
-	var FileModalServerUrl = "getServerLocationFromScript_04";
-
-
+    var ServerLocation = "getServerLocationFromScript";
 
 
 	// PATH and FILE to be loaded, can be in formats DWG, DXF, DWF, SVG , JS, DGN, PCF, JPG, GIF, PNG
-	var FileName = ServerUrl + "/content/drawings/dwg/Asbestos_drawing_01.dwg";		
-	var FileName = ServerUrl + "/content/drawings/dwg/measure_template.dwg";		
-
+	var FileName = ServerUrl + "/content/drawings/dwg/one_of_simple.dwg";
 
 
 	$(document).ready(function()
 		{
 
-		//$(document).html();
-		// Set CADViewer with full CADViewer Pro features
+
 		cvjs_CADViewerPro(true);
 		cvjs_debugMode(true);
-		
-        // Pass over the location of the installation, will update the internal paths
+
 		cvjs_setAllServerPaths_and_Handlers(ServerBackEndUrl, ServerUrl, ServerLocation, "PHP", "JavaScript", "floorPlan");
-
-
-
+				
 		// uncomment if you want to use NodeJS cadviewer-conversion-server as backend
 		//cvjs_setHandlers_FrontEnd("NodeJS", "JavaScript", "floorPlan");
-								
-				
-		cvjs_PrintToPDFWindowRelativeSize(0.8);
-		cvjs_setFileModalEditMode(false);
+
+		
+		
+		cvjs_setInteractiveZoomWidthAdjustment(false);
+		 cvjs_setHandleObjectProcessing(true);
+		
+		
+		//cvjs_print_to_pdf_windowRelativeSize = 0.8;
+	
+		cvjs_setCurrentRedlineValues_StokeWidth(0.6);
+		cvjs_setCallbackMeasurement(true);
+		
 	
 		// http://127.0.0.1:8081/html/CADViewer_json_610.html?drawing_name=/home/mydrawing.dgn&dgn_workspace=/home/workspace.txt&json_location=c:/nodejs/cadviewer/content/helloworld.json&print_modal_custom_checkbox=add_json
 
@@ -104,24 +101,24 @@
 		//  this code segment will pass over the drawing_name to FileName for load of drawing
 
 		var myDrawing = cvjs_GetURLParameter("drawing_name");
-		console.log("DRAWING NAME >"+cvjs_GetURLParameter("drawing_name")+"</end>  ");
+		if (cvjs_debug) console.log("DRAWING NAME >"+cvjs_GetURLParameter("drawing_name")+"</end>  ");
 		if (myDrawing==""){
-			console.log("no drawing_name parameter!!!");				
+			if (cvjs_debug) console.log("no drawing_name parameter!!!");				
 		}
 		else{
 //			console.log("we pass over to FileName to load Drawing");
 			FileName =  myDrawing;
 		}
 
+
 		// For "Merge DWG" / "Merge PDF" commands, set up the email server to send merged DWG files or merged PDF files with redlines/interactive highlight.
 		// See php / xampp documentation on how to prepare your server
-		cvjs_emailSettings_PDF_publish("From CAD Server", "my_from_address@mydomain.com", "my_cc_address@mydomain.com", "my_reply_to@mydomain.com");
+		cvjs_emailSettings_PDF_publish("From CAD Server", "downloads@cadviewer.com", "my_cc_address@cadviewer.com", "downloads@cadviewer.com");
 
+	
+		cvjs_loadCADViewerLanguage("English");//		cvjs_loadCADViewerLanguage("English", "/app/cv/cv-pro/language_table/cadviewerProLanguage.xml");
 		
-		// CHANGE LANGUAGE - DEFAULT IS ENGLISH
-		cvjs_loadCADViewerLanguage("English", "/app/cv/cv-pro/language_table/cadviewerProLanguage.xml");
-		// Available languages:  "English" ; "French, "Korean", "Spanish", "Portuguese", "Portuguese (Brazil)" ;  "Russian" ; "Malay" ;  "Chinese-Simplified"
-				
+	
 		// Set Icon Menu Interface controls. Users can: 
 		// 1: Disable all icon interfaces
 		//  cvjs_displayAllInterfaceControls(false, "floorPlan");  // disable all icons for user control of interface
@@ -130,20 +127,7 @@
 		//	cvjs_displayTopNavigationBar(false, "floorPlan");  // disable top navigation bar
 		// 3: Users can change the number of top menu icon pages and the content of pages, based on a configuration file in folder /cadviewer/app/js/menu_config/
 
-		cvjs_setTopMenuXML("floorPlan", "cadviewer_full_commands_01.xml", "/app/cv/cv-pro/menu_config/");
-		
-				
-/*      vertical icon bar sample with integrated zoom icons   - when using this, comment out cvjs_setTopMenuXML("floorPlan", "cadviewer_full_commands_01.xml");   */	
-//		cvjs_setTopMenuXML("floorPlan", "cadviewer_verticalmeasurementbar_01.xml"); //cvjs_setTopMenuXML("floorPlan", "cadviewer_full_commands_01.xml", "/app/cv/cv-pro/menu_config/");
-//		cvjs_displayZoomIconBar(false, "floorPlan");
-// 		cvjs_measurementLinesScaleFactor(1.0);
-/*      end vertical icon bar */				
-		
-		
-		// Display Coordinates
-		cvjs_DisplayCoordinatesMenu("floorPlan",true);
-		
-		
+			cvjs_setTopMenuXML("floorPlan", "cadviewer_full_commands_01.xml");   //cvjs_setTopMenuXML("floorPlan", "cadviewer_full_commands_01.xml", "/app/cv/cv-pro/menu_config/");
 		
 		// Initialize CADViewer  - needs the div name on the svg element on page that contains CADViewerJS and the location of the
 		// main application "app" folder. It can be either absolute or relative
@@ -172,10 +156,10 @@
 						'stroke-width': 3
 					};
 
-/** FIXED POP-UP MODAL
+/** FIXED POP-UP MODAL **/
 
 		// THIS IS THE DESIGN OF THE pop-up MODAL WHEN CLICKING ON SPACES
-		var my_cvjsPopUpBody = "<div class=\"cvjs_modal_1\" onclick=\"my_own_clickmenu1();\">Hello<br>Menu 1<br><i class=\"glyphicon glyphicon-transfer\"></i></div>";
+		var my_cvjsPopUpBody = "<div class=\"cvjs_modal_1\" onclick=\"my_own_clickmenu1();\">Custom<br>Menu 1<br><i class=\"glyphicon glyphicon-transfer\"></i></div>";
 		my_cvjsPopUpBody += "<div class=\"cvjs_modal_1\" onclick=\"my_own_clickmenu2();\">Custom<br>Menu 2<br><i class=\"glyphicon glyphicon-info-sign\"></i></div>";
 		my_cvjsPopUpBody += "<div class=\"cvjs_modal_1\" onclick=\"cvjs_zoomHere();\">Zoom<br>Here<br><i class=\"glyphicon glyphicon-zoom-in\"></i></div>";
 
@@ -184,11 +168,9 @@
 		// And we intialize with the Space Object Custom values
 		cvjs_InitCADViewer_highLight_popUp_app("floorPlan", ServerUrl+"app/", cvjsRoomPolygonBaseAttributes, cvjsRoomPolygonHighlightAttributes, cvjsRoomPolygonSelectAttributes, my_cvjsPopUpBody );
 
-		 
-**/		 
-		 
+		 	 
 	
-/** DYNAMIC POP-UP MODAL ON CALLBACK   **/
+/** DYNAMIC POP-UP MODAL ON CALLBACK  
 	
 //      set funtional attributes for popup menu body when clicking on an object
 // 		This modal is populated on callback, so this is a placeholder only
@@ -204,9 +186,8 @@
 		// Initialize CADViewer - needs the div name on the svg element on page that contains CADViewerJS and the location of the
 		// And we intialize with the Space Object Custom values
 		cvjs_InitCADViewer_highLight_popUp_app("floorPlan", ServerUrl+"app/", cvjsRoomPolygonBaseAttributes, cvjsRoomPolygonHighlightAttributes, cvjsRoomPolygonSelectAttributes, my_cvjsPopUpBody );
-		 
-		 
-		 
+		 		 
+**/		 
 		
 		 
 		// set the location to license key, typically the js folder in main app application folder ../app/js/
@@ -215,7 +196,6 @@
 		//cvjs_setLicenseKeyDirect('{ \"cvKey\": \"00110010 00110010 00110000 00110010 00110001 00111001 00111001 00110001 00110100 00111000 00110001 00110100 00110101 00110001 00110101 00110111 00110001 00110101 00111001 00110001 00110100 00111000 00110001 00110101 00110010 00110001 00110100 00110101 00110001 00110100 00110001 00110001 00110100 00110000 00110001 00111001 00110111 00110010 00110000 00110111 00110010 00110000 00110110 00110010 00110000 00110001 00110010 00110001 00110000 00110010 00110000 00111000 00110010 00110001 00110000 00110010 00110000 00111000 00110010 00110001 00110000 00110010 00110000 00110111 00110001 00111001 00111000 00110010 00110000 00110110 00110010 00110000 00111000 00110010 00110000 00110111 00110001 00111001 00111001 00110010 00110001 00110001 00110010 00110000 00111000 00110010 00110000 00110111 00110010 00110001 00110001 00110010 00110000 00110101 00110010 00110000 00111000 \" }');		 
 		 
 		 
-
 		// Sets the icon interface for viewing, layerhanding, measurement, etc. only
 		//cvjs_setIconInterfaceControls_ViewingOnly();
 
@@ -233,10 +213,7 @@
 
 		// NOTE BELOW: THESE SETTINGS ARE FOR SERVER CONTROLS FOR UPLOAD OF REDLINES
 		
-		//cvjs_setRedlinesAbsolutePath(ServerUrl+'/content/redlines/api_650/', ServerLocation+'/content/redlines/api_650/');
-        cvjs_setRedlinesAbsolutePath(ServerUrl+'/content/redlines/api_650/', RedlinesServerLocation);
-
-
+		cvjs_setRedlinesAbsolutePath(ServerUrl+'/content/redlines/fileloader_610/', ServerLocation+'/content/redlines/fileloader_610/');
 
 		// NOTE ABOVE: THESE SETTINGS ARE FOR SERVER CONTROLS FOR UPLOAD OF REDLINES
 
@@ -247,12 +224,7 @@
 		// and the relative location of floorplans drawings relative to my current location
 		// as well as the URL to the location of floorplan drawings with username and password if it is protected "" "" if not
 
-		// cvjs_setServerFileLocation(ServerLocation+'/content/drawings/dwg/', '../content/drawings/dwg/', ServerUrl+'/content/drawings/dwg/',"","");
-		
-		//cvjs_setServerFileLocation_AbsolutePaths(ServerLocation+'/content/drawings/dwg/', ServerUrl+'content/drawings/dwg/',"","");
-		cvjs_setServerFileLocation_AbsolutePaths(FileModalServerLocation, FileModalServerUrl);		
-		
-		
+		cvjs_setServerFileLocation(ServerLocation+'/content/drawings/dwg/', '../content/drawings/dwg/', ServerUrl+'/content/drawings/dwg/',"","");
 		// NOTE ABOVE: THESE SETTINGS ARE FOR SERVER CONTROLS FOR UPLOAD OF FILES AND FILE MANAGER
 		
 
@@ -267,19 +239,8 @@
 		// settings of Converter Path, Controller and Converter Name are done in the XXXHandlerSettings.js files
 
 		cvjs_conversion_clearAXconversionParameters();
-		cvjs_conversion_addAXconversionParameter("last", "");		 
-		cvjs_conversion_addAXconversionParameter ("hlall", "");	
-		cvjs_conversion_addAXconversionParameter("fpath", ServerLocation + "/converters/ax2022/windows/fonts/");		 
-
-
-
-		cvjs_conversion_addAXconversionParameter("postfix", "");  // for compare drawings
-	
-//		cvjs_conversion_addAXconversionParameter ("RL", "IDB");
-//		cvjs_conversion_addAXconversionParameter ("TL", "IDB_REF");	
-//		cvjs_conversion_addAXconversionParameter("firstlayout", "");		 
-
-		
+		cvjs_conversion_addAXconversionParameter("hlall", "");		 
+		cvjs_conversion_addAXconversionParameter("fpath", ServerLocation + "/converters/ax2020/linux/fonts/");		 
 	
 		// NOTE ABOVE: THESE SETTINGS ARE FOR SERVER CONTROLS FOR CONVERTING DWG, DXF, DWF files
 
@@ -299,9 +260,7 @@
 		// set maximum CADViewer canvas side
 	    cvjs_resizeWindow_position("floorPlan" );
 		// alternatively set a fixed CADViewer canvas size
-		//	cvjs_resizeWindow_fixedSize(800, 600, "floorPlan");	
-		cvjs_LoadTopIconMenuXML_preconfigured("floorPlan"); //cvjs_setTopMenuXML("floorPlan", "cadviewer_full_commands_01.xml", "/app/cv/cv-pro/menu_config/");
-		
+		//	cvjs_resizeWindow_fixedSize(800, 600, "floorPlan");		
    });
 
 
@@ -321,22 +280,7 @@
 			// set a value for redlines
 			cvjs_setCurrentStickyNoteValues_NameUserId(user_name, user_id );
 			cvjs_setCurrentRedlineValues_NameUserid(user_name, user_id);
-			
-			/*  If drag-background to front,  so spaceobject or handle interaction
-			cvjs_dragBackgroundToFront_SVG("floorPlan");					
-			*/
-
-			// Use process handles, if -hlall has been set in conversion to expose AutoCAD DWG Handles
-			var processHandles = false;
-			if (processHandles){
-				cvjs_processHandleObjects();
-				cvjs_handleObjectsParceBlocks(false);
-			}
-
-
-			// activate to print entire document when doing print-to-pdf
-			cvjs_overwritePDFOutputParameter(true, "basic", "");
-
+				
 	}
 
 
@@ -358,25 +302,16 @@
 	// generic callback method, tells which FM object has been clicked
 	function cvjs_change_space(){
 
-		//window.alert("cvjs_change_space ");
-	
+	}
+
+	function cvjs_graphicalObjectCreated(graphicalObject){
+
+	// do something with the graphics object created!
+		console.log(graphicalObject);
 
 	}
 
-
-
 	function cvjs_ObjectSelected(rmid){
-	
-		var e = window.event;
-		var posX = e.clientX;
-		var posY = e.clientY;
-	
-		myBoundingBox = cvjs_ObjectBoundingBox_ScreenCoord(rmid);
-				
-		window.alert("See callback: cvjs_ObjectSelected() "+rmid+" BBox: "+myBoundingBox.x+" "+myBoundingBox.y+" "+myBoundingBox.x2+" "+myBoundingBox.y2+" mouse x,y "+posX+"  "+posY);
-
-		// hideOnlyPop(rmid);		
-		//  
 	 	// placeholder for method in tms_cadviewerjs_modal_1_0_14.js   - must be removed when in creation mode and using creation modal
 	}
 
@@ -385,29 +320,19 @@
 
 /// NOTE: BELOW REDLINE SAVE LOAD CONTROLLERS
 
-
-
-
 // This method is linked to the save redline icon in the imagemap
 function cvjs_saveStickyNotesRedlinesUser(){
 
 	// there are two modes, user handling of redlines
 	// alternatively use the build in redline file manager
 
-	//cvjs_openRedlineSaveModal("floorPlan");
+	cvjs_openRedlineSaveModal("floorPlan");
 
 	// custom method startMethodRed to set the name and location of redline to save
 	// see implementation below
-	startMethodRed();
+	//startMethodRed();
 	// API call to save stickynotes and redlines
-
-
-	var custom_content = cvjs_getRedlineStickyNoteBusinessContent();
-
-	var	api_data = JSON.stringify(custom_content);
-	console.log(api_data);
-
-	cvjs_saveStickyNotesRedlines("floorPlan", true, api_data);
+	//cvjs_saveStickyNotesRedlines("floorPlan");
 }
 
 
@@ -415,7 +340,7 @@ function cvjs_saveStickyNotesRedlinesUser(){
 function cvjs_loadStickyNotesRedlinesUser(){
 
 
-	//cvjs_openRedlineLoadModal("floorPlan");
+	cvjs_openRedlineLoadModal("floorPlan");
 
 	// first the drawing needs to be cleared of stickynotes and redlines
 	//cvjs_deleteAllStickyNotes();
@@ -423,25 +348,11 @@ function cvjs_loadStickyNotesRedlinesUser(){
 
 	// custom method startMethodRed to set the name and location of redline to load
 	// see implementation below
-	 startMethodRed();
+	// startMethodRed();
 
 	// API call to load stickynotes and redlines
-	cvjs_loadStickyNotesRedlines("floorPlan");
+	//cvjs_loadStickyNotesRedlines("floorPlan");
 }
-
-
-function startMethodRed(){
-
-	var v1 = ServerUrl+"content/redlines/api_650/test01.js";
-	var v2 = ServerLocation+"content/redlines/api_650/test01.js";
-
-	cvjs_setStickyNoteRedlineUrl(v1);
-	cvjs_setStickyNoteSaveRedlineUrl(v2);
-}
-
-
-
-
 
 /// NOTE: ABOVE REDLINE SAVE LOAD CONTROLLERS
 
@@ -517,12 +428,180 @@ function startMethodRed(){
 	}
 
 
-// MUST BE INCLUDED
 
-	function cvjs_graphicalObjectCreated(graphicalObject){
-	// do something with the graphics object created!
-//		window.alert(graphicalObject);
+
+/// NOTE: BELOW CUSTOM MODAL COMMANDS
+
+var highlight_colorgrade_red_1 = {
+			fill: '#fa8072',
+			"fill-opacity": "0.7",
+			stroke: '#fa8072',
+			'stroke-width': 1,
+			'stroke-opacity': "1",
+			'stroke-linejoin': 'round'
+		};
+
+var highlight_colorgrade_yellow_1 = {
+			fill: '#ffff33',
+			"fill-opacity": "0.7",
+			stroke: '#fa8072',
+			'stroke-width': 1,
+			'stroke-opacity': "1",
+			'stroke-linejoin': 'round'
+		};
+
+var highlight_colorgrade_green_5 = {
+			fill: '#89DC74',
+			"fill-opacity": "0.7",
+			stroke: '#89DC74',
+			'stroke-width': 1,
+			'stroke-opacity': "1",
+			'stroke-linejoin': 'round'
+		};
+
+
+var roomLayer1;
+
+function clear_space_highlight(){
+
+	roomLayer1 = cvjs_clearLayer(roomLayer1);
+}
+
+function highlight_space_object(){
+
+	roomLayer1 = cvjs_clearLayer(roomLayer1);
+	cvjs_highlightSpaceObjectIdDiv( $('#sensor_to_highlight').val() , highlight_colorgrade_green_5 , roomLayer1, "floorPlan");
+
+}
+
+function space_highlight_1(){
+
+	roomLayer1 = cvjs_clearLayer(roomLayer1);
+
+	var spaceObjectIds = cvjs_getSpaceObjectIdList();
+	for (spc in spaceObjectIds)
+	{
+		if (!spaceObjectIds[spc].toString().indexOf("05A")==0 || !spaceObjectIds[spc].toString().indexOf("41")==0 || !spaceObjectIds[spc].toString().indexOf("38")==0 )
+			cvjs_highlightSpaceObjectIdDiv( spaceObjectIds[spc] , highlight_colorgrade_red_1 , roomLayer1, "floorPlan");
 	}
+
+}
+
+function space_highlight_2(){
+
+	roomLayer1 = cvjs_clearLayer(roomLayer1);
+
+	var spaceObjectIds = cvjs_getSpaceObjectIdList();
+	for (spc in spaceObjectIds)
+	{
+		if (spaceObjectIds[spc].toString().indexOf("05A")==0 || spaceObjectIds[spc].toString().indexOf("41")==0 || spaceObjectIds[spc].toString().indexOf("38")==0 )
+			cvjs_highlightSpaceObjectIdDiv( spaceObjectIds[spc] , highlight_colorgrade_yellow_1 , roomLayer1, "floorPlan");
+	}
+
+}
+
+/**
+ * Callback method from CADViewer which application programmers can use to interface their own applications
+ * @param {float} cvjs_currentMeasurementLength - measured length in current measurement operation
+ * @param {float} cvjs_currentMeasurementArea - measureed area in current measurement operation, if any
+ * @param {String} cvjs_units - the units of the current measurement operation
+ */
+
+
+function cvjs_measurementCallback(cvjs_currentMeasurementLength, cvjs_currentMeasurementArea, cvjs_units){
+
+	console.log("Measurement callback - Length: "+cvjs_currentMeasurementLength+"  Area: "+cvjs_currentMeasurementArea+" Unit: "+cvjs_units);
+
+}
+
+
+/**
+ * Callback method from CADViewer when an AutoCAD handle object has been clicked
+ * @param {String} id - the ID of the object, this ID can be used to reference the object using jQuery
+ * @param {String} handle - the AutoCAD handle of the object, this is an unique ID for each geometrical unit in the drawing, 
+ * @param {String} entity - the entity associated with the Handle, including the AutoCAD AcDb prefix to entities
+ */
+
+
+function cvjs_click(id, handle, entity){
+
+	console.log("click "+id+"  "+handle);
+	// removing AcDb in entity name
+	window.alert("We have clicked an entity: "+entity.substring(4)+"\r\nThe AutoCAD Handle id: "+handle+"\r\nThe svg id is: "+id);
+}
+
+
+/**
+ * Callback method from CADViewer when an AutoCAD handle object has been double clicked
+ * @param {String} id - the ID of the object, this ID can be used to reference the object using jQuery
+ * @param {String} handle - the AutoCAD handle of the object, this is an unique ID for each geometrical unit in the drawing, 
+ * @param {String} entity - the entity associated with the Handle, including the AutoCAD AcDb prefix to entities
+ */
+
+function cvjs_dblclick(id, handle, entity){
+
+	console.log("click "+id+"  "+handle);
+	window.alert("We have double clicked entity with AutoCAD Handle: "+handle+"\r\nThe svg id is: "+id);
+}
+
+
+/**
+ * Callback method from CADViewer when mouse out on an AutoCAD handle object
+ * @param {String} id - the ID of the object, this ID can be used to reference the object using jQuery
+ * @param {String} handle - the AutoCAD handle of the object, this is an unique ID for each geometrical unit in the drawing, 
+ * @param {String} entity - the entity associated with the Handle, including the AutoCAD AcDb prefix to entities
+ */
+
+function cvjs_mouseout(id, handle, entity){
+	cvjs_mouseout_handleObjectStyles(id, handle);
+	
+}
+
+/**
+ * Callback method from CADViewer when mouse over on an AutoCAD handle object
+ * @param {String} id - the ID of the object, this ID can be used to reference the object using jQuery
+ * @param {String} handle - the AutoCAD handle of the object, this is an unique ID for each geometrical unit in the drawing, 
+ * @param {String} entity - the entity associated with the Handle, including the AutoCAD AcDb prefix to entities
+ */
+
+function cvjs_mouseover(id, handle, entity){
+
+	console.log("mouseover "+id+"  "+handle+"  "+jQuery("#"+id).css("color"))
+	//cvjs_mouseover_handleObjectPopUp(id, handle);	
+}
+
+/**
+ * Callback method from CADViewer when mouse leave on an AutoCAD handle object
+ * @param {String} id - the ID of the object, this ID can be used to reference the object using jQuery
+ * @param {String} handle - the AutoCAD handle of the object, this is an unique ID for each geometrical unit in the drawing, 
+ * @param {String} entity - the entity associated with the Handle, including the AutoCAD AcDb prefix to entities
+ */
+function cvjs_mouseleave(id, handle, entity){
+
+	console.log("mouseleave "+id+"  "+handle+"  "+jQuery("#"+id).css("color"));
+}
+
+
+/**
+ * Callback method from CADViewer when mouse enter on an AutoCAD handle object
+ * @param {String} id - the ID of the object, this ID can be used to reference the object using jQuery
+ * @param {String} handle - the AutoCAD handle of the object, this is an unique ID for each geometrical unit in the drawing, 
+ * @param {String} entity - the entity associated with the Handle, including the AutoCAD AcDb prefix to entities
+ */
+
+function cvjs_mouseenter(id, handle, entity){
+//	cvjs_mouseenter_handleObjectStyles("#a0a000", 4.0, 1.0, id, handle);
+	cvjs_mouseenter_handleObjectStyles("#F00", 10.0, 1.0, true, id, handle);
+	
+}
+
+
+
+function cvjs_mousedown(id, handle, entity){
+
+}
+
+
 
 
 	// Callback Method on Creation and Delete 
@@ -607,75 +686,6 @@ function startMethodRed(){
 
 
 
-// ENABLE ALL API EVENT HANDLES FOR AUTOCAD Handles
-
-var selected_handles = [];
-var handle_selector = false;
-var current_selected_handle = "";
-
-function cvjs_mousedown(id, handle, entity){
-
-}
-
-function cvjs_click(id, handle, entity){
-
-    console.log("click "+id+"  "+handle);
-    // if we click on an object, then we add to the handle list
-    if (handle_selector){
-        selected_handles.push({id,handle});
-        current_selected_handle = handle;
-    }
-
-	// tell to update the Scroll bar 
-	//vqUpdateScrollbar(id, handle);
-	// window.alert("We have clicked an entity: "+entity.substring(4)+"\r\nThe AutoCAD Handle id: "+handle+"\r\nThe svg id is: "+id+"\r\nHighlight SQL pane entry");
-}
-
-function cvjs_dblclick(id, handle, entity){
-
-	console.log("mysql dblclick "+id+"  "+handle);
-	window.alert("We have double clicked entity with AutoCAD Handle: "+handle+"\r\nThe svg id is: "+id);
-}
-
-function cvjs_mouseout(id, handle, entity){
-
-    console.log("mysql mouseout "+id+"  "+handle);
-    
-    if (current_selected_handle == handle){
-        // do nothing
-    }
-    else{
-        cvjs_mouseout_handleObjectStyles(id, handle);
-    }
-}
-
-function cvjs_mouseover(id, handle, entity){
-
-	console.log("mysql mouseover "+id+"  "+handle+"  "+jQuery("#"+id).css("color"))
-	//cvjs_mouseover_handleObjectPopUp(id, handle);	
-}
-
-function cvjs_mouseleave(id, handle, entity){
-
-	console.log("mysql mouseleave "+id+"  "+handle+"  "+jQuery("#"+id).css("color"));
-}
-
-
-function cvjs_mouseenter(id, handle, entity){
-//	cvjs_mouseenter_handleObjectStyles("#a0a000", 4.0, 1.0, id, handle);
-//	cvjs_mouseenter_handleObjectStyles("#ffcccb", 5.0, 0.7, true, id, handle);
-
-	cvjs_mouseenter_handleObjectStyles("#F00", 10.0, 1.0, true, id, handle);	
-
-//	cvjs_mouseenter_handleObjectStyles("#F00", 10.0, 1.0, false, id, handle, "Hello "+id+"<br>My Custom message:"+handle);
-
-
-}
-
-// END OF MOUSE OPERATION
-
-
-
 
 
  	</script>
@@ -690,19 +700,23 @@ function cvjs_mouseenter(id, handle, entity){
 				<canvas id="dummy" width="10" height="10"></canvas>
 			</td>
 		<td>
-			<a href="https://cadviewer.com/cadviewertechdocs"><img src="https://cadviewer.com/images/cadviewer/cv-logo.gif" width="240" height="60" alt="Tailor Made logo" /></a>
+			<a href="https://cadviewer.com/cadviewerdemo"><img src="https://cadviewer.com/images/cadviewer/cv-logo.gif" width="240" height="60" alt="Tailor Made logo" /></a>
+		
+			<br><canvas id="dummy" width="10" height="20"></canvas><strong><a href="https://cadviewer.com/"><img src="./index_images/back01.png" alt="Tailor Made logo" />CADViewer Home</a></strong>
 		</td>
 		<td>
 		<canvas id="dummy" width="10" height="10"></canvas>
 		</td>
 		<td>
-		<h4><b>CADViewer: Sample Fileloading and Redlining</b></h4>
-		<p>Check out the <strong><a href="http://cadviewer.com/cadviewertechdocs/">Documentation</a></strong> at our <strong><a href="http://cadviewer.com/cadviewertechdocs/samples/">TechDocs</a></strong>. Contact us at: <a href="mailto:developer@tailormade.com">developer@tailormade.com</a> or <a href="mailto:internationalsales@tailormade.com">internationalsales@tailormade.com</a>.
-		</p></td>
+		<h4>   <b>CADViewer Retaining AutoCAD Handles</b></h4>
+		<p>Move cursor over entities to highlight properties. See the <strong><a href="https://cadviewer.com/cadviewertechdocs/">Documentation</a></strong> and <strong><a href="https://cadviewer.com/download/">Download CADViewer</a></strong>. Contact us at: <a href="mailto:internationalsales@tailormade.com">internationalsales@tailormade.com</a>.
+		</p>
+		</td>
+
 	</tr>
 	</table>
 
-
+		<canvas id="dummy" width="10" height="10"></canvas>
 
 	<table id="none">
 	<tr>
