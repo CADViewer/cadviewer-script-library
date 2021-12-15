@@ -46,11 +46,10 @@ Please refer to the general Documentation above, for the back-end handlers, ther
 
 - [NodeJS](https://cadviewer.com/cadviewertechdocs/handlers/nodejs/)
 - [PHP](https://cadviewer.com/cadviewertechdocs/handlers/php/)
-	* [.NET](https://cadviewer.com/cadviewertechdocs/handlers/asp.net/)
-	* [Servlets](https://cadviewer.com/cadviewertechdocs/handlers/servlets/)
-	* [Angular](https://cadviewer.com/cadviewertechdocs/handlers/angular/)
-	* [ReactJS](https://cadviewer.com/cadviewertechdocs/handlers/reactjs/)
-
+- [.NET](https://cadviewer.com/cadviewertechdocs/handlers/asp.net/)
+- [Servlets](https://cadviewer.com/cadviewertechdocs/handlers/servlets/)
+- [Angular](https://cadviewer.com/cadviewertechdocs/handlers/angular/)
+- [ReactJS](https://cadviewer.com/cadviewertechdocs/handlers/reactjs/)
 
 
 ## Updating CAD Converters
