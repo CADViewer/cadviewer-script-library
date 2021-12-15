@@ -2,7 +2,10 @@
 
 Use this version with global DOM scope with back-end conversion scripts and CAD converters for PHP, .NET, .NET Core, Servlets, Laravel and NodeJS.  
 
-For front-end frameworks ReactJS, Angular and VueJS, use npm installer: **npm i cadviewer**.  
+Install the content of this repository under /cadviewer/. So for example, if on xampp, then /xampp/htdocs/cadviewer/, if on apache Linux then /var/www/html/cadviewer/.
+
+
+For front-end frameworks ReactJS, Angular and VueJS, insted use npm installer: **npm i cadviewer**.  In that case only the structures under 2:, 3: and 4: is of interest. 
 
 
 ## This package contains
