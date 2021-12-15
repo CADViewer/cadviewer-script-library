@@ -18,7 +18,7 @@ For front-end frameworks ReactJS, Angular and VueJS, use npm installer: **npm i 
 
 4: The folder structure for script handlers for communication between CADViewer and the back-end AutoXchange 2022. Install these separately!
 
-With this download, the PHP handlers will work as-is, download these from 
+With this download, the PHP handlers will work as-is, download the PHP handlers from: https://github.com/CADViewer/cadviewer-php-scripts , install under /cadviewer/php/.
 
 
 
