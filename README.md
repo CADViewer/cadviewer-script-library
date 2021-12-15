@@ -50,6 +50,7 @@ Please refer to the general Documentation above, for the back-end handlers, ther
 - [Servlets](https://cadviewer.com/cadviewertechdocs/handlers/servlets/)
 - [Angular](https://cadviewer.com/cadviewertechdocs/handlers/angular/)
 - [ReactJS](https://cadviewer.com/cadviewertechdocs/handlers/reactjs/)
+- [VueJS](https://cadviewer.com/cadviewertechdocs/handlers/vuejs/)
 
 
 ## Updating CAD Converters
