@@ -9,7 +9,7 @@ For front-end frameworks ReactJS, Angular and VueJS, use npm installer: **npm i 
 
 1: CADViewer script library  - in its preferred folder structure
 
-2: AutoXchange AX2022 converter - in its preferred folder structure
+2: AutoXchange AX2022 Converter and DWG Merge 2022 Converter - in their preferred folder structure
 
 3: All structures for file-conversion, sample drawings, redlines, etc. 
 
@@ -18,9 +18,15 @@ For front-end frameworks ReactJS, Angular and VueJS, use npm installer: **npm i 
 
 ## This package does not contains
 
-4: The folder structure for script handlers for communication between CADViewer and the back-end AutoXchange 2022. Install these separately!
+5: The folder structure for script handlers for communication between CADViewer and the back-end AutoXchange 2022. Install these separately!
 
-With this download, the PHP handlers will work as-is, download the PHP handlers from: https://github.com/CADViewer/cadviewer-php-scripts , install under /cadviewer/php/.
+**NOTE:** With this download, the PHP handlers will work as-is, download the PHP handlers from: https://github.com/CADViewer/cadviewer-php-scripts , install under /cadviewer/php/.
+
+
+## How to Use
+
+Once the 5: script handler is installed, the HTML samples under /cadviewer/html/ can be run from a web-browser. Use http://localhost/cadviewer/html/CADViewer_fileloader_670.html as a starting point (assuming that your have installed under http://localhost).
+
 
 
 
