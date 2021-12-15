@@ -1,13 +1,43 @@
 # cadviewer-script-library
 
-Use this version with global DOM scope with back-end conversion scripts and CAD converters for PHP, .NET, .NET Core, Servlets, Laravel and NodeJS.  For front-end frameworks ReactJS, Angular and VueJS, use npm installer: **npm i cadviewer**.  
+Use this version with global DOM scope with back-end conversion scripts and CAD converters for PHP, .NET, .NET Core, Servlets, Laravel and NodeJS.  
+
+For front-end frameworks ReactJS, Angular and VueJS, use npm installer: **npm i cadviewer**.  
+
+
+## This package contains
+
+1: CADViewer script library  - in its preferred folder structure
+
+2: AutoXchange AX2022 converter - in its preferred folder structure
+
+3: All structures for file-conversion, sample drawings, redlines, etc. 
+
+
+## This package does not contains
+
+4: The folder structure for script handlers for communication between CADViewer and the back-end AutoXchange 2022. Install these separately!
+
+With this download, the PHP handlers will work as-is, download these from 
+
+
+
+
+
 
 ## Documentation 
 
 -   [CADViewer Techdocs and Installation Guide](https://cadviewer.com/cadviewertechdocs/download)
 
 
-## How To Install CADViewer 
+
+
+
+## How To Install CADViewer
+
+This are the general instructions
+
+
 
 * [Download **CADViewer**](/alldownloads/cadviewer), the CADViewer download comes with CADViewer and a base folder structure with drawings, and html sample(s).
 * Modify or move the CADViewer folderstructure specific to your back-end technology and do other specifics associated with your platform.
