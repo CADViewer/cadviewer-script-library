@@ -80,7 +80,7 @@ Typically the variables *ServerUrl*, *ServerLocation* or *ServerBackEndUrl* in t
     var ServerUrl = "http://localhost/cadviewer/";   // or what is appropriate for my server
     var ServerLocation = ""; // or what is appropriate for my server
 </pre>
-
+ 
  
  
 **Have Fun!**  - and get in [touch](mailto:developer@tailormade.com)  with us!
