@@ -23,16 +23,14 @@
 	<link href="../app/css/jquery-ui-1.11.4.min.css" media="screen" rel="stylesheet" type="text/css" />
 
 
-  <script src="../app/cv/cv-pro/cadviewer_6.8.14e.min.js" type="text/javascript" ></script> 
-	 
-	
+	<script src="../app/cv/cv-pro/cadviewer.min.js" type="text/javascript" ></script> 	
 	<script src="../app/cv/cv-custom_commands/CADViewer_custom_commands.js" type="text/javascript" ></script>
+	<link href="../app/css/cvjs_7.css" media="screen" rel="stylesheet" type="text/css" />
 
 	<script src="../app/cv/cvlicense.js" type="text/javascript" ></script>
 
 	<script src="../app/js/bootstrap-multiselect.js" type="text/javascript" ></script>
 	<link href="../app/css/bootstrap-multiselect.css" rel="stylesheet" type="text/css" />
-	<link href="../app/css/cvjs_6.5.css" media="screen" rel="stylesheet" type="text/css" />
 
 	<script src="../app/js/library_js_svg_path.js" type="text/javascript"></script>			
 	<script src="../app/js/snap.svg-min.js" type="text/javascript" ></script>
@@ -54,10 +52,10 @@
 	<script type="text/javascript">
 
 	// Location of installation folders
-    var ServerBackEndUrl = "http://localhost/cadviewer/";
-    var ServerUrl = "http://localhost/cadviewer/";
-    var ServerLocation = "c:/xampp/htdocs/cadviewer/";
-    var ServerLocation = "getServerLocationFromScript";
+    var ServerBackEndUrl = location.origin+"/cadviewer/";
+    var ServerUrl = location.origin+"/cadviewer/";
+    var ServerLocation = "";
+
 
 	// PATH and FILE to be loaded, can be in formats DWG, DXF, DWF, SVG , JS, DGN, PCF, JPG, GIF, PNG	
 	var FileName = ServerUrl + "/content/drawings/dwg/one_of_simple.dwg";	
