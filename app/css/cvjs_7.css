@@ -4840,14 +4840,6 @@ table.adjustspaceobjectModalTable {
 
 
 
-
-
-
-
-
-
-
-
 .linethicknessModalHeader{
     z-index: 1100;
 	position:absolute;
@@ -4942,6 +4934,14 @@ table.linethicknessModalTable td {
 }
 
 
+.cvjs_objectslider2{
+ z-index:1000;
+ width: 300px; 
+ border: 1px solid gray;
+  position: absolute;
+	  left: 10px;
+	  top: 0px;
+}
 
 
 
@@ -4951,7 +4951,7 @@ table.linethicknessModalTable td {
 	border: 1px solid gray;
 	 position: absolute;
     	 left: 10px;
-    	 top: 70px;
+    	 top: 0px;
 }
 
 .cvjs_slider3{
