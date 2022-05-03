@@ -391,7 +391,6 @@ function process_rule_snap_to_vessel(spaceID, i, jsonObject){
         return true;
 }
 
-
 function cvjsspace_addRectangleSpaceObjectCore(floorplan_div){
 
 	
@@ -485,6 +484,7 @@ function cvjsspace_addRectangleSpaceObjectCore(floorplan_div){
 	cvjs_addHandleFunc_Rectangle();
 
 }
+
 
 
 
