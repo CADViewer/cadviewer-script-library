@@ -5738,8 +5738,8 @@ select_file_image\" id=\"select_file
 .cvjs_controls_min {
     position: absolute;
     display: block;
-    height: 123px !important;
-	width: 30px !important;
+    height: 123px ;  /* 123 remove important */   
+	width: 30px ;
     z-index: 1000;
     border: 1px #999 solid;
     cursor: pointer;
