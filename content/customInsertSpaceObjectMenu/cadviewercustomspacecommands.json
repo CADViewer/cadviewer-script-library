@@ -5,6 +5,11 @@
         "pages" :[
                 [
                     {
+                        "commandName" : "DoorWithStates",
+                        "imageLocation" : "/images/door_allstates01.svg",
+                        "toolTip" : "Insert Door Object with multiple states"
+                    },
+                    {
                         "commandName" : "Danger",
                         "imageLocation" : "/images/danger.png",
                         "toolTip" : "Insert Danger object"
@@ -58,25 +63,7 @@
                         "commandName" : "FireExit",
                         "imageLocation" : "/images/fire_exit.png",
                         "toolTip" : "Insert Fire Exit object "
-                    }
-                    ,
-                    {
-                        "commandName" : "FireExtinguisher",
-                        "imageLocation" : "/images/fire_extinguisher.png",
-                        "toolTip" : "Insert Fire Extinguisher object "
-                    }
-                    ,
-                    {
-                        "commandName" : "RefugePoint",
-                        "imageLocation" : "/images/refuge_point.png",
-                        "toolTip" : "Insert Refuge Point object "
-                    },
-                    {
-                        "commandName" : "Marker",
-                        "imageLocation" : "/images/pin_02.svg",
-                        "toolTip" : "Insert marker object "
-                    }
-
+                    }                    
 
                 
 
@@ -93,6 +80,13 @@
                         "imageLocation" : "/images/pin_02.svg",
                         "toolTip" : "Insert marker object "
                     }
+                    ,
+                    {
+                        "commandName" : "FireExtinguisher",
+                        "imageLocation" : "/images/fire_extinguisher.png",
+                        "toolTip" : "Insert Fire Extinguisher object "
+                    }
+
                 ]
         ]
     }
