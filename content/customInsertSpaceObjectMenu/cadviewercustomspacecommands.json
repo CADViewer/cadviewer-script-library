@@ -5,7 +5,7 @@
         "pages" :[
                 [
                     {
-                        "commandName" : "DoorWithStates",
+                        "commandName" : "Door",
                         "imageLocation" : "/images/door_allstates01.svg",
                         "toolTip" : "Insert Door Object with multiple states"
                     },
