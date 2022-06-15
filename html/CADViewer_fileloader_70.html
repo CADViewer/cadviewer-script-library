@@ -349,7 +349,6 @@
 	}
 
 
-
 	function cvjs_ObjectSelected(rmid){
 	
 		var e = window.event;
@@ -358,7 +357,7 @@
 	
 		myBoundingBox = cvjs_ObjectBoundingBox_ScreenCoord(rmid);
 				
-		window.alert("See callback: cvjs_ObjectSelected() "+rmid+" BBox: "+myBoundingBox.x+" "+myBoundingBox.y+" "+myBoundingBox.x2+" "+myBoundingBox.y2+" mouse x,y "+posX+"  "+posY);
+		console.log("See callback: cvjs_ObjectSelected() "+rmid+" BBox: "+myBoundingBox.x+" "+myBoundingBox.y+" "+myBoundingBox.x2+" "+myBoundingBox.y2+" mouse x,y "+posX+"  "+posY);
 
 		// hideOnlyPop(rmid);		
 		//  
@@ -570,33 +569,17 @@ var selected_handles = [];
 var handle_selector = false;
 var current_selected_handle = "";
 
-function cvjs_mousedown(id, handle, entity){
 
-}
-
-function cvjs_click(id, handle, entity){
-
-    console.log("click "+id+"  "+handle);
-    // if we click on an object, then we add to the handle list
-    if (handle_selector){
-        selected_handles.push({id,handle});
-        current_selected_handle = handle;
-    }
-
-	// tell to update the Scroll bar 
-	//vqUpdateScrollbar(id, handle);
-	// window.alert("We have clicked an entity: "+entity.substring(4)+"\r\nThe AutoCAD Handle id: "+handle+"\r\nThe svg id is: "+id+"\r\nHighlight SQL pane entry");
-}
 
 function cvjs_dblclick(id, handle, entity){
 
-	console.log("mysql dblclick "+id+"  "+handle);
+	console.log("dblclick "+id+"  "+handle);
 	window.alert("We have double clicked entity with AutoCAD Handle: "+handle+"\r\nThe svg id is: "+id);
 }
 
 function cvjs_mouseout(id, handle, entity){
 
-    console.log("mysql mouseout "+id+"  "+handle);
+    console.log("mouseout "+id+"  "+handle);
     
     if (current_selected_handle == handle){
         // do nothing
@@ -606,18 +589,6 @@ function cvjs_mouseout(id, handle, entity){
     }
 }
 
-function cvjs_mouseover(id, handle, entity){
-
-	console.log("mysql mouseover "+id+"  "+handle+"  "+jQuery("#"+id).css("color"))
-	//cvjs_mouseover_handleObjectPopUp(id, handle);	
-}
-
-function cvjs_mouseleave(id, handle, entity){
-
-	console.log("mysql mouseleave "+id+"  "+handle+"  "+jQuery("#"+id).css("color"));
-}
-
-
 function cvjs_mouseenter(id, handle, entity){
 //	cvjs_mouseenter_handleObjectStyles("#a0a000", 4.0, 1.0, id, handle);
 //	cvjs_mouseenter_handleObjectStyles("#ffcccb", 5.0, 0.7, true, id, handle);
@@ -625,10 +596,72 @@ function cvjs_mouseenter(id, handle, entity){
 	cvjs_mouseenter_handleObjectStyles("#F00", 10.0, 1.0, true, id, handle);	
 }
 
+
+var mouseover = false;
+var mouseclick = false;
+
+
+function cvjs_mousedown(id, handle, entity){
+
+	console.log("mousedown "+id);
+
+	// capture mouse down on a space to 
+	if (!mouseclick)
+		mouseclick = true;
+
+}
+
+
+function cvjs_click(id, handle, entity){
+
+	console.log("click "+id+"  "+handle);
+
+	// if the popup close menu is called, it will return cvjs_click
+	if (mouseclick)
+		mouseclick = false;
+
+	// if we click on an object, then we add to the handle list
+	if (handle_selector){
+		selected_handles.push({id,handle});
+		current_selected_handle = handle;
+	}
+
+	// tell to update the Scroll bar 
+	//vqUpdateScrollbar(id, handle);
+	// window.alert("We have clicked an entity: "+entity.substring(4)+"\r\nThe AutoCAD Handle id: "+handle+"\r\nThe svg id is: "+id+"\r\nHighlight SQL pane entry");
+}
+
+
+function cvjs_mouseover(id, handle, entity){
+
+	console.log("mouseover "+id+"  "+handle+"  "+jQuery("#"+id).css("color"));
+
+	// if we do not have a mouse over we open the modal,  but if the space is clicked we do not do anything
+	if (!mouseover){
+		mouseover = true;
+		if (!mouseclick) cvjs_changeSpaceFixedLocation(id);
+	}
+
+
+	//cvjs_mouseover_handleObjectPopUp(id, handle);	
+}
+
+function cvjs_mouseleave(id, handle, entity){
+
+	console.log("mouseleave "+id+"  "+handle+"  "+jQuery("#"+id).css("color"));
+
+	mouseover = false;
+
+	console.log("mouseleave variable mouseclick: "+mouseclick);
+
+	if (!mouseclick)       // we hide the pop upon leaving, but do not so if the space is clicked.
+		cvjs_hideOnlyPop();
+
+}
+
+
+
 // END OF MOUSE OPERATION
-
-
-
 
 
  	</script>
