@@ -47,9 +47,7 @@
 /* 6.8.21  */
 
 .cvjs_qtip{
-
 	max-width: none !important;
-
 }
 
 
@@ -3581,7 +3579,7 @@ table.publishPDFModalTable td {
 
 .cvjs_inputRedlineColorModal{
 
-	width: 80px;
+	width: 96px;     /*   80   */ 
 	height: 20px; 
 	padding: 1px;
     	top: 3px;
@@ -4559,7 +4557,7 @@ table.backgroundModalTable td {
 
 .cvjs_inputBackgroundColorModal{
 
-	width: 80px;
+	width: 96px;     /*   80   */ 
 	height: 20px; 
 	padding: 1px;
     	top: 3px;
