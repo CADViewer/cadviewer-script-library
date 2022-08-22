@@ -104,7 +104,7 @@
 
         // NOTE BELOW: THESE SETTINGS ARE FOR SERVER CONTROLS FOR UPLOAD OF REDLINES, FILES, SPACE OBJECTS
 		cvjs_setServerFileLocation_AbsolutePaths(ServerLocation+folderPath, ServerUrl+folderPath,"","");
-		cvjs_setRedlinesAbsolutePath(ServerUrl+'/content/redlines/fileloader_610/', ServerLocation+'/content/redlines/fileloader_610/');
+		cvjs_setRedlinesAbsolutePath(ServerUrl+'/content/redlines/v7/', ServerLocation+'/content/redlines/v7/');
 		cvjs_setSpaceObjectsAbsolutePath(ServerUrl+'/content/spaceObjects/', ServerLocation+'/content/spaceObjects/');
 		cvjs_setInsertImageObjectsAbsolutePath(ServerUrl+'/content/inserted_image_objects/', ServerLocation+'/content/inserted_image_objects/')
 		// NOTE ABOVE: THESE SETTINGS ARE FOR SERVER CONTROLS OF SPACE OBJECTS, ETC
@@ -245,8 +245,8 @@ function cvjs_loadStickyNotesRedlinesUser(){
 
 function startMethodRed(){
 
-	var v1 = ServerUrl+"/content/redlines/api_650/test01.js";
-	var v2 = "/content/redlines/api_650/test01.js";
+	var v1 = ServerUrl+"/content/redlines/v7/test01.js";
+	var v2 = "/content/redlines/v7/test01.js";
 
 	cvjs_setStickyNoteRedlineUrl(v1);
 	cvjs_setStickyNoteSaveRedlineUrl(v2);
