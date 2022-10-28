@@ -199,7 +199,7 @@
 			<RedlineColorModal>
 				<Header>Select Redline Color</Header>
 				<PickColor>Pick Color:</PickColor>
-				<SelectColor>Select:</SelectColor>
+				<SelectColor></SelectColor>
 				<Blue>Blue</Blue>
 				<Red>Red</Red>
 				<Yellow>Yellow</Yellow>
@@ -228,7 +228,7 @@
 			<BackgroundColorModal>
 				<Header>Select Background Color</Header>
 				<PickColor>Pick Color:</PickColor>
-				<SelectColor>Select:</SelectColor>
+				<SelectColor></SelectColor>
 				<White>White</White>
 				<Black>Black</Black>
 				<Azure>Azure</Azure>
@@ -750,7 +750,7 @@
 			<RedlineColorModal>
 				<Header> Seleccionar color de línea roja </Header>
 				<PickColor> Elegir color: </PickColor>
-				<SelectColor> Seleccione: </SelectColor>
+				<SelectColor></SelectColor>
 				<Blue> Azul </Blue>
 				<Red> Rojo </Red>
 				<Yellow> Amarillo </Yellow>
@@ -779,7 +779,7 @@
 			<BackgroundColorModal>
 				<Header> Seleccionar color de fondo </Header>
 				<PickColor> Elegir color: </PickColor>
-				<SelectColor> Seleccione: </SelectColor>
+				<SelectColor></SelectColor>
 				<White> Blanco </White>
 				<Black> Negro </Black>
 				<Azure> Azur </Azure>
@@ -1302,7 +1302,7 @@
 			<RedlineColorModal>
 			<Header>选择红线颜色</Header>
 			<PickColor>选择颜色：</PickColor>
-			<SelectColor>选择：</SelectColor>
+			<SelectColor></SelectColor>
 			<Blue>蓝色</Blue>
 			<Red>红色</Red>
 			<Yellow> 黄色 </Yellow>
@@ -1331,7 +1331,7 @@
 			<BackgroundColorModal>
 			<Header>选择背景色</Header>
 			<PickColor>选择颜色：</PickColor>
-			<SelectColor>选择：</SelectColor>
+			<SelectColor></SelectColor>
 			<White> 白色 </White>
 			<Black>黑色</Black>
 			<Azure> 蔚蓝 </Azure>
@@ -1854,7 +1854,7 @@
 			<RedlineColorModal>
 			<Header>選擇紅線顏色</Header>
 			<PickColor>選擇顏色：</PickColor>
-			<SelectColor>選擇：</SelectColor>
+			<SelectColor></SelectColor>
 			<Blue>藍色</Blue>
 			<Red>紅色</Red>
 			<Yellow> 黃色 </Yellow>
@@ -1883,7 +1883,7 @@
 			<BackgroundColorModal>
 			<Header>選擇背景色</Header>
 			<PickColor>選擇顏色：</PickColor>
-			<SelectColor>選擇：</SelectColor>
+			<SelectColor></SelectColor>
 			<White> 白色 </White>
 			<Black>黑色</Black>
 			<Azure> 蔚藍 </Azure>
@@ -2406,7 +2406,7 @@
 			<RedlineColorModal>
 			<Header> Selecione Redline Color </Header>
 			<PickColor> Escolha: </PickColor>
-			<SelectColor> Selecione: </SelectColor>
+			<SelectColor></SelectColor>
 			<Blue> Azul </Blue>
 			<Red> Vermelho </Red>
 			<Yellow> Amarelo </Yellow>
@@ -2435,7 +2435,7 @@
 			<BackgroundColorModal>
 				<Header> Selecione a cor de fundo </Header>
 				<PickColor> Escolha: </PickColor>
-				<SelectColor> Selecione: </SelectColor>
+				<SelectColor></SelectColor>
 				<White> Branco </White>
 				<Black> Preto </Black>
 				<Azure> Azure </Azure>
@@ -2958,7 +2958,7 @@
 			<RedlineColorModal>
 			<Header> 수정 지시 색상 선택 </Header>
 			<PickColor> 색상 선택 : </PickColor>
-			<SelectColor> 선택 : </SelectColor>
+			<SelectColor></SelectColor>
 			<Blue> 파란색 </Blue>
 			<Red> 적색 </Red>
 			<Yellow> 노란색 </Yellow>
@@ -2987,7 +2987,7 @@
 			<BackgroundColorModal>
 			<Header> 배경색 선택 </Header>
 			<PickColor> 색상 선택 : </PickColor>
-			<SelectColor> 선택 : </SelectColor>
+			<SelectColor></SelectColor>
 			<White> 흰색 </White>
 			<Black> 검정 </Black>
 			<Azure> 하늘빛 </Azure>
@@ -3512,7 +3512,7 @@
 			<RedlineColorModal>
 			<Header> Pilih Warna Redline </Header>
 			<PickColor> Pilih Warna: </PickColor>
-			<SelectColor> Pilih: </SelectColor>
+			<SelectColor></SelectColor>
 			<Blue> Biru </Blue>
 			<Red> Merah </Red>
 			<Yellow> Kuning </Yellow>
@@ -3541,7 +3541,7 @@
 			<BackgroundColorModal>
 			<Header> Pilih Warna Latar Belakang </Header>
 			<PickColor> Pilih Warna: </PickColor>
-			<SelectColor> Pilih: </SelectColor>
+			<SelectColor></SelectColor>
 			<White> Putih </White>
 			<Black> Hitam </Black>
 			<Azure> Azure </Azure>
@@ -4063,7 +4063,7 @@
 			<RedlineColorModal>
 				<Header> Wählen Sie Redline-Farbe</Header>
 				<PickColor> Farbe:</PickColor>
-				<SelectColor> Wählen: </SelectColor>
+				<SelectColor></SelectColor>
 				<Blue> Blau </Blue>
 				<Red> Rot </Red>
 				<Yellow> Gelb </Yellow>
@@ -4092,7 +4092,7 @@
 			<BackgroundColorModal>
 				<Header> Hintergrundfarbe auswählen </Header>
 				<PickColor> Farbe:</PickColor>
-				<SelectColor> Wählen: </SelectColor>
+				<SelectColor></SelectColor>
 				<White>Weiß</White>
 				<Black>Schwarz</Black>
 				<Azure>Azur</Azure>
@@ -4615,7 +4615,7 @@
 			<RedlineColorModal>
 				<Header> Sélectionnez la couleur Redline </Header>
 				<PickColor> Choisissez: </PickColor>
-				<SelectColor> Sélection: </SelectColor>
+				<SelectColor></SelectColor>
 				<Blue> Bleu </Blue>
 				<Red> Rouge </Red>
 				<Yellow> Jaune </Yellow>
@@ -4644,7 +4644,7 @@
 			<BackgroundColorModal>
 				<Header> Sélectionnez la couleur d'arrière-plan </Header>
 				<PickColor> Choisissez: </PickColor>
-				<SelectColor> Sélection: </SelectColor>
+				<SelectColor></SelectColor>
 				<White> Blanc </White>
 				<Black> Noir </Black>
 				<Azure> Azure </Azure>

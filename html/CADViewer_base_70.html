@@ -11,47 +11,45 @@
     <meta name="keywords" content="" />
 
 
-	<script src="../app/js/jquery-3.5.1.js" type="text/javascript"></script>    <!-- required  jQuery -->
+
+	<link href="../app/css/cvjs-core-styles.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="../app/css/font-awesome.min.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="../app/css/bootstrap-multiselect.css" rel="stylesheet" type="text/css" />
+	<link href="../app/css/jquery.qtip.min.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="../app/css/jquery-ui-1.13.2.min.css" media="screen" rel="stylesheet" type="text/css" />
+
+	<link href="../app/css/bootstrap-cadviewer.css" media="screen" rel="stylesheet" type="text/css" />
 	
-	<script src="../app/js/jquery-ui-1.11.4.min.js" type="text/javascript"></script> <!-- required  meny drag, etc -->
-	<link href="../app/css/jquery-ui-1.11.4.min.css" media="screen" rel="stylesheet" type="text/css" />  <!-- required  meny drag, etc -->
-	<script src="../app/js/xml2json.min.js"></script>   <!-- required  XML to JSON -->
-	<script src="../app/js/snap.svg-min.js" type="text/javascript" ></script> <!-- required  SNAP svg -->
-    <script src="../app/js/list.js" type="text/javascript"></script>  <!-- required  CADVewer menu list generation, change views, layers -->
 
-	<script src="../app/js/popper.js" type="text/javascript"></script> <!-- required CADViewer modal dropdown + selection formatting -->
-	<script src="../app/js/bootstrap-cadviewer.js" type="text/javascript"></script> <!-- required  CADViewer modal dropdown + selection formatting -->
-	<link href="../app/css/bootstrap-cadviewer.css" media="screen" rel="stylesheet" type="text/css" /> <!-- required CADViewer modal formatting -->
+	<script src="../app/js/jquery-2.2.3.js" type="text/javascript"></script>
+	<!-- <script src="../app/js/jquery-3.5.1.js" type="text/javascript"></script> -->
+	 <script src="../app/js/jquery.qtip.min.js" type="text/javascript"></script> 
+	<script src="../app/js/popper.js" type="text/javascript"></script>
+	<script src="../app/js/bootstrap-cadviewer.js" type="text/javascript"></script>
+	<script src="../app/js/jquery-ui-1.13.2.min.js" type="text/javascript"></script>
+	<script src="../app/cv/cv-pro/cadviewer.min.js" type="text/javascript" ></script> 
 
+	<script src="../app/cv/cv-pro/custom_rules_template.js" type="text/javascript" ></script>
+    <script src="../app/cv/cv-custom_commands/CADViewer_custom_commands.js" type="text/javascript" ></script>
 
-    <script src="../app/js/bootstrap-multiselect.js" type="text/javascript" ></script> <!-- optional / required  for CADViewer multiselect layermodal -->
-    <link href="../app/css/bootstrap-multiselect.css" rel="stylesheet" type="text/css" /> <!-- optional / for required CADViewer multiselect layermodal -->
-	<script src="../app/js/jscolor.js" type="text/javascript" ></script> <!-- optional / required for CADViewer background color modals, redline color modal -->
-    
-	<script src="../app/cv/cv-pro/cadviewer.min.js" type="text/javascript" ></script><!-- required CADViewer , can include version number, for example: cadviewer_6.8.61c.min.js, see /cadviewer/app/cv/cv-pro/ -->
-<!--	<script src="../app/cv/cv-pro/cadviewer_base_pro_6_8_64c_php.js" type="text/javascript" ></script> <!-- required CADViewer , can include version number, for example: cadviewer_6.8.61c.min.js, see /cadviewer/app/cv/cv-pro/ -->
+	<script src="../app/cv/cvlicense.js" type="text/javascript" ></script> 
+		 
+	<script src="../app/js/bootstrap-multiselect.js" type="text/javascript" ></script>
+	<script src="../app/js/library_js_svg_path.js" type="text/javascript"></script>			
+	<script src="../app/js/snap.svg-min.js" type="text/javascript" ></script>
 
-	<link href="../app/css/cvjs_7.css" media="screen" rel="stylesheet" type="text/css" /> <!-- required CADViewer -->
-	<script src="../app/cv/cvlicense.js" type="text/javascript" ></script> <!-- required CADViewer -->
+	<script src="../app/js/cvjs_api_styles_2_0_26.js" type="text/javascript" ></script>
+	<script src="../app/js/rgbcolor.js"type="text/javascript" ></script>
+	<script src="../app/js/StackBlur.js"type="text/javascript" ></script>
+	<script src="../app/js/canvg.js" type="text/javascript"  ></script>
+	<script src="../app/js/list.js" type="text/javascript"></script>
+	<script src="../app/js/jscolor.js" type="text/javascript" ></script>
+	
+	<script src="../app/js/jstree/jstree.min.js"></script>
+	<script src="../app/js/xml2json.min.js"></script>
+	<script src="../app/js/d3.v3.min.js"></script>  
+	<script src="../app/js/qrcode.min.js" type="text/javascript"></script> 
 
-	<script src="../app/cv/cv-pro/custom_rules_template.js" type="text/javascript" ></script> <!-- required CADViewer -->
-
-
-    <script src="../app/js/rgbcolor.js"type="text/javascript" ></script> <!-- optional bird-eye , mmust be declared prior to canvg.js -->
-	<script src="../app/js/canvg.js" type="text/javascript"  ></script>  <!-- optional  CADViewer print to papersize, birds-eye   -->
-
-
-	<!-- below are class libs for SPACE MAMAGEMENT, snap modes, QR codes, they can be optional for standard view and redline interface-- >    
-    <script src="../app/js/jquery.qtip.min.js" type="text/javascript"></script>  <!-- optional CADViewer Space Management-- >
-	<link href="../app/css/jquery.qtip.min.css" media="screen" rel="stylesheet" type="text/css" /> <!-- optional CADViewer Space Management-- >
-	<script src="../app/cv/cv-pro/custom_rules_v6.8.55_template.js" type="text/javascript" ></script>  <!-- optional CADViewer Space Management-- >
-    <script src="../app/cv/cv-custom_commands/CADViewer_custom_commands.js" type="text/javascript" ></script> <!-- optional CADViewer Space Management-- >
-	<script src="../app/js/library_js_svg_path.js" type="text/javascript"></script>	 <!-- optional CADViewer Space Management-- >		
-	<script src="../app/js/cvjs_api_styles_2_0_26.js" type="text/javascript" ></script> <!-- optional CADViewer Space Management-- >		
-	<script src="../app/js/d3.v3.min.js"></script>  <!-- optional snap modes measurement, Space Management -- >
-	<script src="../app/js/qrcode.min.js" type="text/javascript"></script> <!-- optional QR core modal only -- >
-	<script src="../app/js/jstree/jstree.min.js"></script>   <!-- optional Sharepoint menu system -- >
-	<script src="../app/js/StackBlur.js"type="text/javascript" ></script><!-- retired -->
 	
 	<script type="text/javascript">
 
