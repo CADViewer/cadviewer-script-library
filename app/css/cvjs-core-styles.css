@@ -3172,7 +3172,7 @@ table.info_messageModal_2Table td {
 	/* 7.3.14*/
 
    	z-index:1000;
-	width: 360px; 
+	width: 370px !important;   /*7.6.5 */
 	height: 260px;
 	border-radius: 3px;
 	background-color: #FFFFFF;
