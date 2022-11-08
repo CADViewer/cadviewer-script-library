@@ -1670,7 +1670,7 @@ table.cvjs_floorPlanMagnifyingGlassTable td {
 .cvjs_floorPlanMagnifyingGlassTop { 
 	z-index: 9000000;
 	border: 1px solid gray; 
-	width: 654px;   /*7.3.26 */ 
+	width: 650px;   /*7.3.26 */ 
 	height: 25px;
 	border-radius: 0px;
 	background-color: #DDDDDD;
@@ -4968,6 +4968,45 @@ table.publishPDFModalTable td {
 
 
 
+	#cvjs_redline_color_pickcolor{
+		position:absolute;
+		top: 48px;
+		width: 100px;
+		left: 5px;
+	
+		font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
+		text-decoration: none;
+		font-weight: none;
+		color:#000000;
+		font-size: 12px;
+		line-height: 1;
+	
+	}
+	
+	
+
+
+
+
+
+
+
+
+#cvjs_background_color_pickcolor{
+	position:absolute;
+	top: 48px;
+	width: 100px;
+	left: 5px;
+
+	font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-weight: none;
+	color:#000000;
+	font-size: 12px;
+	line-height: 1;
+
+}
+
 
 
 
@@ -5675,7 +5714,7 @@ tr.mySpecialTable {
 /*7.3.26 */
 #cvjs_colorPickerValue{
 
-	width: 80px; 
+	width: 120px; 
 	height: 22px;
 	min-height: 22px;
 	position: absolute;
@@ -5690,7 +5729,7 @@ tr.mySpecialTable {
 
 #cvjs_backgroundPickerValue{
 
-	width: 80px; 
+	width: 140px; 
 	height: 22px;
 	min-height: 22px;
 	position: absolute;
@@ -8187,8 +8226,6 @@ table.settingsModalTable td {
 /* 7.4.41 */
 #cvjs_measurementSnapOption{
 
-
-
     padding: 2px 5px;   
     height: 22px !important;
     min-height: 22px !important;    /*7.3.14 */
@@ -8196,7 +8233,7 @@ table.settingsModalTable td {
     width: 200px; 
     position: absolute; 
     left : 140px;
-    top : 124px    /* 6.5.14a */
+    top : 120px    /* 6.5.14a */
 }
 
 
