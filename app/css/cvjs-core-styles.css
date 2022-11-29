@@ -4724,13 +4724,13 @@ table.publishPDFModalTable td {
 
 }
 
-/*7.4.32 */
+/*7.6.19 */
 
 #cvjs_ellipse_button{
 
     position: absolute;
     top: 30px !important;
-    right: 10px !important; 
+    left: 220px !important; 
 
     width: 40px !important;
     height: 20px !important;
@@ -6148,6 +6148,14 @@ table.linethicknessModalTable td {
 
 }
 
+#spaceobjectSize_ {
+
+	position: absolute;
+	top: 40px;
+	left: 180px;
+}
+
+
 
 .cvjs_inputLineweightModal{
 	/* 7.3.14*/
@@ -6174,12 +6182,12 @@ table.linethicknessModalTable td {
 
 
 .cvjs_objectslider2{
- z-index:1000;
- width: 300px; 
- border: 1px solid gray;
-  position: absolute;
-	  left: 10px;
-	  top: 0px;
+		z-index:1000;
+		width: 300px; 
+		border: 1px solid gray;
+		position: absolute !important;
+		left: 10px;
+		top: 0px;
 }
 
 
@@ -6221,6 +6229,18 @@ table.linethicknessModalTable td {
 	text-decoration: none;
 	font-weight: bold;
 }
+
+
+#spaceObjectSizeText{
+	z-index:1000;
+	position: absolute;
+	left: 10px;
+	top: 38px;
+	font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-weight: bold;
+}
+
 
 
 #lineThicknessText{
