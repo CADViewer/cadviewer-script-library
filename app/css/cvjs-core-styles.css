@@ -7935,6 +7935,27 @@ button.multiselect {
 	
 }
 
+
+/* 7.8.25 */
+#cvjs_reloadfile_checkbox1{
+
+	position:absolute;
+	top: 34px;
+	left: 270px;
+    z-index: 1101;
+
+}
+
+#cvjs_settingsReload{
+	position:absolute;
+	top: 34px;
+	left: 286px;
+    z-index: 1101;
+}
+
+
+
+
 .settingsModalHeader{
     z-index: 1100;
 	position:absolute;
@@ -7964,6 +7985,11 @@ table.settingsModalTable {
 	border-collapse: separate;
 	text-align: left;
 
+
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;   /* 7.8.25 */
+	font-size: 12px;
+
+
 }
 
 table.settingsModalTable tr {
@@ -7987,17 +8013,16 @@ table.settingsModalTable td {
 }
 
 
+/* 7.8.25 */
 #cvjs_settings_button{
 
 	width: 110px;
 	height: 20px; 
 	padding: 1px;
-    	top: 3px;
-    	bottom: 3px;
-    	z-index:1000;
-    	margin: 0px;
-    	text-indent: 1px;
-    	text-align:center;
+	z-index:1000;
+	margin: 0px;
+	text-indent: 1px;
+	text-align:center;
 	font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
 	text-decoration: none;
 	font-weight: bold;
@@ -8006,22 +8031,22 @@ table.settingsModalTable td {
 	line-height: 1;
 	 
 	position: absolute;
-	left: 270px;
+	left: 330px;
 	top: 32px;
 
 }
+
+/*7.8.25 */
 #cvjs_settings_button_icon{
 
-	width: 50px;
+	width: 40px;
 	height: 22px;
 	min-height: 22px !important; 
 	padding: 1px;
-    	top: 3px;
-    	bottom: 3px;
-    	z-index:1000;
-    	margin: 0px;
-    	text-indent: 1px;
-    	text-align:center;
+	z-index:1000;
+	margin: 0px;
+	text-indent: 1px;
+	text-align:center;
 	font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
 	text-decoration: none;
 	font-weight: bold;
@@ -8030,7 +8055,7 @@ table.settingsModalTable td {
 	line-height: 1;
 	 
 	position: absolute;
-	left: 326px;
+	left: 360px;
 	top: 30px;
 
 }
