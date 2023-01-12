@@ -4453,6 +4453,234 @@ table.ellipseModalTable td {
 }
 
 
+
+/* 8.4.1  8.6.4 below */
+
+.compareModalHeader{
+    z-index: 1100;
+	position:absolute;
+	top: 0px;
+	left: 0px;
+ 	width: 100%; 
+ 	height: 23px;
+ 	border-radius: 0px;
+ 	background-color: #DDDDDD;
+ 	margin-top: 0px;
+	 border-bottom: 1px solid gray;
+	 
+	 font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	 font-size: 14px;
+	 /* line-height: 1.42857143; */
+	 color: #333
+ 
+	
+}
+
+
+.compareModal{
+	/* 7.3.14*/
+
+   	z-index:1000;
+	width: 450px; 
+	height: 105px;
+	border-radius: 3px;
+	background-color: #FFFFFF;
+	border: 2px solid gray;
+	position: absolute;
+	cursor:default;
+
+	 font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	 font-size: 14px;
+	 /* line-height: 1.42857143; */
+	 color: #333
+	
+
+}
+
+
+table.compareModalTable {
+	width: 275px  ;
+	height: 100px ;
+   	z-index:1000;
+	padding: 0px !important;
+	border-spacing: 0px;
+	border-collapse: separate;
+	text-align: left;
+
+		
+}
+
+table.compareModalTable tr {
+	height: 22px ;
+	z-index:1010;
+	align-items: top;
+}
+
+
+table.compareModalTable td {
+    border-bottom: 0px !important;  /*7.3.17 */
+	height: 22px  !important;
+	background: #FFFFFF !important;
+	z-index:1010;
+	border: 0px solid gray;	
+	border-right: 0px;
+	border-left: 0px;	
+	padding: 0px !important;
+	vertical-align:top;
+
+}
+
+
+
+
+#cvjs_compare1{
+	font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-decoration: none;
+	font-weight: none;
+	position: absolute;
+    	left: 95px;
+    	top: 32px;
+}
+
+.radioCompare1{
+	 position: absolute;
+    	 left: 75px;
+    	 top: 32px;
+         min-height: 16px !important; /*7.3.26 */
+        }
+
+
+
+
+#cvjs_compare2{
+	font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-decoration: none;
+	font-weight: none;
+	position: absolute;
+    	left: 95px;
+    	top: 55px;
+}
+
+.radioCompare2{
+	 position: absolute;
+    	 left: 75px;
+    	 top: 55px;
+         min-height: 16px !important; /*7.3.26 */
+        }
+
+
+#cvjs_compare3{
+	font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-decoration: none;
+	font-weight: none;
+	position: absolute;
+    	left: 95px;
+    	top: 77px;
+}
+
+.radioCompare3{
+	position: absolute;
+		left: 75px;
+		top: 77px;
+        min-height: 16px !important; /*7.3.26 */
+}
+
+
+
+#cvjs_compare_button1{
+
+    position: absolute;
+    top: 30px !important;
+    left: 300px !important; 
+
+    width: 130px !important;
+    height: 20px !important;
+    min-height: 20px !important;
+    border:solid 1px #ccc;
+    border-radius: 5px;
+    padding:1px 1px;
+    margin-bottom:10px;
+	font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-weight: bold;
+	color:#000000;
+	font-size: 12px;
+
+}
+
+#cvjs_compare_button2{
+
+    position: absolute;
+    top: 54px !important;
+    left: 300px !important; 
+
+    width: 130px !important;
+    height: 20px !important;
+    min-height: 20px !important;
+    border:solid 1px #ccc;
+    border-radius: 5px;
+    padding:1px 1px;
+    margin-bottom:10px;
+	font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-weight: bold;
+	color:#000000;
+	font-size: 12px;
+
+}
+
+
+#cvjs_compare_modal_hide{
+
+	position: absolute;
+	width: 20px !important;
+	height: 20px !important; 
+	min-height: 20px !important; 
+	padding: 0px;
+	top: 1px;
+	right: 1px;
+	z-index:1000;
+	margin: 0px;
+	text-indent: 1px;
+	text-align:center;
+/*	font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;*/
+	font-family: "Courier", Arial, Helvetica, sans-serif !important;
+	text-decoration: none;
+	font-weight: bold;
+	color:#000000 !important;  /* #000000 */
+	background-color:#EFEFEF !important; /* #000000 */
+	font-size: 20px !important;
+	line-height: 1;
+    border-radius: 4px !important;
+    border-color: #767676;
+    border-width: thin;
+
+
+}
+
+
+/*8.4.1  8.6.1  above */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .creationModalHeader{
     z-index: 1100;
 	position:absolute;
@@ -4778,8 +5006,6 @@ table.publishPDFModalTable td {
 	height: 20px !important;
     min-height: 20px !important; 
 	padding: 1px;
-    top: 3px;
-    bottom: 3px;
     z-index:1000;
     margin: 0px;
     text-indent: 1px;
@@ -4793,8 +5019,8 @@ table.publishPDFModalTable td {
 	 
 
 	position: absolute;
-    	left: 460px;
-    	top: 170px;
+	left: 460px;
+	top: 190px;
 
 }
 
@@ -7757,6 +7983,68 @@ button.multiselect {
 	z-index: 3;	
 }
 /* 4.1.01b */
+
+
+
+/* 7.12.6 */
+
+
+.compareDrawingbox2 { 
+	position: relative; 
+	width: 190px; 
+	height: 73px; 
+	background-image: url(../images/compareDrawingOverlay_11B.png); 
+	background-repeat: no-repeat; 
+	padding-left: 0px;
+	padding-top:  0px;	
+	top: 0px;  
+	left: 1px;
+	z-index: 2;
+	
+	font-family: "Arial", Arial, Helvetica, sans-serif;
+	font-weight: none;
+	text-decoration: none;
+	font-size: 13px;	
+}
+
+.compareDrawingbox2Text1 {
+	position: absolute; 
+	top:  8px;  
+	left: 20px;
+	z-index: 3;
+}
+
+.compareDrawingbox2Text2 {
+	position: absolute; 
+	top:  29px;  
+	left: 20px;
+	z-index: 3;	
+}
+
+.compareDrawingbox2Text3 {
+	position: absolute; 
+	top:  51px;  
+	left: 20px;
+	z-index: 3;	
+}
+
+
+/* 7.12.6 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
