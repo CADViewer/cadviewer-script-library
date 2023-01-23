@@ -569,6 +569,9 @@ map area{
     	left: 10px;
     	top: 90px;
         min-height: 16px !important; /*7.3.26 */
+
+		cursor: pointer;  /*8.9.6 */
+
 }
 
 
@@ -1188,6 +1191,8 @@ input[type=text3] {
 	font-size: 12px;
 	line-height: 1;
 
+	min-height: 22px !important;    /* 8.9.3  */
+
 }
 
 input[type=text3_red] {
@@ -1207,6 +1212,9 @@ input[type=text3_red] {
 	color:#000000;
 	font-size: 13px;
 	line-height: 1;
+
+	min-height: 22px !important;    /* 8.9.3  */
+
 
 }
 
@@ -1764,6 +1772,9 @@ input[type=button_layer] {
 	line-height: 1;
 	background: #DDDDDD;
 	cursor: pointer;
+
+	min-height: 22px !important;    /* 8.9.3  */
+
 }
 
 
@@ -3383,6 +3394,9 @@ table.calibrateModalTable td {
     left: 10px;
     height: 16px;
     min-height: 16px !important;
+
+	cursor: pointer;  /*8.9.6 */
+
 }
 
 #cvjs_calibrate_checkbox{
@@ -3392,6 +3406,9 @@ table.calibrateModalTable td {
     left: 140px;
     height: 16px;
     min-height: 16px !important;
+
+	cursor: pointer;  /*8.9.6 */
+
 }
 
 
@@ -3807,6 +3824,9 @@ table.printModalTable td {
     	top: 58px;
         min-height: 16px !important; /*7.3.26 */
 
+		cursor: pointer;  /*8.9.6 */
+
+
 }
 
 
@@ -3815,6 +3835,10 @@ table.printModalTable td {
     	left: 10px;
     	top: 115px;
         min-height: 16px !important; /*7.3.26 */
+
+
+		cursor: pointer;  /*8.9.6 */
+
 
 }
 
@@ -3868,6 +3892,10 @@ table.printModalTable td {
     	top: 65px;
         min-height: 16px !important; /*7.3.26 */
 
+
+		cursor: pointer;  /*8.9.6 */
+
+
 }
 
 #printCustomCheckbox{
@@ -3884,6 +3912,10 @@ table.printModalTable td {
     	left: 182px;
     	top: 80px;
         min-height: 16px !important; /*7.3.26 */
+
+
+		cursor: pointer;  /*8.9.6 */
+
 
 }
 
@@ -3904,6 +3936,9 @@ table.printModalTable td {
     	left: 26px;
     	top: 72px;
         min-height: 16px !important; /*7.3.26 */
+
+		cursor: pointer;  /*8.9.6 */
+
 
 }
 
@@ -4596,7 +4631,7 @@ table.compareModalTable td {
     top: 30px !important;
     left: 300px !important; 
 
-    width: 130px !important;
+    width: 144px !important;
     height: 20px !important;
     min-height: 20px !important;
     border:solid 1px #ccc;
@@ -4617,7 +4652,7 @@ table.compareModalTable td {
     top: 54px !important;
     left: 300px !important; 
 
-    width: 130px !important;
+    width: 144px !important;
     height: 20px !important;
     min-height: 20px !important;
     border:solid 1px #ccc;
@@ -4854,14 +4889,16 @@ table.publishPDFModalTable td {
     left: 135px;
     top: 43px;
 	z-index:3010;
+	cursor : pointer !important;
 }
 
 .radioPublishPDF1{
 	 position: absolute;
     left: 115px;
-    top: 40px;
+    top: 42px;
 	z-index:3010;
     min-height: 16px !important;
+	cursor : pointer !important;
 }
 
 #cvjs_publishpdfmode2{
@@ -4878,9 +4915,11 @@ table.publishPDFModalTable td {
 .radioPublishPDF2{
 	 position: absolute;
     	 left: 240px;
-    	 top: 40px;
+    	 top: 42px;
 	z-index:3010;
     min-height: 16px !important;
+	cursor : pointer !important;
+
 }
 
 
@@ -4899,9 +4938,11 @@ table.publishPDFModalTable td {
 .radioPublishPDF3{
 	 position: absolute;
     	 left: 360px;
-    	 top: 40px;
+    	 top: 42px;
 	z-index:3010;
     min-height: 16px !important;
+	cursor : pointer !important;
+
 
 }
 
@@ -5088,6 +5129,11 @@ table.publishPDFModalTable td {
     	 left: 115px;
     	 top: 32px;
          min-height: 16px !important; /*7.3.26 */
+
+		 cursor: pointer !important;  /*8.9.10 */
+
+
+
         }
 
 
@@ -5108,6 +5154,8 @@ table.publishPDFModalTable td {
     	 left: 115px;
     	 top: 53px;
          min-height: 16px !important; /*7.3.26 */
+		 cursor: pointer !important;  /*8.9.10 */
+
         }
 
 
@@ -5126,6 +5174,8 @@ table.publishPDFModalTable td {
 		left: 115px;
 		top: 74px;
         min-height: 16px !important; /*7.3.26 */
+		cursor: pointer !important;  /*8.9.10 */
+
 }
 
 
@@ -5137,6 +5187,9 @@ table.publishPDFModalTable td {
     	top: 144px;
         min-height: 16px !important; /*7.3.26 */
 
+		cursor: pointer;  /*8.9.6 */
+
+
 }
 
 #cvjs_backgroundcolor_checkbox2{
@@ -5144,6 +5197,10 @@ table.publishPDFModalTable td {
     	left: 10px;
     	top: 170px;
         min-height: 16px !important; /*7.3.26 */
+
+
+		cursor: pointer;  /*8.9.6 */
+
 
 }
 
@@ -5281,6 +5338,8 @@ table.publishPDFModalTable td {
     	 top: 32px;
          min-height: 16px !important;  /*7.3.26 */
 
+		 cursor : pointer !important; /*8.9.7 */
+
 }
 
 #cvjs_radioColor1_img{
@@ -5304,6 +5363,8 @@ table.publishPDFModalTable td {
     	 left: 370px;
     	 top: 32px;
          min-height: 16px !important;  /*7.3.26 */
+		 cursor : pointer !important; /*8.9.7 */
+
 
 }
 
@@ -5331,6 +5392,8 @@ table.publishPDFModalTable td {
     	 top: 57px;
          min-height: 16px !important;  /*7.3.26 */
 
+		 cursor : pointer !important; /*8.9.7 */
+
 }
 
 #cvjs_radioColor3_img{
@@ -5356,6 +5419,8 @@ table.publishPDFModalTable td {
     	 left: 370px;
     	 top: 57px;
          min-height: 16px !important;  /*7.3.26 */
+		 cursor : pointer !important; /*8.9.7 */
+
 
 }
 
@@ -5382,6 +5447,7 @@ table.publishPDFModalTable td {
     	 left: 270px;
     	 top: 82px;
          min-height: 16px !important;  /*7.3.26 */
+		 cursor : pointer !important; /*8.9.7 */
 
 }
 
@@ -5389,6 +5455,7 @@ table.publishPDFModalTable td {
 	 position: absolute;
     	 left: 290px;
     	 top: 81px;
+
 }
 
 
@@ -5409,6 +5476,8 @@ table.publishPDFModalTable td {
     	 left: 370px;
     	 top: 82px;
          min-height: 16px !important;  /*7.3.26 */
+		 cursor : pointer !important; /*8.9.7 */
+
 
 }
 
@@ -5436,6 +5505,7 @@ table.publishPDFModalTable td {
     	 left: 270px;
     	 top: 107px;
          min-height: 16px !important;  /*7.3.26 */
+		 cursor : pointer !important; /*8.9.7 */
 
 }
 
@@ -5443,6 +5513,7 @@ table.publishPDFModalTable td {
 	 position: absolute;
     	 left: 290px;
     	 top: 106px;
+
 }
 
 
@@ -5462,6 +5533,8 @@ table.publishPDFModalTable td {
     	 left: 370px;
     	 top: 107px;
          min-height: 16px !important;  /*7.3.26 */
+		 cursor : pointer !important; /*8.9.7 */
+
 
 }
 
@@ -5486,6 +5559,8 @@ table.publishPDFModalTable td {
     left: 270px;
     top: 32px;
     min-height: 16px;
+	cursor : pointer !important; /*8.9.9 */
+
 }
 
 
@@ -5512,6 +5587,8 @@ table.publishPDFModalTable td {
     	 left: 370px;
     	 top: 32px;
          min-height: 16px !important;
+		 cursor : pointer !important; /*8.9.9 */
+
 }
 
 #cvjs_radioColor2_img_background{
@@ -5536,6 +5613,8 @@ table.publishPDFModalTable td {
     	 left: 270px;
     	 top: 57px;
     min-height: 16px !important;  /*7.3.26 */
+	cursor : pointer !important; /*8.9.9 */
+
 }
 
 #cvjs_radioColor3_img_background{
@@ -5560,6 +5639,8 @@ table.publishPDFModalTable td {
     	 left: 370px;
     	 top: 57px;
          min-height: 16px !important;  /*7.3.26 */
+		 cursor : pointer !important; /*8.9.9 */
+
 
 }
 
@@ -5585,6 +5666,8 @@ table.publishPDFModalTable td {
     	 left: 270px;
     	 top: 82px;
          min-height: 16px !important;  /*7.3.26 */
+		 cursor : pointer !important; /*8.9.9 */
+
 
 }
 
@@ -5611,6 +5694,8 @@ table.publishPDFModalTable td {
     	 left: 370px;
     	 top: 82px;
          min-height: 16px !important;  /*7.3.26 */
+		 cursor : pointer !important; /*8.9.9 */
+
 
 }
 
@@ -5635,6 +5720,8 @@ table.publishPDFModalTable td {
     	 left: 270px;
     	 top: 107px;
          min-height: 16px !important;  /*7.3.26 */
+		 cursor : pointer !important; /*8.9.9 */
+
 
 }
 
@@ -5659,6 +5746,8 @@ table.publishPDFModalTable td {
     	 left: 370px;
     	 top: 107px;
          min-height: 16px !important;  /*7.3.26 */
+		 cursor : pointer !important; /*8.9.9 */
+
 
 }
 
@@ -6316,6 +6405,7 @@ table.adjustspaceobjectModalTable {
     position: absolute;
     top: 32px;
     left: 200px;
+	max-height: 22px !important;  /* 8.9.6 */
 
 }
 
@@ -7085,6 +7175,8 @@ input[type=text_settings] {
 	font-weight: bold;
 	color:#000000;
 
+	min-height: 22px !important;    /* 8.9.3  */
+
 	font-size: 13px;
 	line-height: 0.9;
 
@@ -7108,6 +7200,9 @@ input[type="password"] {
 	color:#000000;
 	font-size: 13px;
 	line-height: 0.9;
+
+	min-height: 22px !important;    /* 8.9.3  */
+
 
 }
 
@@ -7949,6 +8044,27 @@ button.multiselect {
 	
 }
 
+/* 8.7.19  */
+
+
+#cvjs_compare_select_text{
+
+    position: absolute;
+    top: 34px;
+    left: 5px;
+    text-indent: 1px;
+    text-align:center;
+	font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-weight: none;
+	color:#000000;
+	font-size: 13px;
+	line-height: 1;
+
+}
+
+
+
 
 /* 4.1.01b */
 .compareDrawingbox1 { 
@@ -7969,16 +8085,17 @@ button.multiselect {
 	font-size: 13px;	
 }
 
+/*  8.7.17 */
 .compareDrawingbox1Text1 {
-	position: relative; 
+	position: absolute; 
 	top:  7px;  
 	left: 18px;
 	z-index: 3;
 }
 
 .compareDrawingbox1Text2 {
-	position: relative; 
-	top:  9px;  
+	position: absolute; 
+	top:  29px;  
 	left: 18px;
 	z-index: 3;	
 }
@@ -8231,6 +8348,11 @@ button.multiselect {
 	top: 34px;
 	left: 270px;
     z-index: 1101;
+	height: 16px;    /* 8.9.3  */
+	min-height: 16px !important;    /* 8.9.3  */
+					/*8.9.3 */
+
+	cursor: pointer;  /*8.9.6 */
 
 }
 
@@ -8376,6 +8498,8 @@ table.settingsModalTable td {
 	line-height: 1;
 	background: "#D28A8E0";
 	padding: 1px 5px !important;
+
+	min-height: 16px !important;   /*8.9.3 */
 
 }
 
@@ -8612,8 +8736,8 @@ table.settingsModalTable td {
 	background-color:#EFEFEF; /* #000000 */
 	font-size: 18px;
 	line-height: 1;
-	 
-
+	
+	cursor : pointer !important;			/* 8.11.2 */
 }
 
 
