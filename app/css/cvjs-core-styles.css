@@ -569,10 +569,25 @@ map area{
     	left: 10px;
     	top: 90px;
         min-height: 16px !important; /*7.3.26 */
-
 		cursor: pointer;  /*8.9.6 */
 
 }
+
+#cvjs_pdfservername_checkbox{
+
+/*	position: absolute;
+	top: 2px; */
+	min-height: 16px !important; /*7.3.26 */
+
+	vertical-align: middle;
+
+	cursor: pointer;  /*8.9.6 */
+
+}
+
+
+
+
 
 
 #cvjs_layerlist_checkbox{
@@ -3913,10 +3928,7 @@ table.printModalTable td {
     	top: 80px;
         min-height: 16px !important; /*7.3.26 */
 
-
 		cursor: pointer;  /*8.9.6 */
-
-
 }
 
 
@@ -4873,9 +4885,34 @@ table.publishPDFModalTable td {
 	font-weight: bold;
 	position: absolute;
     left: 5px;
-    top: 43px;
+    top: 34px;
 	z-index:3010;
 }
+
+
+/* 8.15.1 */
+#cvjs_publishpdf_servername{
+	font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-decoration: none;
+	font-weight: none;
+	z-index:3010;
+	vertical-align: middle;
+
+}
+
+
+/* 8.15.1 */
+#publishPDFModal_row5{
+	position: absolute;
+    top: 50px;
+	z-index:3010;
+}
+
+
+
+
+
 
 
 
@@ -4887,7 +4924,7 @@ table.publishPDFModalTable td {
 	font-weight: none;
 	position: absolute;
     left: 135px;
-    top: 43px;
+    top: 34px;
 	z-index:3010;
 	cursor : pointer !important;
 }
@@ -4895,7 +4932,7 @@ table.publishPDFModalTable td {
 .radioPublishPDF1{
 	 position: absolute;
     left: 115px;
-    top: 42px;
+    top: 33px;
 	z-index:3010;
     min-height: 16px !important;
 	cursor : pointer !important;
@@ -4908,14 +4945,14 @@ table.publishPDFModalTable td {
 	font-weight: none;
 	position: absolute;
     left: 260px;
-    top: 43px;
+    top: 34px;
 	z-index:3010;
 }
 
 .radioPublishPDF2{
 	 position: absolute;
     	 left: 240px;
-    	 top: 42px;
+    	 top: 33px;
 	z-index:3010;
     min-height: 16px !important;
 	cursor : pointer !important;
@@ -4931,14 +4968,14 @@ table.publishPDFModalTable td {
 	font-weight: none;
 	position: absolute;
     	left: 380px;
-    	top: 43px;
+    	top: 34px;
 	z-index:3010;
 }
 
 .radioPublishPDF3{
 	 position: absolute;
     	 left: 360px;
-    	 top: 42px;
+    	 top: 33px;
 	z-index:3010;
     min-height: 16px !important;
 	cursor : pointer !important;
@@ -6251,6 +6288,39 @@ table.backgroundModalTable td {
 
 	
 }
+
+
+
+/* 8.15.1 */
+
+.cvjs_publishPDFservername{
+	
+	width: 280px;
+	height: 20px; 
+	padding: 1px;
+    	top: 3px;
+    	bottom: 3px;
+    	z-index:1000;
+    	margin: 0px;
+    	text-indent: 1px;
+    	text-align:center;
+	font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-weight: none;
+	color:#000000;
+	font-size: 12px;
+	line-height: 1;
+		
+}
+
+
+
+
+
+
+
+
+
 
 .redlinetextModalHeader{
     z-index: 1100;
