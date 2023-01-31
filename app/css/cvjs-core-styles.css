@@ -6298,20 +6298,27 @@ table.backgroundModalTable td {
 	width: 280px;
 	height: 20px; 
 	padding: 1px;
-    	top: 3px;
-    	bottom: 3px;
-    	z-index:1000;
-    	margin: 0px;
-    	text-indent: 1px;
-    	text-align:center;
+	z-index:1000;
+	margin: 0px;
+	text-indent: 1px;
+	text-align:center;
 	font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
 	text-decoration: none;
 	font-weight: none;
 	color:#000000;
 	font-size: 12px;
 	line-height: 1;
+	max-height: 22px; /*  8.16.5 */
 		
 }
+
+
+
+#cvjs_publishPDFservername{
+	
+	max-height: 22px; /*  8.16.5 */		
+}
+
 
 
 
