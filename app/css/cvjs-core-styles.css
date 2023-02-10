@@ -7404,9 +7404,13 @@ select_file_image\" id=\"select_file
 	top: 23px;
 	left: 8px;
 }
+
+
 .cvjs_controls_min li:hover {
     background: #d7d7d7;  
 }
+
+
 .cvjs_controls_min li {
     height: 30px ;
     width: 28px ;
@@ -7430,10 +7434,11 @@ select_file_image\" id=\"select_file
 	color: #999;
 }
 
+/*  8.25.3
 .cvjs_controls_min i:hover {
     background: #d7d7d7;  
 }
-
+*/
 
 .cvjs_controls_min li:first-child {
     border-top: none;
