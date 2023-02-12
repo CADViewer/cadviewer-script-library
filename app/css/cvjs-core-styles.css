@@ -4595,7 +4595,10 @@ table.compareModalTable td {
     	 left: 75px;
     	 top: 32px;
          min-height: 16px !important; /*7.3.26 */
-        }
+        
+		 cursor: pointer !important;  /*8.27.2 */
+
+}
 
 
 
@@ -4615,7 +4618,10 @@ table.compareModalTable td {
     	 left: 75px;
     	 top: 55px;
          min-height: 16px !important; /*7.3.26 */
-        }
+
+		 cursor: pointer !important;  /*8.27.2 */
+		
+}
 
 
 #cvjs_compare3{
@@ -4633,6 +4639,9 @@ table.compareModalTable td {
 		left: 75px;
 		top: 77px;
         min-height: 16px !important; /*7.3.26 */
+
+		cursor: pointer !important;  /*8.27.2 */
+
 }
 
 
