@@ -7410,8 +7410,8 @@ select_file_image\" id=\"select_file
     border: 1px #999 solid;
     cursor: pointer;
     background: #f7f7f7; /* 99FF99; */
-	top: 23px;
-	left: 8px;
+	/* top: 23px;   8.28.1
+	left: 8px; */
 }
 
 
