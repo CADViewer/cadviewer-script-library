@@ -184,7 +184,7 @@
 }
 
 #cvjs_tool_tip{
-	 position : absolute;
+	 position : absolute;  /* 8.32.2   */
 	 border : 1px solid gray;
 	 background-color : #efefef;
 	 color:#333;
@@ -7402,8 +7402,9 @@ select_file_image\" id=\"select_file
 /* Controls to match new top icon menu 3.3.0   */
 
 .cvjs_controls_min {
-    position: absolute;
-    display: block;
+    /* position: absolute;   8.32.1 */
+    position: relative;  /*8.32.1 */
+	display: block;
     height: 123px ;  /* 123 remove important */   
 	width: 28px ;   /* 7.3.1 */
     z-index: 1000;
