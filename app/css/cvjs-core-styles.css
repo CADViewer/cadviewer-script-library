@@ -6516,8 +6516,8 @@ table.adjustspaceobjectModalTable {
 }
 
 table.linethicknessModalTable {
-	width: 324px  ;
-	height: 198px ;
+	width: 320px  ;
+	height: 80px ;
    	z-index:1000;
 	padding: 0px !important;
 	border-spacing: 0px;
