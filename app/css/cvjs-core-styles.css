@@ -6487,6 +6487,31 @@ table.adjustspaceobjectModalTable {
 }
 
 
+/*  8.44.1 */
+
+.colordarknessModalHeader{
+    z-index: 1100;
+	position:absolute;
+	top: 0px;
+	left: 0px;
+ 	width: 100%; 
+ 	height: 23px;
+ 	border-radius: 0px;
+ 	background-color: #DDDDDD;
+ 	margin-top: 0px;
+    border-bottom: 1px solid gray;
+	 
+	 font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	 font-size: 14px;
+	 /* line-height: 1.42857143; */
+	 color: #333
+ 
+}
+
+
+
+
+
 #lineThickness{
     position: absolute;
     top: 32px;
@@ -6494,6 +6519,46 @@ table.adjustspaceobjectModalTable {
 	max-height: 22px !important;  /* 8.9.6 */
 
 }
+
+
+/* 8.44.1 */
+
+#colorDarkness{
+    position: absolute;
+    top: 32px;
+    left: 200px;
+	max-height: 22px !important;  /* 8.9.6 */
+
+}
+
+
+
+/* 8.44.1 */
+
+
+.colordarknessModal{
+
+   	z-index:1000;
+	width: 328px; 
+	height: 102px;
+	border-radius: 3px;
+	background-color: #FFFFFF;
+	border: 2px solid gray;
+	position: absolute;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 13px;
+	 /* line-height: 1.42857143; */
+	 color: #333;
+     cursor:default;
+
+}
+
+
+
+
+
+
+
 
 
 .linethicknessModal{
@@ -6550,12 +6615,96 @@ table.linethicknessModalTable td {
 
 }
 
+
+/* 8.44.1 */
+
+
+
+table.colordarknessModalTable {
+	width: 320px  ;
+	height: 80px ;
+   	z-index:1000;
+	padding: 0px !important;
+	border-spacing: 0px;
+	border-collapse: separate;
+	text-align: left;
+
+}
+
+table.colordarknessModalTable tr {
+	height: 22px ;
+	z-index:1010;
+	align-items: top;
+	text-align: left;
+
+}
+
+
+table.colordarknessModalTable td {
+    border-bottom: 0px !important;  /*7.3.17 */
+	height: 22px  !important;
+	background: #FFFFFF !important;
+	z-index:1010;
+	border: 0px solid gray;	
+	border-right: 0px;
+	border-left: 0px;	
+	padding: 0px !important;
+	vertical-align:top;
+	text-align: left;
+
+
+}
+
+
+
+
+
+
+
+
+
+
 #spaceobjectSize_ {
 
 	position: absolute;
 	top: 40px;
 	left: 180px;
 }
+
+
+
+/* 8.44.3  */
+
+.cvjs_inputColorDarknessModal{
+
+	width: 80px;
+	height: 20px; 	
+	min-height: 20px !important; 	
+	padding: 1px;
+    z-index:1000;
+    margin: 0px;
+    text-indent: 1px;
+    text-align:center;
+	font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-weight: none;
+	color:#000000;
+	font-size: 12px;
+	line-height: 1;
+	 
+	position: absolute;
+	top: 40px;
+	left: 180px;
+}
+
+
+
+
+
+
+
+
+
 
 
 
