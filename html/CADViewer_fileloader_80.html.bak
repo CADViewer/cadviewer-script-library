@@ -10,31 +10,37 @@
     <meta name="description" content="Tailor Made Software  - CADViewer Online Sample " />
     <meta name="keywords" content="" />
 
+	<link href="../app/css/cvjs-core-styles.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="../app/css/font-awesome.min.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="../app/css/bootstrap-multiselect.css" rel="stylesheet" type="text/css" />
+	<link href="../app/css/jquery.qtip.min.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="../app/css/jquery-ui-1.13.2.min.css" media="screen" rel="stylesheet" type="text/css" />
+
+	<link href="../app/css/bootstrap-cadviewer.css" media="screen" rel="stylesheet" type="text/css" />
+	
 
 	<script src="../app/js/jquery-2.2.3.js" type="text/javascript"></script>
-	<script src="../app/js/jquery.qtip.min.js" type="text/javascript"></script>
-	<link href="../app/css/jquery.qtip.min.css" media="screen" rel="stylesheet" type="text/css" />
+	<!-- <script src="../app/js/jquery-3.5.1.js" type="text/javascript"></script> -->
+	 <script src="../app/js/jquery.qtip.min.js" type="text/javascript"></script> 
 
 	<script src="../app/js/popper.js" type="text/javascript"></script>
 
-	<script src="../app/js/bootstrap.min.js" type="text/javascript"></script>
-	<link href="../app/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css" />
+	<script src="../app/js/bootstrap-cadviewer.js" type="text/javascript"></script>
 
-	<script src="../app/js/jquery-ui-1.11.4.min.js" type="text/javascript"></script>
-	<link href="../app/css/jquery-ui-1.11.4.min.css" media="screen" rel="stylesheet" type="text/css" />
-
-	
-    <script src="../app/cv/cv-pro/cadviewer.min.js" type="text/javascript" ></script>
-	<script src="../app/cv/cv-custom_commands/CADViewer_custom_commands.js" type="text/javascript" ></script>
-
-	<script src="../app/cv/cvlicense.js" type="text/javascript" ></script>
-	<link href="../app/css/cvjs-core-styles.css" media="screen" rel="stylesheet" type="text/css" />
 	 
 
+	<script src="../app/js/jquery-ui-1.13.2.min.js" type="text/javascript"></script>
+
+	<script src="../app/cv/cv-pro/cadviewer.min.js" type="text/javascript" ></script> 
+
+
+	<script src="../app/cv/cv-pro/custom_rules_template.js" type="text/javascript" ></script>
+    <script src="../app/cv/cv-custom_commands/CADViewer_custom_commands.js" type="text/javascript" ></script>
+
+	<script src="../app/cv/cvlicense.js" type="text/javascript" ></script> 
+	 
+	 
 	<script src="../app/js/bootstrap-multiselect.js" type="text/javascript" ></script>
-	<link href="../app/css/bootstrap-multiselect.css" rel="stylesheet" type="text/css" />
-
-
 	<script src="../app/js/library_js_svg_path.js" type="text/javascript"></script>			
 	<script src="../app/js/snap.svg-min.js" type="text/javascript" ></script>
 
@@ -77,8 +83,13 @@
 		// uncomment if you want to use NodeJS cadviewer-conversion-server as backend
 		//cvjs_setHandlers_FrontEnd("NodeJS", "JavaScript", "floorPlan");
 		
-						
-				
+
+		// set to true to embed SpaceObject Menu, false to omit
+		cvjs_setSpaceObjectsCustomMenu("/content/customInsertSpaceObjectMenu/", "cadviewercustomspacecommands.json", true);
+
+
+		cvjs_setCADViewerInterfaceVersion(8);	
+		
 		cvjs_PrintToPDFWindowRelativeSize(0.8);
 		cvjs_setFileModalEditMode(false);
 	
@@ -104,8 +115,8 @@
 
 		
 		// CHANGE LANGUAGE - DEFAULT IS ENGLISH
-		cvjs_loadCADViewerLanguage("English", "/app/cv/cv-pro/language_table/cadviewerProLanguage.xml");
-		// Available languages:  "English" ; "French, "Korean", "Spanish", "Portuguese", "Portuguese (Brazil)" ;  "Russian" ; "Malay" ;  "Chinese-Simplified"
+        cvjs_loadCADViewerLanguage("English", "");  // "English", "French", "Spanish", "Portuguese", "German", "Indonesian", "Chinese-Traditional", Chinese-Simplified", "Korean", 
+		  										//cvjs_loadCADViewerLanguage("English", "/cadviewer/app/cv/cv-pro/custom_language_table/custom_cadviewerProLanguage.xml");
 				
 		// Set Icon Menu Interface controls. Users can: 
 		// 1: Disable all icon interfaces
@@ -127,10 +138,9 @@
 		
 		// Display Coordinates
 //		cvjs_DisplayCoordinatesMenu("floorPlan",true);
+				
 		
-		
-		
-		
+				
 		// Initialize CADViewer  - needs the div name on the svg element on page that contains CADViewerJS and the location of the
 		// main application "app" folder. It can be either absolute or relative
 
@@ -191,9 +201,7 @@
 		// And we intialize with the Space Object Custom values
 		cvjs_InitCADViewer_highLight_popUp_app("floorPlan", ServerUrl+"app/", cvjsRoomPolygonBaseAttributes, cvjsRoomPolygonHighlightAttributes, cvjsRoomPolygonSelectAttributes, my_cvjsPopUpBody );
 		 
-		 
-		 
-		
+		 		
 		 
 		// set the location to license key, typically the js folder in main app application folder ../app/js/
 		 cvjs_setLicenseKeyPath(ServerUrl+"/app/cv/");
@@ -218,8 +226,8 @@
 
 
 		// NOTE BELOW: THESE SETTINGS ARE FOR SERVER CONTROLS FOR UPLOAD OF REDLINES
-		
-		cvjs_setRedlinesAbsolutePath(ServerUrl+'/content/redlines/fileloader_610/', ServerLocation+'/content/redlines/fileloader_610/');
+		// last parameter , set true for dynamic paths
+		cvjs_setRedlinesAbsolutePath(ServerUrl+'/content/redlines/v7/', ServerLocation+'/content/redlines/v7/', true);
 
 		// NOTE ABOVE: THESE SETTINGS ARE FOR SERVER CONTROLS FOR UPLOAD OF REDLINES
 
@@ -252,7 +260,6 @@
 		cvjs_conversion_clearAXconversionParameters();
 		cvjs_conversion_addAXconversionParameter("last", "");		 
 //		cvjs_conversion_addAXconversionParameter("firstlayout", "");		 
-		cvjs_conversion_addAXconversionParameter("fpath", ServerLocation + "/converters/ax2022/windows/fonts/");		 
 
 	
 //		cvjs_conversion_addAXconversionParameter ("RL", "IDB");
@@ -345,7 +352,6 @@
 	}
 
 
-
 	function cvjs_ObjectSelected(rmid){
 	
 		var e = window.event;
@@ -354,7 +360,7 @@
 	
 		myBoundingBox = cvjs_ObjectBoundingBox_ScreenCoord(rmid);
 				
-		window.alert("See callback: cvjs_ObjectSelected() "+rmid+" BBox: "+myBoundingBox.x+" "+myBoundingBox.y+" "+myBoundingBox.x2+" "+myBoundingBox.y2+" mouse x,y "+posX+"  "+posY);
+		console.log("See callback: cvjs_ObjectSelected() "+rmid+" BBox: "+myBoundingBox.x+" "+myBoundingBox.y+" "+myBoundingBox.x2+" "+myBoundingBox.y2+" mouse x,y "+posX+"  "+posY);
 
 		// hideOnlyPop(rmid);		
 		//  
@@ -485,8 +491,8 @@ function cvjs_loadStickyNotesRedlinesUser(){
 
  /*     UPDATE SERVER WITH REDLINES ON CHANGE       
         if (graphicalObject.toLowerCase().indexOf('redline')>-1 && !type.toLowerCase().indexOf('click')==0 ){
-//            cvjs_setStickyNoteSaveRedlineUrl(ServerLocation + "/content/redlines/fileloader_610/test"+Math.round(Math.random()*100)+".js");
-            cvjs_setStickyNoteSaveRedlineUrl(ServerLocation + "/content/redlines/fileloader_610/test_fixed.js");
+//            cvjs_setStickyNoteSaveRedlineUrl(ServerLocation + "/content/redlines/v7/test"+Math.round(Math.random()*100)+".js");
+            cvjs_setStickyNoteSaveRedlineUrl(ServerLocation + "/content/redlines/v7/test_fixed.js");
             cvjs_saveStickyNotesRedlines("floorPlan", false, "THIS IS PLACEHOLDER FOR CUSTOM STUFF TO SERVER");
         }
 */
@@ -566,33 +572,17 @@ var selected_handles = [];
 var handle_selector = false;
 var current_selected_handle = "";
 
-function cvjs_mousedown(id, handle, entity){
 
-}
-
-function cvjs_click(id, handle, entity){
-
-    console.log("click "+id+"  "+handle);
-    // if we click on an object, then we add to the handle list
-    if (handle_selector){
-        selected_handles.push({id,handle});
-        current_selected_handle = handle;
-    }
-
-	// tell to update the Scroll bar 
-	//vqUpdateScrollbar(id, handle);
-	// window.alert("We have clicked an entity: "+entity.substring(4)+"\r\nThe AutoCAD Handle id: "+handle+"\r\nThe svg id is: "+id+"\r\nHighlight SQL pane entry");
-}
 
 function cvjs_dblclick(id, handle, entity){
 
-	console.log("mysql dblclick "+id+"  "+handle);
+	console.log("dblclick "+id+"  "+handle);
 	window.alert("We have double clicked entity with AutoCAD Handle: "+handle+"\r\nThe svg id is: "+id);
 }
 
 function cvjs_mouseout(id, handle, entity){
 
-    console.log("mysql mouseout "+id+"  "+handle);
+    console.log("mouseout "+id+"  "+handle);
     
     if (current_selected_handle == handle){
         // do nothing
@@ -602,18 +592,6 @@ function cvjs_mouseout(id, handle, entity){
     }
 }
 
-function cvjs_mouseover(id, handle, entity){
-
-	console.log("mysql mouseover "+id+"  "+handle+"  "+jQuery("#"+id).css("color"))
-	//cvjs_mouseover_handleObjectPopUp(id, handle);	
-}
-
-function cvjs_mouseleave(id, handle, entity){
-
-	console.log("mysql mouseleave "+id+"  "+handle+"  "+jQuery("#"+id).css("color"));
-}
-
-
 function cvjs_mouseenter(id, handle, entity){
 //	cvjs_mouseenter_handleObjectStyles("#a0a000", 4.0, 1.0, id, handle);
 //	cvjs_mouseenter_handleObjectStyles("#ffcccb", 5.0, 0.7, true, id, handle);
@@ -621,10 +599,71 @@ function cvjs_mouseenter(id, handle, entity){
 	cvjs_mouseenter_handleObjectStyles("#F00", 10.0, 1.0, true, id, handle);	
 }
 
+
+var mouseover = false;
+var mouseclick = false;
+
+
+function cvjs_mousedown(id, handle, entity){
+
+	console.log("mousedown "+id);
+
+	// capture mouse down on a space to 
+	if (!mouseclick)
+		mouseclick = true;
+
+}
+
+
+function cvjs_click(id, handle, entity){
+
+	console.log("click "+id+"  "+handle);
+
+	// if the popup close menu is called, it will return cvjs_click
+	if (mouseclick)
+		mouseclick = false;
+
+	// if we click on an object, then we add to the handle list
+	if (handle_selector){
+		selected_handles.push({id,handle});
+		current_selected_handle = handle;
+	}
+
+	// tell to update the Scroll bar 
+	//vqUpdateScrollbar(id, handle);
+	// window.alert("We have clicked an entity: "+entity.substring(4)+"\r\nThe AutoCAD Handle id: "+handle+"\r\nThe svg id is: "+id+"\r\nHighlight SQL pane entry");
+}
+
+
+function cvjs_mouseover(id, handle, entity){
+
+	console.log("mouseover "+id+"  "+handle+"  "+jQuery("#"+id).css("color"));
+
+	// if we do not have a mouse over we open the modal,  but if the space is clicked we do not do anything
+	if (!mouseover){
+		mouseover = true;
+		if (!mouseclick) cvjs_changeSpaceFixedLocation(id);
+	}
+
+
+	//cvjs_mouseover_handleObjectPopUp(id, handle);	
+}
+
+function cvjs_mouseleave(id, handle, entity){
+
+	console.log("mouseleave "+id+"  "+handle+"  "+jQuery("#"+id).css("color"));
+
+	mouseover = false;
+
+	console.log("mouseleave variable mouseclick: "+mouseclick);
+
+	if (!mouseclick)       // we hide the pop upon leaving, but do not so if the space is clicked.
+		cvjs_hideOnlyPop();
+
+}
+
+
 // END OF MOUSE OPERATION
-
-
-
 
 
  	</script>
@@ -659,7 +698,7 @@ function cvjs_mouseenter(id, handle, entity){
 
 	<!--This is the CADViewer floorplan div declaration -->
 
-		<div id="floorPlan"  style="border:2px none; width:1800;height:1400;">
+		<div id="floorPlan" class="cadviewer-bootstrap cadviewer-core-styles" class="cadviewer-bootstrap cadviewer-core-styles"  style="border:2px none; width:1800;height:1400;">
 		</div>
 
 	<!--End of CADViewer declaration -->
