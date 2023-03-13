@@ -3239,7 +3239,7 @@
   /* 7.3.14*/
   z-index: 1000;
   width: 280px;
-  height: 67px;
+  height: 82px !important; /*8.46.1 */
   border-radius: 3px;
   background-color: #FFFFFF;
   border: 2px solid gray;
