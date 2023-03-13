@@ -2382,6 +2382,12 @@
   line-height: 1;
   /*7.3.8*/
 }
+
+
+
+
+
+
 .cadviewer-core-styles #cvjs_searchTextFromModal {
   /* 7.3.14*/
   position: absolute;
@@ -3239,7 +3245,7 @@
   /* 7.3.14*/
   z-index: 1000;
   width: 280px;
-  height: 82px !important; /*8.46.1 */
+  height: 78px !important; /*8.46.1 */
   border-radius: 3px;
   background-color: #FFFFFF;
   border: 2px solid gray;
@@ -3290,12 +3296,68 @@
   font-size: 12px;
   line-height: 1;
 }
-.cadviewer-core-styles #cvjs_documentPageChangeModal_button {
+
+
+
+
+/* 8.46.4*/
+.cadviewer-core-styles #cvjs_inputDocumentPageChange {
+  /* 7.3.14*/
+  position: absolute;
+  top: 36px;
+  left: 100px;
   width: 40px;
-  height: 20px;
-  padding: 1px;
-  top: 3px;
-  bottom: 3px;
+  height: 20px !important;
+  min-height: 20px !important;
+  padding: 0px !important;
+  z-index: 1000;
+  margin: 0px;
+  text-indent: 1px;
+  text-align: left;
+  font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-weight: none;
+  color: #000000;
+  font-size: 12px;
+  line-height: 1;
+}
+
+
+
+
+
+
+
+
+/*8.46.4 */
+
+.cadviewer-core-styles #cvjs_documentPageChangeModal_changetext {
+  position: absolute;
+  top: 40px;
+  left: 16px;
+  z-index: 1000;
+  margin: 0px;
+  text-indent: 1px;
+  text-align: center;
+  font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-weight: none;
+  color: #000000;
+  font-size: 13px;
+  line-height: 1;
+}
+
+
+
+/*8.46.4 */
+.cadviewer-core-styles #cvjs_documentPageChangeModal_button {
+  position: absolute;
+  width: 40px !important;
+  height: 20px !important;
+  min-height: 20px !important;
+  padding: 0px !important;
+  top: 36px;
+  left: 220px;
   z-index: 1000;
   margin: 0px;
   text-indent: 1px;
