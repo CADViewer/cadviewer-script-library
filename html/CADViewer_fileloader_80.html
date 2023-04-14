@@ -6,7 +6,7 @@
     <link rel="icon" href="https://cadviewer.com/images/cvlogo.png">
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="generator" content="TMS" />
-    <meta name="created" content="Fri, 17 Apr 2020 07:14:30 GMT" />
+    <meta name="created" content="Wed, 29 Mar 2023 07:14:30 GMT" />
     <meta name="description" content="Tailor Made Software  - CADViewer Online Sample " />
     <meta name="keywords" content="" />
 
@@ -26,13 +26,11 @@
 	<script src="../app/js/popper.js" type="text/javascript"></script>
 
 	<script src="../app/js/bootstrap-cadviewer.js" type="text/javascript"></script>
-
-	 
-
+	
 	<script src="../app/js/jquery-ui-1.13.2.min.js" type="text/javascript"></script>
-
+	<script src="../app/js/eve.js" type="text/javascript" ></script>
+	
 	<script src="../app/cv/cv-pro/cadviewer.min.js" type="text/javascript" ></script> 
-
 
 	<script src="../app/cv/cv-pro/custom_rules_template.js" type="text/javascript" ></script>
     <script src="../app/cv/cv-custom_commands/CADViewer_custom_commands.js" type="text/javascript" ></script>
@@ -88,7 +86,9 @@
 		cvjs_setSpaceObjectsCustomMenu("/content/customInsertSpaceObjectMenu/", "cadviewercustomspacecommands.json", true);
 
 
-		cvjs_setCADViewerInterfaceVersion(8);	
+		cvjs_setCADViewerInterfaceVersion(8);
+		cvjs_setCADViewerSkin("black"); // lightgray, black, deepblue  // method can be omitted, alternative is "deepblue" , "nextcloud"
+	
 		
 		cvjs_PrintToPDFWindowRelativeSize(0.8);
 		cvjs_setFileModalEditMode(false);
@@ -412,6 +412,21 @@ function cvjs_loadStickyNotesRedlinesUser(){
 	var cvjsPopUpBody;
 
 	function myCustomPopUpBody(rmid){
+
+
+		cvjs_setQtipLocation("bottom center", "top left");
+		cvjs_styleQTip_color(false, '#3DCD5D', '#293133', '#293133', '#293133', '#293133');  // we use standard colors, first parameter is false
+		cvjsPopUpBody = "<div class=\"cvjs_modal_1\" onclick=\"my_own_clickmenu1();\">Hello<br>Menu 1<br><i class=\"fa fa-level-down\"></i></div>";
+		cvjsPopUpBody += "<div class=\"cvjs_modal_1\" onclick=\"my_own_clickmenu2();\">Custom<br>Menu 2<br><i class=\"fa fa-info\"></i></div>";
+		cvjsPopUpBody += "<div class=\"cvjs_modal_1\" onclick=\"cvjs_zoomHere();\">Zoom<br>Here<br><i class=\"fa fa-search-plus\"></i></div>";
+
+
+		if (true) 		return cvjsPopUpBody;
+  // see below for custom programming
+
+
+
+
 		// template pop-up modal body
 		cvjsPopUpBody = "<div>Space Id: <span id=\"mymodal_name_"+rmid+"\" ></span><br>";
 		cvjsPopUpBody += "Survey: <span id=\"mymodal_survey_"+rmid+"\" ></span><br>";
@@ -453,7 +468,7 @@ function cvjs_loadStickyNotesRedlinesUser(){
 
 	function cvjs_callbackForModalDisplay(rmid, node){
 	
-		window.alert("WE call our server, then we update the modal"+ rmid+"  "+node);
+		console.log("WE call our server, then we update the modal"+ rmid+"  "+node);
 		populateMyCustomPopUpBody(rmid, node);
 	}
 
@@ -639,12 +654,14 @@ function cvjs_mouseover(id, handle, entity){
 
 	console.log("mouseover "+id+"  "+handle+"  "+jQuery("#"+id).css("color"));
 
+
+	/*
 	// if we do not have a mouse over we open the modal,  but if the space is clicked we do not do anything
 	if (!mouseover){
 		mouseover = true;
 		if (!mouseclick) cvjs_changeSpaceFixedLocation(id);
 	}
-
+	*/
 
 	//cvjs_mouseover_handleObjectPopUp(id, handle);	
 }
@@ -653,13 +670,15 @@ function cvjs_mouseleave(id, handle, entity){
 
 	console.log("mouseleave "+id+"  "+handle+"  "+jQuery("#"+id).css("color"));
 
+	/*
+
 	mouseover = false;
 
 	console.log("mouseleave variable mouseclick: "+mouseclick);
 
 	if (!mouseclick)       // we hide the pop upon leaving, but do not so if the space is clicked.
 		cvjs_hideOnlyPop();
-
+	*/
 }
 
 
