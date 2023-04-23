@@ -298,7 +298,8 @@ function cvjs_popupTitleClick(graphicalObject){
 }
 
 // Callback Method on Creation, Delete and Change
-function cvjs_graphicalObjectOnChange(type, graphicalObject, spaceID){
+function cvjs_graphicalObjectOnChange(type, graphicalObject, spaceID, evt){
+
 	  // do something with the graphics object created! 
 		console.log(" cvjs_graphicalObjectOnChange: "+type+" "+graphicalObject+" "+spaceID+" indexSpace: "+graphicalObject.toLowerCase().indexOf("space"));
 

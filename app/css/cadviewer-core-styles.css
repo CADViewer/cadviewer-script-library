@@ -3646,7 +3646,7 @@
 .cadviewer-core-styles .radioCompare1 {
   position: absolute;
   left: 75px;
-  top: 32px;
+  top: 28px;
   min-height: 16px !important;
   /*7.3.26 */
   cursor: pointer !important;
@@ -3664,7 +3664,7 @@
 .cadviewer-core-styles .radioCompare2 {
   position: absolute;
   left: 75px;
-  top: 55px;
+  top: 51px;
   min-height: 16px !important;
   /*7.3.26 */
   cursor: pointer !important;
@@ -3682,7 +3682,7 @@
 .cadviewer-core-styles .radioCompare3 {
   position: absolute;
   left: 75px;
-  top: 77px;
+  top: 73px;
   min-height: 16px !important;
   /*7.3.26 */
   cursor: pointer !important;
@@ -5098,7 +5098,7 @@
   color: #333;
   /*  8.44.1 */
 }
-.cadviewer-core-styles .colordarknessModalHeader {
+.cadviewer-core-styles .coloradjustModalHeader {
   z-index: 1100;
   position: absolute;
   top: 0px;
@@ -5122,16 +5122,17 @@
   /* 8.9.6 */
   /* 8.44.1 */
 }
-.cadviewer-core-styles #colorDarkness {
+.cadviewer-core-styles #colorAdjustment {
   position: absolute;
-  top: 32px;
+  top: 36px;
   left: 200px;
+  width: 60px;
   max-height: 22px !important;
   /* 8.9.6 */
   /* 8.44.1 */
 }
-.cadviewer-core-styles .colordarknessModal {
-  z-index: 1000;
+.cadviewer-core-styles .coloradjustModal {
+  z-index: 800;
   width: 328px;
   height: 102px;
   border-radius: 3px;
@@ -5188,7 +5189,7 @@
   text-align: left;
   /* 8.44.1 */
 }
-.cadviewer-core-styles table.colordarknessModalTable {
+.cadviewer-core-styles table.coloradjustModalTable {
   width: 320px;
   height: 80px;
   z-index: 1000;
@@ -5197,13 +5198,13 @@
   border-collapse: separate;
   text-align: left;
 }
-.cadviewer-core-styles table.colordarknessModalTable tr {
+.cadviewer-core-styles table.coloradjustModalTable tr {
   height: 22px;
   z-index: 1010;
   align-items: top;
   text-align: left;
 }
-.cadviewer-core-styles table.colordarknessModalTable td {
+.cadviewer-core-styles table.coloradjustModalTable td {
   border-bottom: 0px !important;
   /*7.3.17 */
   height: 22px !important;
@@ -5283,7 +5284,7 @@
   border: 1px solid gray;
   position: absolute;
   left: 10px;
-  top: 140px;
+  top: 70px;
 }
 .cadviewer-core-styles .lineThickness {
   z-index: 1000;
@@ -5312,6 +5313,20 @@
   text-decoration: none;
   font-weight: bold;
 }
+
+
+.cadviewer-core-styles #colorAdjustmentText {
+  z-index: 1000;
+  position: absolute;
+  left: 10px;
+  top: 38px;
+  font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+
 .cadviewer-core-styles #lineThicknessText {
   z-index: 1000;
   position: absolute;
