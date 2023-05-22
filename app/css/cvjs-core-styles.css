@@ -5306,7 +5306,7 @@ table.publishPDFModalTable td {
 	position: absolute;
     left: 100px;
     top: 171px;
-    width: 40px;
+    width: 60px;
     height: 20px;
     min-height: 20px !important;
 
@@ -8385,7 +8385,7 @@ button.multiselect {
 
 .compareDrawingbox2 { 
 	position: relative; 
-	width: 190px; 
+	width: 392px; 
 	height: 73px; 
 	background-image: url(../images/compareDrawingOverlay_11B.png); 
 	background-repeat: no-repeat; 
