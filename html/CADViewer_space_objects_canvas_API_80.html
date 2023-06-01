@@ -1358,7 +1358,13 @@ var selectedColor = '#AAAA00';
 
 function custom_ColorHex(pickcolor){
 
-    selectedColor = "#"+pickcolor;
+//    selectedColor = "#"+pickcolor;
+	if (pickcolor.toString().indexOf("#")==-1)
+    	selectedColor = "#"+pickcolor.toString();
+	else
+		selectedColor = pickcolor.toString();
+
+
     console.log("selectedColor"+selectedColor);
 
 }
@@ -2131,7 +2137,7 @@ function cvjs_mouseenter(id, handle, entity){
 		<canvas id="dummy" width="10" height="10"></canvas>
 		</td>
 		<td>
-        <b>Highlight based on Color:&nbsp; </b> <input id="cvjs_backgroundPickerValue" value="AAAA00" class="cvjs_inputBackgroundColorModal jscolor {width:101, padding:10, shadow:false, borderWidth:0, backgroundColor:'transparent', insetColor:'#AAAA00',closable:true, closeText:'Close Color Picker!', onFineChange:'custom_ColorHex(this)'}">        
+        <b>Highlight based on Color:&nbsp; </b> <input id="setcolor" value="AAAA00" class="cvjs_inputBackgroundColorModal jscolor {width:101, padding:10, shadow:false, borderWidth:0, backgroundColor:'transparent', insetColor:'#AAAA00',closable:true, closeText:'Close Color Picker!', onFineChange:'custom_ColorHex(this)'}">        
         <button class="w3-button demo" onClick="highlight_all_spaces();">Spaces</button>
         <button class="w3-button demo" onClick="highlight_all_borders();">Borders</button>
         <button class="w3-button demo" onClick="highlight_space_type();">Space Type</button>
