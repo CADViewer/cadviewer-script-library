@@ -12,8 +12,7 @@ The back-end converters can be used on Windows and Linux.
 
 1: CADViewer script library  - in its preferred folder structure
 
-2: AutoXchange AX2024 Converter and DWG Merge 2024 Converter - in their preferred folder structure -. 
-**NOTE:** Each converter with have two subfolders /windows/ and /linux/ where the executable for the corresponding platform is located. 
+2: AutoXchange AX2024 Converter and DWG Merge 2024 Converter, in their preferred folder structure.  **NOTE:** Each converter will have two subfolders /windows/ and /linux/ where the executable for the corresponding platform is located. 
 
 3: All structures for file-conversion, sample drawings, redlines, etc. 
 
