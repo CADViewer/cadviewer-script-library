@@ -46,6 +46,9 @@ Once the 5: script handler is installed and 6: permissions settings are done, th
 Use **http://localhost/cadviewer/html/CADViewer_fileloader_80.html** as a starting point (assuming that your have installed under http://localhost).
 
 
+See please see troubleshooting in: https://github.com/CADViewer/cadviewer-php-scripts , when using ***PHP***. 
+
+
 
 ## Documentation 
 
