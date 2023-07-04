@@ -23,12 +23,22 @@ The back-end converters can be used on Windows and Linux.
 
 5: The folder structure for script handlers for communication between CADViewer and the back-end AutoXchange 2024. Install these separately!
 
-**NOTE:** With this download, the PHP handlers will work as-is, download the PHP handlers from: https://github.com/CADViewer/cadviewer-php-scripts , install under /cadviewer/php/.
+**NOTE:** With this download, the **PHP handlers** will work as-is, download the PHP handlers from: https://github.com/CADViewer/cadviewer-php-scripts , install under /cadviewer/php/.
 
 
 ## How to Use
 
-Once the 5: script handler is installed, the HTML samples under /cadviewer/html/ can be run from a web-browser. Use ***http://localhost/cadviewer/html/CADViewer_fileloader_80.html** as a starting point (assuming that your have installed under http://localhost).
+6: If on Linux ensure the following: 
+6A: The executable /cadviewer/ax2024/linux/ax_2023_xx_yy_zz has full read, write and execute permissions for the owner  (chmod 755 or chmod 777)
+6B: The php scripts in /cadviewer/php/ has full rights  (chmod 755)
+6C: Ensure the /cadviewer/converters/files/ folder for temporary files has full write permission (chmod 766)
+6D: Make sure the /cadviewer/ folder has the right owner structure, for example, sudo chown -R www-data:www-data /var/www/html/cadviewer
+
+
+Once the 5: script handler is installed and 6: permissions settings are done, the HTML samples under /cadviewer/html/ can be run from a web-browser. 
+
+Use ***http://localhost/cadviewer/html/CADViewer_fileloader_80.html** as a starting point (assuming that your have installed under http://localhost).
+
 
 
 ## Documentation 
