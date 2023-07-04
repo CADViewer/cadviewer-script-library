@@ -43,7 +43,7 @@ The back-end converters can be used on Windows and Linux.
 
 Once the 5: script handler is installed and 6: permissions settings are done, the HTML samples under /cadviewer/html/ can be run from a web-browser. 
 
-Use ***http://localhost/cadviewer/html/CADViewer_fileloader_80.html** as a starting point (assuming that your have installed under http://localhost).
+Use **http://localhost/cadviewer/html/CADViewer_fileloader_80.html** as a starting point (assuming that your have installed under http://localhost).
 
 
 
