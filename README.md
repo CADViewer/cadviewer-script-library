@@ -32,11 +32,13 @@ The back-end converters can be used on Windows and Linux.
 
 6A: The executable /cadviewer/ax2024/linux/ax2023_L64__xx_yy_zz has full read, write and execute permissions for the owner  (chmod 755 or chmod 777)
 
-6B: The php scripts in /cadviewer/php/ has full rights  (chmod 755)
+6B: The executable /cadviewer/ax2024/linux/ has full read, write permissions for the owner  (chmod 766 or chmod 777)
 
-6C: Ensure the /cadviewer/converters/files/ folder for temporary files has full write permission (chmod 766)
+6C: The php scripts in /cadviewer/php/ has full rights  (chmod 755)
 
-6D: Make sure the /cadviewer/ folder has the right owner structure, for example, sudo chown -R www-data:www-data /var/www/html/cadviewer
+6D: Ensure the /cadviewer/converters/files/ folder for temporary files has full write permission (chmod 766)
+
+6E: Make sure the /cadviewer/ folder has the right owner structure, for example, sudo chown -R www-data:www-data /var/www/html/cadviewer
 
 
 Once the 5: script handler is installed and 6: permissions settings are done, the HTML samples under /cadviewer/html/ can be run from a web-browser. 
