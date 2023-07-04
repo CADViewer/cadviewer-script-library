@@ -4,15 +4,16 @@ Use this version with global DOM scope with back-end conversion scripts and CAD 
 
 Install the content of this repository under /cadviewer/. So for example, if on xampp, then /xampp/htdocs/cadviewer/, if on apache Linux then /var/www/html/cadviewer/.
 
-
 For front-end frameworks ReactJS, Angular and VueJS, insted use npm installer: **npm i cadviewer**.  In that case only the structures under 2:, 3: and 4: is of interest. 
 
+The back-end converters can be used on Windows and Linux. 
 
 ## This package contains
 
 1: CADViewer script library  - in its preferred folder structure
 
-2: AutoXchange AX2022 Converter and DWG Merge 2022 Converter - in their preferred folder structure
+2: AutoXchange AX2024 Converter and DWG Merge 2024 Converter - in their preferred folder structure -. 
+**NOTE:** Each converter with have two subfolders /windows/ and /linux/ where the executable for the corresponding platform is located. 
 
 3: All structures for file-conversion, sample drawings, redlines, etc. 
 
@@ -21,22 +22,19 @@ For front-end frameworks ReactJS, Angular and VueJS, insted use npm installer: *
 
 ## This package does not contains
 
-5: The folder structure for script handlers for communication between CADViewer and the back-end AutoXchange 2022. Install these separately!
+5: The folder structure for script handlers for communication between CADViewer and the back-end AutoXchange 2024. Install these separately!
 
 **NOTE:** With this download, the PHP handlers will work as-is, download the PHP handlers from: https://github.com/CADViewer/cadviewer-php-scripts , install under /cadviewer/php/.
 
 
 ## How to Use
 
-Once the 5: script handler is installed, the HTML samples under /cadviewer/html/ can be run from a web-browser. Use http://localhost/cadviewer/html/CADViewer_fileloader_670.html as a starting point (assuming that your have installed under http://localhost).
-
-
+Once the 5: script handler is installed, the HTML samples under /cadviewer/html/ can be run from a web-browser. Use ***http://localhost/cadviewer/html/CADViewer_fileloader_80.html** as a starting point (assuming that your have installed under http://localhost).
 
 
 ## Documentation 
 
 -   [CADViewer Techdocs and Installation Guide](https://cadviewer.com/cadviewertechdocs/download)
-
 
 
 ## How To Install CADViewer Handlers
@@ -57,8 +55,8 @@ Please refer to the general Documentation above, for the back-end handlers, ther
 
 This repository should contain the latest converters, but in case you need to update any of the back-end converters please follow: 
 
-* [Download **AutoXchange**](/download/) (and other converters), install (unzip) AX2022 in **cadviewer/converters/ax2022/windows** or **cadviewer/converters/ax2022/linux** or in the designated folder structure.
-* Read the sections on installing and handling [Fonts](https://tailormade.com/ax2020techdocs/installation/fonts/) in [AutoXchange 2022 TechDocs](https://tailormade.com/ax2020techdocs/) and [TroubleShooting](https://tailormade.com/ax2020techdocs/troubleshooting/).
+* [Download **AutoXchange**](/download/) (and other converters), install (unzip) AX2024 in **cadviewer/converters/ax2024/windows** or **cadviewer/converters/ax2024/linux** or in the designated folder structure.
+* Read the sections on installing and handling [Fonts](https://tailormade.com/ax2020techdocs/installation/fonts/) in [AutoXchange 2024 TechDocs](https://tailormade.com/ax2020techdocs/) and [TroubleShooting](https://tailormade.com/ax2020techdocs/troubleshooting/).
 
 * Try out the samples and build your own application!
  
