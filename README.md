@@ -29,9 +29,13 @@ The back-end converters can be used on Windows and Linux.
 ## How to Use
 
 6: If on Linux ensure the following: 
+
 6A: The executable /cadviewer/ax2024/linux/ax_2023_xx_yy_zz has full read, write and execute permissions for the owner  (chmod 755 or chmod 777)
+
 6B: The php scripts in /cadviewer/php/ has full rights  (chmod 755)
+
 6C: Ensure the /cadviewer/converters/files/ folder for temporary files has full write permission (chmod 766)
+
 6D: Make sure the /cadviewer/ folder has the right owner structure, for example, sudo chown -R www-data:www-data /var/www/html/cadviewer
 
 
