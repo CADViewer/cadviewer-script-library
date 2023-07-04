@@ -30,7 +30,7 @@ The back-end converters can be used on Windows and Linux.
 
 6: If on Linux ensure the following: 
 
-6A: The executable /cadviewer/ax2024/linux/ax_2023_xx_yy_zz has full read, write and execute permissions for the owner  (chmod 755 or chmod 777)
+6A: The executable /cadviewer/ax2024/linux/ax2023_L64__xx_yy_zz has full read, write and execute permissions for the owner  (chmod 755 or chmod 777)
 
 6B: The php scripts in /cadviewer/php/ has full rights  (chmod 755)
 
