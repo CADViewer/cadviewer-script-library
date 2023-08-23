@@ -4,17 +4,21 @@ Use this version with global DOM scope with back-end conversion scripts and CAD 
 
 Install the content of this repository under /cadviewer/. So for example, if on xampp, then /xampp/htdocs/cadviewer/, if on apache Linux then /var/www/html/cadviewer/.
 
-For front-end frameworks ReactJS, Angular and VueJS, insted use npm installer: **npm i cadviewer**.  In that case only the structures under 2:, 3: and 4: is of interest. 
+Pull the library from your install location, for example: /var/www/html/ (linux) or /xampp/htdocs/ (windows) , it will expand into cadviewer-script-library, rename or copy this folder to cadviewer.
+
+For front-end frameworks ReactJS, Angular and VueJS, insted use npm installer: **npm i cadviewer**.  In that case, the htmnl sample folder 4: is not used. 
 
 The back-end converters can be used on Windows and Linux. 
+
+***NOTE:*** Your end-point to access the CADViewer script library from an external source will be: ***http://myapacheserver/cadviewer/***, where ***myapacheserver** is the url of the Apache server. 
 
 ## This package contains
 
 1: CADViewer script library  - in its preferred folder structure
 
-2: AutoXchange AX2024 Converter and DWG Merge 2024 Converter, in their preferred folder structure.  **NOTE:** Each converter will have two subfolders /windows/ and /linux/ where the executable for the corresponding platform is located. 
+2: AutoXchange AX2024 Converter , Linklist 2024 Extractor and DWG Merge 2024 Converter, in their preferred folder structure.  **NOTE:** Each converter will have two subfolders /windows/ and /linux/ where the executable for the corresponding platform is located. 
 
-3: All structures for file-conversion, sample drawings, redlines, etc. 
+3: All structures for file-conversion, sample drawings, redlines, print folders etc. 
 
 4: A number of HTML files with CADViewer samples.
 
@@ -23,7 +27,7 @@ The back-end converters can be used on Windows and Linux.
 
 5: The folder structure for script handlers for communication between CADViewer and the back-end AutoXchange 2024. Install these separately!
 
-**NOTE:** With this download, the **PHP handlers** will work as-is, download the PHP handlers from: https://github.com/CADViewer/cadviewer-php-scripts , install under /cadviewer/php/.
+**NOTE:** With this download, the **PHP handlers** will work as-is, download the PHP handlers from: https://github.com/CADViewer/cadviewer-php-scripts, install under /cadviewer/php/.
 
 
 ## How to Use
@@ -40,11 +44,14 @@ The back-end converters can be used on Windows and Linux.
 
 6E: Make sure the /cadviewer/ folder has the right owner structure, for example, sudo chown -R www-data:www-data /var/www/html/cadviewer
 
+6G: If installing on a clean VM, such as Google Cloud or other providers, ensure that in addition to Apache, PHP is installed: ***sudo apt install php***
+
+6H: If installing on a clean VM, such as Google Cloud or other providers, for CAD conversion, ensure that fontconfig is installed: ***sudo apt -y install fontconfig***
+
 
 Once the 5: script handler is installed and 6: permissions settings are done, the HTML samples under /cadviewer/html/ can be run from a web-browser. 
 
 Use **http://localhost/cadviewer/html/CADViewer_fileloader_80.html** as a starting point (assuming that your have installed under http://localhost).
-
 
 See please see troubleshooting in: https://github.com/CADViewer/cadviewer-php-scripts , when using ***PHP***. 
 
@@ -83,7 +90,7 @@ This repository should contain the latest converters, but in case you need to up
  
  ## Troubleshooting
 
-One issue that often appears in installations is that interface icons do not display properly:
+1: One issue that often appears in installations is that interface icons do not display properly:
 
 ![Icons](https://cadviewer.com/cadviewertechdocs/images/missing_icons.png "Icons missing")
 
@@ -92,7 +99,7 @@ Typically the variables *ServerUrl*, *ServerLocation* or *ServerBackEndUrl* in t
 <pre style="line-height: 110%">
 
 
-    var ServerBackEndUrl = "";  // or what is appropriate for my server; used for NodeJS server only
+    var ServerBackEndUrl = "http://localhost/cadviewer/";  // or what is appropriate for my server; used for NodeJS server only
     var ServerUrl = "http://localhost/cadviewer/";   // or what is appropriate for my server
     var ServerLocation = ""; // or what is appropriate for my server
 </pre>
