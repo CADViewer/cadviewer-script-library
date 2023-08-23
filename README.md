@@ -45,11 +45,20 @@ The back-end converters can be used on Windows and Linux.
 
 6D: Ensure the /cadviewer/converters/files/ folder for temporary files has full write permission (chmod 766)
 
-6E: Make sure the /cadviewer/ folder has the right owner structure, for example, sudo chown -R www-data:www-data /var/www/html/cadviewer
+6E: Make sure the /cadviewer/ folder has the right owner structure, for example, 
+```
+sudo chown -R www-data:www-data /var/www/html/cadviewer
+```
 
-6G: If installing on a clean VM, such as Google Cloud or other providers, ensure that in addition to Apache, PHP is installed: ***sudo apt install php***
+6G: If installing on a clean VM, such as Google Cloud or other providers, ensure that in addition to Apache, PHP is installed: 
+```
+sudo apt install php
+```
 
-6H: If installing on a clean VM, such as Google Cloud or other providers, for CAD conversion, ensure that fontconfig is installed: ***sudo apt -y install fontconfig***
+6H: If installing on a clean VM, such as Google Cloud or other providers, for CAD conversion, ensure that fontconfig is installed: 
+```
+sudo apt -y install fontconfig
+```
 
 
 Once the 5: script handler is installed and 6: permissions settings are done, the HTML samples under /cadviewer/html/ can be run from a web-browser. 
