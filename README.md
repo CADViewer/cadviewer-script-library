@@ -4,7 +4,9 @@ Use this version with global DOM scope with back-end conversion scripts and CAD 
 
 Install the content of this repository under /cadviewer/. So for example, if on xampp, then /xampp/htdocs/cadviewer/, if on apache Linux then /var/www/html/cadviewer/.
 
-Pull the library from your install location, for example: /var/www/html/ (linux) or /xampp/htdocs/ (windows) , it will expand into cadviewer-script-library, rename or copy this folder to cadviewer, or use git to rename at install: ***sudo git clone https://github.com/CADViewer/cadviewer-script-library.git ./cadviewer***
+Pull the library from your install location, for example: /var/www/html/ (linux) or /xampp/htdocs/ (windows) , it will expand into cadviewer-script-library, rename or copy this folder to cadviewer, or use git to rename at install: 
+
+ sudo git clone https://github.com/CADViewer/cadviewer-script-library.git ./cadviewer
 
 For front-end frameworks ReactJS, Angular and VueJS, insted use npm installer: **npm i cadviewer**.  In that case, the htmnl sample folder 4: is not used. 
 
