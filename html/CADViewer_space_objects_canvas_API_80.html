@@ -741,12 +741,33 @@ function display_all_objects(){
   var myString = "";
   for (var spc in allSpaceObjects.SpaceObjects){
     console.log(spc);
-    myString += "("+allSpaceObjects.SpaceObjects[spc].id+", "+allSpaceObjects.SpaceObjects[spc].area+")";
+    myString += "("+allSpaceObjects.SpaceObjects[spc].id+", "+allSpaceObjects.SpaceObjects[spc],name+", "+allSpaceObjects.SpaceObjects[spc].type+", "+allSpaceObjects.SpaceObjects[spc].area+")";
   }
 
   window.alert("The spaces with area (id,area): "+myString);
 
 }
+
+
+
+
+var allSpaceObjects = cvjs_returnAllSpaceObjects();
+
+var myString = "";
+for (var spc in allSpaceObjects.SpaceObjects){
+  console.log(spc);
+  myString += "("+allSpaceObjects.SpaceObjects[spc].id+", "+allSpaceObjects.SpaceObjects[spc].name+")";
+}
+
+window.alert("The spaces with area (id,area): "+myString);
+
+}
+
+
+
+
+
+
 
 ////////// HIGHLIGHT METHODS START
 
