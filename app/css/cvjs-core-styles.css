@@ -431,6 +431,7 @@
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 10pt;
 	z-index: 201;
+	border-right: 2px;
 }
 
 
@@ -7776,6 +7777,7 @@ table.waitlooperTable {
 
 table.waitlooperTable tr {
 	height: 22px ;
+	width: 160px !important;
 	z-index:1010;
 	align-items: top;
 }
@@ -7784,6 +7786,7 @@ table.waitlooperTable tr {
 table.waitlooperTable td {
     border-bottom: 0px !important;  /*7.3.17 */
 	height: 22px  ;
+	width: 160px !important;
 	background: #FFFFFF ;
 	z-index:1010;
 	border: 0px solid gray;	

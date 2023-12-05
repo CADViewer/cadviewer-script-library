@@ -364,6 +364,7 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 10pt;
   z-index: 201;
+  border-right: 2px;
 }
 .cadviewer-core-styles .cvjs_redlines_edit_text_1 {
   color: #333333;
@@ -5087,8 +5088,8 @@
   text-align: left;
 }
 .cadviewer-core-styles table.redlinetextModalTable {
-  width: 336px;
-  height: 158px;
+  width: 336px;   /* 336*/
+  height: 158px;  /*158 */
   z-index: 1000;
   padding: 0px !important;
   border-spacing: 0px;
@@ -6224,6 +6225,7 @@
 }
 .cadviewer-core-styles table.waitlooperTable tr {
   height: 22px;
+  width: 160px !important;
   z-index: 1010;
   align-items: top;
 }
@@ -6231,6 +6233,7 @@
   border-bottom: 0px !important;
   /*7.3.17 */
   height: 22px;
+  width: 160px !important;
   background: #FFFFFF;
   z-index: 1010;
   border: 0px solid gray;
