@@ -1847,6 +1847,8 @@ input[type=button_layer] {
 	text-decoration: none;
 	font-weight: none;
 	color:#000000;
+	background: #FFF;
+	background-color: #FFF;
 	font-size: 13px;
 	line-height: 1;
 
@@ -3124,7 +3126,8 @@ table.info_messageModal_2Table td {
 	color:#000000;
 	font-size: 12px;
 	line-height: 1;
-	 
+	background: #FFF;
+	background-color: #FFF;
 
 }
 
@@ -8844,6 +8847,8 @@ table.settingsModalTable td {
 	height: 20px !important;
 	min-height: 20px !important;
 	padding: 2px 5px;
+	background: #FFF;
+	background-color: #FFF;
 
 
     font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
@@ -8875,8 +8880,9 @@ table.settingsModalTable td {
 	text-decoration: none;
 	font-weight: none;
 	color:#000000;
+	background: #FFF;
+	background-color: #FFF;
 	font-size: 12px;
-
 
 }
 
@@ -8935,13 +8941,13 @@ table.settingsModalTable td {
    min-height: 20px !important;    /*7.3.14 */
    font-size: 13px;
    padding: 2px 5px;   
-
-
    font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
    text-decoration: none;
    font-weight: none;
    color:#000000;
-   font-size: 12px;
+   background: #FFF;
+   background-color: #FFF;
+  font-size: 12px;
 
 }
 
