@@ -1187,6 +1187,7 @@
   /* #243a64 #374daf   */
 }
 .cadviewer-core-styles #cvjs_FileModalXButton {
+  cursor: pointer;
   position: absolute;
   top: 15px;
   right: 15px;
@@ -1499,7 +1500,7 @@
   /* 7.3.31 */
 }
 .cadviewer-core-styles #cvjs_redlinetext_button {
-  position: absolute;
+  cursor: pointer;
   top: 30px !important;
   right: 10px !important;
   width: 40px !important;
@@ -1546,6 +1547,7 @@
   /* 7.3.30  */
 }
 .cadviewer-core-styles #cvjs_thickness_button {
+  cursor: pointer;
   position: absolute;
   top: 30px !important;
   left: 234px !important;
@@ -1840,6 +1842,7 @@
   /* 7.3.7*/
 }
 .cadviewer-core-styles #cvjs_layer_settings_button2 {
+  cursor: pointer;
   position: relative;
   top: 5px !important;
   left: 100 !important;
@@ -1902,6 +1905,7 @@
   /* 7.3.7  */
 }
 .cadviewer-core-styles #cvjs_layer_sort_button {
+  cursor: pointer;
   /*position: absolute !important;*/
   top: 20 !important;
   left: 300 !important;
@@ -2010,6 +2014,7 @@
   line-height: 1;
 }
 .cadviewer-core-styles #cvjs_pagechange_sort_button {
+  cursor: pointer;
   width: 110px;
   height: 22px;
   padding: 1px;
@@ -2354,6 +2359,7 @@
   /* 7.3.8 */
 }
 .cadviewer-core-styles #cvjs_textsearch_button {
+  cursor: pointer;
   position: absolute;
   top: 58px;
   right: 10px;
@@ -2612,6 +2618,7 @@
   vertical-align: top;
 }
 .cadviewer-core-styles #cvjs_calibrate_button {
+  cursor: pointer;
   position: absolute;
   top: 153px;
   right: 10px;
@@ -2633,6 +2640,7 @@
 
 }
 .cadviewer-core-styles #cvjs_calibrate_button2 {
+  cursor: pointer;
   position: absolute;
   top: 64px;
   right: 10px;
@@ -2850,6 +2858,7 @@
   vertical-align: top;
 }
 .cadviewer-core-styles #cvjs_measurement_button {
+  cursor: pointer;
   width: 110px;
   height: 20px;
   min-height: 20px !important;
@@ -2891,6 +2900,7 @@
   top: 32px;
 }
 .cadviewer-core-styles #cvjs_closearea_button {
+  cursor: pointer;
   width: 150px;
   height: 20px;
   padding: 1px;
@@ -3023,7 +3033,8 @@
   padding: 0px !important;
   vertical-align: top;
 }
-.cadviewer-core-styles #cvjs_print_button {
+.cadviewer-core-styles #cvjs_print_button {  
+  cursor: pointer;
   width: 60px;
   height: 20px !important;
   min-height: 20px !important;
@@ -3271,6 +3282,7 @@
 
 }
 .cadviewer-core-styles #cvjs_thickness_button {
+  cursor: pointer;
   width: 40px;
   height: 20px;
   padding: 1px;
@@ -3403,6 +3415,7 @@
 
 /*8.46.4 */
 .cadviewer-core-styles #cvjs_documentPageChangeModal_button {
+  cursor: pointer;
   position: absolute;
   width: 40px !important;
   height: 20px !important;
@@ -3501,6 +3514,7 @@
 
 }
 .cadviewer-core-styles #cvjs_collabStart_button {
+  cursor: pointer;
   position: absolute;
   left: 270px;
   top: 43px;
@@ -3766,6 +3780,7 @@
 
 }
 .cadviewer-core-styles #cvjs_compare_button2 {
+  cursor: pointer;
   position: absolute;
   top: 54px !important;
   left: 300px !important;
@@ -4026,6 +4041,7 @@
 
 }
 .cadviewer-core-styles #cvjs_redlinecolor_button {
+  cursor: pointer;
   width: 40px;
   height: 20px !important;
   min-height: 20px !important;
@@ -4048,6 +4064,7 @@
 
 }
 .cadviewer-core-styles #cvjs_ellipse_button {
+  cursor: pointer;
   position: absolute;
   top: 30px !important;
   left: 220px !important;
@@ -4080,6 +4097,7 @@
   line-height: 1;
 }
 .cadviewer-core-styles #cvjs_publish_redline_to_pdf_button {
+  cursor: pointer;
   width: 40px;
   height: 20px !important;
   min-height: 20px !important;
@@ -4269,6 +4287,7 @@
   line-height: 1;
 }
 .cadviewer-core-styles #cvjs_backgroundcolor_button {
+  cursor: pointer;
   width: 60px;
   height: 20px;
   min-height: 20px !important;
@@ -5432,6 +5451,7 @@
   height: 80px;
 }
 .cadviewer-core-styles #cvjs_genericcolor_button {
+  cursor: pointer;
   width: 40px;
   height: 20px;
   padding: 1px;
@@ -6428,6 +6448,7 @@
   z-index: 3010;
 }
 .cadviewer-core-styles #cvjs_publish_redline_to_dxf_button {
+  cursor: pointer;
   width: 40px;
   height: 20px;
   padding: 1px;
@@ -6967,6 +6988,7 @@
   /* 7.8.25 */
 }
 .cadviewer-core-styles #cvjs_settings_button {
+  cursor: pointer;
   width: 110px;
   height: 20px;
   padding: 1px;
@@ -7201,6 +7223,7 @@
   /* 7.2.5  - all exit buttons styled*/
 }
 .cadviewer-core-styles .cvjs_new_header_button {
+  cursor: pointer;
   position: absolute;
   width: 20px;
   height: 20px;

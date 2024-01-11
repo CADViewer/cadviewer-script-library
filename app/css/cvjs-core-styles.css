@@ -1467,7 +1467,7 @@ input[type=text3_red] {
 
 
 #cvjs_FileModalXButton{
-
+	cursor: pointer;
 	position: absolute;
 	top: 15px;
 	right: 15px;
@@ -1855,7 +1855,7 @@ input[type=button_layer] {
 }
 /* 7.3.31 */
 #cvjs_redlinetext_button{
-
+	cursor: pointer;
     position: absolute;
     top: 30px !important;
     right: 10px !important; 
@@ -1920,7 +1920,7 @@ input[type=button_layer] {
 
 /* 7.3.30  */
 #cvjs_thickness_button{
-    
+    cursor: pointer;
     position: absolute;
     top: 30px !important;
     left: 234px !important; 
@@ -2006,6 +2006,7 @@ input[type=button_layer] {
   
   /*8.46.4 */
   #cvjs_documentPageChangeModal_button {
+	cursor: pointer;
 	position: absolute;
 	width: 40px !important;
 	height: 20px !important;
@@ -2473,6 +2474,7 @@ input[type=button_layer] {
 
 /* 7.3.7  */
 #cvjs_layer_sort_button{
+	cursor: pointer;
     /*position: absolute !important;*/
     top: 20 !important;
     left: 300 !important; 
@@ -2598,7 +2600,7 @@ input[type=button_layer] {
 
 
 #cvjs_pagechange_sort_button{
-
+	cursor: pointer;
 	width: 110px;
 	height: 22px; 
 	padding: 1px;
@@ -3045,7 +3047,7 @@ table.info_messageModal_2Table td {
 /* 7.3.8 */
 
 #cvjs_textsearch_button{
-
+	cursor: pointer;
     position: absolute;
     top: 58px;
     right: 10px;
@@ -3357,7 +3359,7 @@ table.calibrateModalTable td {
 
 
 #cvjs_calibrate_button{
-
+	cursor: pointer;
 	position: absolute;
 	top: 153px;
 	right: 10px;
@@ -3381,7 +3383,7 @@ table.calibrateModalTable td {
 
 
 #cvjs_calibrate_button2{
-
+	cursor: pointer;
 	position: absolute;
 	top: 64px;
 	right: 10px;
@@ -3686,7 +3688,7 @@ table.measurementModalTable td {
 
 
 #cvjs_measurement_button{
-
+	cursor: pointer;
 	width: 110px;
 	height: 20px; 
 	min-height : 20px !important;
@@ -3738,7 +3740,7 @@ table.measurementModalTable td {
 
 
 #cvjs_closearea_button{
-
+	cursor: pointer;
 	width: 150px;
 	height: 20px; 
 	padding: 1px;
@@ -3899,7 +3901,7 @@ table.printModalTable td {
 
 
 #cvjs_print_button{
-
+	cursor: pointer;
 	width: 60px;
 	height: 20px !important; 
 	min-height: 20px !important;
@@ -4201,7 +4203,7 @@ table.thicknessModalTable td {
 
 
 #cvjs_thickness_button{
-
+	cursor: pointer;
 	width: 40px;
 	height: 20px; 
 	padding: 1px;
@@ -4364,7 +4366,7 @@ table.collabStartModalTable td {
 
 
 #cvjs_collabStart_button{
-
+	cursor: pointer;
 	position: absolute;
     left: 270px;
     top:  43px;
@@ -5055,7 +5057,7 @@ table.publishPDFModalTable td {
 }
 
 #cvjs_redlinecolor_button{
-
+	cursor: pointer;
 	width: 40px;
 	height: 20px !important;
     min-height: 20px !important; 
@@ -5082,7 +5084,7 @@ table.publishPDFModalTable td {
 /*7.6.19 */
 
 #cvjs_ellipse_button{
-
+	cursor: pointer;
     position: absolute;
     top: 30px !important;
     left: 220px !important; 
@@ -5128,7 +5130,7 @@ table.publishPDFModalTable td {
 
 
 #cvjs_publish_redline_to_pdf_button{
-
+	cursor: pointer;
 	width: 40px;
 	height: 20px !important;
     min-height: 20px !important; 
@@ -5381,7 +5383,7 @@ table.publishPDFModalTable td {
 
 
 #cvjs_backgroundcolor_button{
-    
+    cursor: pointer;
 	width: 60px;
 	height: 20px; 
     min-height: 20px !important;
@@ -6862,7 +6864,7 @@ table.colordarknessModalTable td {
 }
 
 #cvjs_genericcolor_button{
-
+	cursor: pointer;
 	width: 40px;
 	height: 20px; 
 	padding: 1px;
@@ -8028,7 +8030,7 @@ table.mergeDXFModalTable td {
 }
 
 #cvjs_publish_redline_to_dxf_button{
-
+	cursor: pointer;
 	width: 40px;
 	height: 20px; 
 	padding: 1px;
@@ -8708,7 +8710,7 @@ table.settingsModalTable td {
 
 /* 7.8.25 */
 #cvjs_settings_button{
-
+	cursor: pointer;
 	width: 110px;
 	height: 20px; 
 	padding: 1px;
@@ -9004,7 +9006,7 @@ table.settingsModalTable td {
 
 /* 7.2.5  - all exit buttons styled*/
 .cvjs_new_header_button{
-
+	cursor: pointer;
 	position: absolute;
 	width: 20px;
 	height: 20px; 
