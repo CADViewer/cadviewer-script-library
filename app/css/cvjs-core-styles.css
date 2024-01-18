@@ -148,12 +148,12 @@
 	font-size: 10pt;
 	font-weight: none;
 	margin: 0;
-	margin-top:4px;
+	margin-top:2px;
 	position: absolute;
 	left:12px;
 	cursor: pointer;
 	text-align:left;
-	vertical-align:top;
+	vertical-align:middle;
 	width: 230px;
 	z-index: 980;
 
@@ -166,11 +166,11 @@
 	position: absolute;
 	font-weight: none;
 	margin: 0;
-	margin-top:4px;
+	margin-top:2px;
 	left:230px;
 	cursor: pointer;
 	text-align:left;
-	vertical-align:top;
+	vertical-align:middle;
 	width: 210px;
 	z-index: 980;
 
@@ -246,7 +246,8 @@
 	color: #00539B;
 	margin: 0;
 	cursor: pointer;
-	width: 25px;
+	width: 20px;
+	padding: 1px;
 	margin-top:-10px;
 	text-align:right;
 	vertical-align:top;
@@ -259,7 +260,8 @@
 /*	color: #FB5300; */
 	margin: 0;
 	cursor: pointer;
-	width: 25px;
+	width: 20px;
+	padding: 5px;
 	margin-top:-10px;
 	text-align:right;
 	vertical-align:top;
@@ -271,7 +273,8 @@
 	color: #FB5300;
 	margin: 0;
 	cursor: pointer;
-	width: 25px;
+	width: 20px;
+	padding: 5px;
 	margin-top:-10px;
 	text-align:right;
 	vertical-align:top;
@@ -284,7 +287,8 @@
 	color: #9B9B9B;
 	margin: 0;
 	cursor: pointer;
-	width: 25px;
+	width: 20px;
+	padding: 5px;
 	margin-top:-10px;
 	text-align:right;
 	vertical-align:top;
@@ -297,7 +301,8 @@
 	color: #9B9B9B;
 	margin: 0;
 	cursor: pointer;
-	width: 30px;
+	width: 20px;
+	padding: 5px;
 	margin-top:-10px;
 	text-align:right;
 	vertical-align:top;
@@ -310,6 +315,7 @@
 	margin: 0;
 	cursor: pointer;
 	width: 30px;
+	padding: 5px;
 	margin-top:-10px;
 	text-align:right;
 	vertical-align:top;
@@ -345,6 +351,7 @@
 	font-size: 9pt;
 	width: 10px;
 	margin: 0;
+	padding: 1px;
 }
 
 
@@ -431,7 +438,9 @@
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 10pt;
 	z-index: 201;
-	border-right: 2px;
+	border-right: 0px;
+	width: 100%;
+
 }
 
 
@@ -440,6 +449,7 @@
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 10pt;
 	z-index: 201;
+	padding: 4px;
 }
 
 
@@ -592,7 +602,7 @@ map area{
 
 
 #cvjs_layerlist_checkbox{
-	position: relative;
+	position: absolute;
     min-height: 16px !important; /*7.3.26 */
 
     background-color: DodgerBlue;
@@ -601,11 +611,12 @@ map area{
     color: white;
     cursor: pointer;
     font-size: 14px;
+	top: 458px;
 	
 }
 
 #cvjs_layerlist_checkboxText{
-	position: relative;
+	position: absolute;
 	/*left: 35px;
 	bottom: 5px;
     height: 16px;
@@ -614,9 +625,11 @@ map area{
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	 font-size: 13px;
 	 /* line-height: 1.42857143; */
-	 color: #333
-	
-	
+	 color: #333;
+	 top: 462px;
+	 left: 26px;
+	 line-height: 13px;
+
 }
 
 #cvjs_imageObject{
@@ -1872,7 +1885,7 @@ input[type=button_layer] {
 	font-weight: bold;
 	color:#000000;
 	font-size: 12px;
-
+	line-height: 12px;
 }
 #cvjs_redline_text_inserttext{
 
@@ -2593,8 +2606,8 @@ input[type=button_layer] {
 	font-weight: bold;
 	color:#000000;
 	font-size: 12px;
-	line-height: 1;
-	 
+	line-height: 12px;
+	min-height: 22px;
 
 }
 
@@ -2615,8 +2628,8 @@ input[type=button_layer] {
 	font-weight: bold;
 	color:#FFF;
 	font-size: 12px;
-	line-height: 1;
-	 
+	line-height: 12px;
+	min-height: 22px;
 
 }
 
@@ -3281,7 +3294,8 @@ table.info_messageModal_2Table td {
 	top : 216px;    
     height: 22px;
     min-height: 22px !important;
-    padding: 0px 0px !important;
+    padding: 0px 2px !important;
+	line-height: 12px;
 }
 
 
@@ -3421,6 +3435,9 @@ table.calibrateModalTable td {
     left: 30px;
     height: 16px;
     min-height: 16px !important;
+	font-size: 12px;
+	line-height: 12px;
+
 
 
 }
@@ -3433,6 +3450,9 @@ table.calibrateModalTable td {
     left: 160px;
     height: 16px;
     min-height: 16px !important;
+	font-size: 12px;
+	line-height: 12px;
+
 
 }
 
@@ -3442,6 +3462,8 @@ table.calibrateModalTable td {
     position: absolute;
     top: 38px;
     left: 10px;
+	font-size: 12px;
+	line-height: 12px;
 
 
 }
@@ -3455,7 +3477,9 @@ table.calibrateModalTable td {
  	width: 100px; 
  	height: 22px !important;
     min-height: 22px !important;
-    padding: 0px 0px !important; 
+    padding: 0px 2px !important; 
+	line-height: 12px;
+
 }
 
 
@@ -3468,6 +3492,9 @@ table.calibrateModalTable td {
     position: absolute;
     top: 156px;
     left: 10px;
+	font-size: 12px;
+	line-height: 12px;
+
 }
 
 #cvjs_calibrateReferenceDistance{
@@ -3562,6 +3589,7 @@ table.calibrateModalTable td {
 	margin-right: 10px;
     margin-left: 10px;
 	font-size: 12px;
+	line-height: 12px;
 }
 
 
@@ -3572,6 +3600,7 @@ table.calibrateModalTable td {
 	margin-right: 10px;
     	margin-left: 10px;
 	font-size: 11px;
+	line-height: 11px;
 }
 
 #cvjs_calibrate_modal_text{
@@ -3759,9 +3788,8 @@ table.measurementModalTable td {
 	font-weight: bold;
 	color:#000000;
 	font-size: 12px;
-	line-height: 1;
-	 
-	
+	line-height: 12px;
+	min-height: 22px;
 	 position: absolute;
     	 right: 10px;
     	 top: 89px;
@@ -4936,6 +4964,7 @@ table.publishPDFModalTable td {
 #cvjs_publish_pdf_selectmode{
 	font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
 	font-size: 13px;
+	line-height: 13px;
 	text-decoration: none;
 	font-weight: bold;
 	position: absolute;
@@ -4975,6 +5004,7 @@ table.publishPDFModalTable td {
 #cvjs_publishpdfmode1{
 	font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
 	font-size: 12px;
+	line-height: 12px;
 	text-decoration: none;
 	font-weight: none;
 	position: absolute;
@@ -4996,6 +5026,7 @@ table.publishPDFModalTable td {
 #cvjs_publishpdfmode2{
 	font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
 	font-size: 12px;
+	line-height: 12px;
 	text-decoration: none;
 	font-weight: none;
 	position: absolute;
@@ -5019,6 +5050,7 @@ table.publishPDFModalTable td {
 #cvjs_publishpdfmode3{
 	font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
 	font-size: 12px;
+	line-height: 12px;
 	text-decoration: none;
 	font-weight: none;
 	position: absolute;
@@ -5105,6 +5137,7 @@ table.publishPDFModalTable td {
 	font-weight: bold;
 	color:#000000;
 	font-size: 12px;
+	line-height: 12px;
 
 }
 
@@ -5214,6 +5247,7 @@ table.publishPDFModalTable td {
 	position: absolute;
     	left: 135px;
     	top: 35px;
+	line-height: 12px;
 }
 
 .radioEllipse1{
@@ -5239,6 +5273,7 @@ table.publishPDFModalTable td {
 	position: absolute;
     	left: 135px;
     	top: 57px;
+	line-height: 12px;
 }
 
 .radioEllipse2{
@@ -5259,6 +5294,7 @@ table.publishPDFModalTable td {
 	position: absolute;
     	left: 135px;
     	top: 77px;
+	line-height: 12px;
 }
 
 .radioEllipse3{
@@ -6351,7 +6387,8 @@ table.backgroundModalTable td {
 .cvjs_publishPDFservername{
 	
 	width: 280px;
-	height: 20px; 
+	height: 22px; 
+	min-height: 22px !important; 
 	padding: 1px;
 	z-index:1000;
 	margin: 0px;
@@ -6371,7 +6408,10 @@ table.backgroundModalTable td {
 
 #cvjs_publishPDFservername{
 	
-	max-height: 22px; /*  8.16.5 */		
+	max-height: 22px; /*  8.16.5 */	
+	height: 22px; 
+	min-height: 22px !important; 
+	
 }
 
 
@@ -8526,6 +8566,7 @@ button.multiselect {
 	height: 23px; 
 	background-color: transparent; 
 	border: 0px solid blue; 
+	line-height: 16px;
 }	
 
 
@@ -8538,6 +8579,7 @@ button.multiselect {
 	height: 23px; 
 	background-color: transparent; 
 	border: 0px solid blue; 
+	line-height: 16px;
 }	
 
 
@@ -8812,7 +8854,7 @@ table.settingsModalTable td {
 	min-height: 22px !important;    /*7.3.14 */
 	font-size: 13px;
 	padding: 2px 5px;   
-
+	line-height: 12px;
 }
 
 
@@ -8954,6 +8996,7 @@ table.settingsModalTable td {
    background: #FFF;
    background-color: #FFF;
   font-size: 12px;
+  line-height: 16px;
 
 }
 
@@ -8982,7 +9025,8 @@ table.settingsModalTable td {
     width: 200px; 
     position: absolute; 
     left : 140px;
-    top : 120px    /* 6.5.14a */
+    top : 120px;    /* 6.5.14a */
+	line-height: 12px;
 }
 
 
@@ -8999,8 +9043,8 @@ table.settingsModalTable td {
 	display: inline-block;
 	position: absolute; 
 	left : 10px;
-	bottom : 6px    /* 6.5.14a */
-
+	bottom : 6px;    /* 6.5.14a */
+	line-height: 12px;
 }
 
 
@@ -9930,6 +9974,8 @@ table.settingsModalTable td {
   background-color: #eee;
   padding:5px;
   box-shadow: inset 0 1px 0 #fff;
+  line-height: 16px;
+
 }
 /*
 
