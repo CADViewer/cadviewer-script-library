@@ -4212,7 +4212,7 @@
 .cadviewer-core-styles .radioEllipse1 {
   position: absolute;
   left: 115px;
-  top: 32px;
+  top: 30px;
   min-height: 16px !important;
   /*7.3.26 */
   cursor: pointer !important;
@@ -4231,7 +4231,7 @@
 .cadviewer-core-styles .radioEllipse2 {
   position: absolute;
   left: 115px;
-  top: 53px;
+  top: 52px;
   min-height: 16px !important;
   /*7.3.26 */
   cursor: pointer !important;
@@ -4250,7 +4250,7 @@
 .cadviewer-core-styles .radioEllipse3 {
   position: absolute;
   left: 115px;
-  top: 74px;
+  top: 72px;
   min-height: 16px !important;
   /*7.3.26 */
   cursor: pointer !important;
@@ -5488,6 +5488,8 @@
   font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
   text-decoration: none;
   font-weight: bold;
+  font-size: 13px;
+  line-height: 13px;
 }
 .cadviewer-core-styles #lineThicknessTextZW {
   z-index: 1000;

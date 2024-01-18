@@ -5253,7 +5253,7 @@ table.publishPDFModalTable td {
 .radioEllipse1{
 	 position: absolute;
     	 left: 115px;
-    	 top: 32px;
+    	 top: 30px;
          min-height: 16px !important; /*7.3.26 */
 
 		 cursor: pointer !important;  /*8.9.10 */
@@ -5279,7 +5279,7 @@ table.publishPDFModalTable td {
 .radioEllipse2{
 	 position: absolute;
     	 left: 115px;
-    	 top: 53px;
+    	 top: 52px;
          min-height: 16px !important; /*7.3.26 */
 		 cursor: pointer !important;  /*8.9.10 */
 
@@ -5300,7 +5300,7 @@ table.publishPDFModalTable td {
 .radioEllipse3{
 	position: absolute;
 		left: 115px;
-		top: 74px;
+		top: 72px;
         min-height: 16px !important; /*7.3.26 */
 		cursor: pointer !important;  /*8.9.10 */
 
@@ -6888,6 +6888,8 @@ table.colordarknessModalTable td {
 	font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
 	text-decoration: none;
 	font-weight: bold;
+	font-size: 13px;
+    line-height: 13px;
 }
 
 #lineThicknessTextZW{

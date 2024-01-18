@@ -135,7 +135,7 @@
   box-sizing: border-box;
   padding: 0;
   border-radius: 0px;
-  height: 22px !important;
+  height: 20px !important;
 }
 .cadviewer-bootstrap input[type="number"]::-webkit-inner-spin-button, .cadviewer-bootstrap input[type="number"]::-webkit-outer-spin-button {
   height: auto;
