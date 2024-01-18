@@ -3001,6 +3001,7 @@ table.info_messageModal_2Table {
 }
 
 table.info_messageModal_2Table tr {
+	width: 326px !important ;
 	height: 22px ;
 	z-index:1010;
 	align-items: top;
@@ -3008,6 +3009,7 @@ table.info_messageModal_2Table tr {
 
 
 table.info_messageModal_2Table td {
+	width: 326px !important ;
     border-bottom: 0px !important;  /*7.3.17 */
 	height: 22px  !important;
 	background: #FFFFFF !important;
@@ -3223,6 +3225,7 @@ table.info_messageModal_2Table td {
 
 	padding: 5px;
 	line-height: 1.2 !important;  /*7.3.12 */
+	width: 200px  /* 9.36.5 */
 }
 
 
@@ -3577,6 +3580,7 @@ table.calibrateModalTable td {
 	top: 184px;
 	left: 5px;
     width: 340px !important;
+	text-wrap: wrap;
 
 }
 
@@ -3586,6 +3590,7 @@ table.calibrateModalTable td {
 	top: 92px;
 	left: 5px;
     width: 340px !important;
+	text-wrap: wrap;
 }
 
 #cvjs_calibrationModalText2{

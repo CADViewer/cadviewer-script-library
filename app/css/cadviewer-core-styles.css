@@ -1501,6 +1501,7 @@
 }
 .cadviewer-core-styles #cvjs_redlinetext_button {
   cursor: pointer;
+  position:absolute;
   top: 30px !important;
   right: 10px !important;
   width: 40px !important;
@@ -2497,6 +2498,7 @@
   /* line-height: 1.42857143; */
   color: #333;
   line-height: 1.2 !important;
+  text-wrap: wrap;
   /*7.3.12 */
 }
 .cadviewer-core-styles .cvjs_informationModalText_2_div {
@@ -2506,6 +2508,7 @@
   color: #333;
   padding: 5px;
   line-height: 1.2 !important;
+  text-wrap: wrap;
   /*7.3.12 */
 }
 .cadviewer-core-styles #cvjs_informationModalText_2 {
@@ -2770,12 +2773,14 @@
   top: 184px;
   left: 10px !important;
   width: 340px !important;
+  text-wrap: wrap;
 }
 .cadviewer-core-styles #cvjs_calibrate_modal_text2 {
   position: absolute;
   top: 92px;
   left: 5px;
   width: 340px !important;
+  text-wrap: wrap;
 }
 .cadviewer-core-styles #cvjs_calibrationModalText2 {
   width: 340px !important;
