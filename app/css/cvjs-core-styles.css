@@ -140,7 +140,7 @@
     border: 4px dotted red;
 }
 
-
+foreignObject{ white-space:pre-wrap !important; }
 
 .cvjs_coordinateX_menu{
 	color: #000;
@@ -1696,7 +1696,7 @@ table.cvjs_floorPlanMagnifyingGlassTable td {
 
 
 .cvjs_floorPlanMagnifyingGlassEncapsulate { 
-	z-index: 9000100;
+	z-index: 5000;
 	border: 4px solid gray; 
 	width: 660px;   /*7.3.26 */ 
 	height: 494px;
@@ -1707,7 +1707,8 @@ table.cvjs_floorPlanMagnifyingGlassTable td {
 }
 
 .cvjs_floorPlanMagnifyingGlassTop { 
-	z-index: 9000000;
+	position: absolute;
+	z-index: 5000;
 	border: 1px solid gray; 
 	width: 650px;   /*7.3.26 */ 
 	height: 25px;
@@ -1719,7 +1720,7 @@ table.cvjs_floorPlanMagnifyingGlassTable td {
 
 
 #cvjs_floorPlanInsertImageEncapsulate { 
-	z-index: 9000000;
+	z-index: 5000;
 	border: 4px solid gray; 
 	width: 656px; 
 	height: 480px;
@@ -1729,7 +1730,7 @@ table.cvjs_floorPlanMagnifyingGlassTable td {
 
 
 #cvjs_floorPlanInsertImage { 
-	z-index: 9000000;
+	z-index: 5000;
 	border: 1px solid gray; 
 	width: 648px; 
 	height: 454px; 
@@ -1738,7 +1739,7 @@ table.cvjs_floorPlanMagnifyingGlassTable td {
 }
 
 #cvjs_floorPlanInsertImageTop { 
-	z-index: 9000000;
+	z-index: 5000;
 	border: 1px solid gray; 
 	width: 648px; 
 	height: 22px;

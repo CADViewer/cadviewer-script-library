@@ -141,6 +141,7 @@
   width: 230px;
   z-index: 980;
 }
+.cadviewer-core-styles foreignObject{ white-space:pre-wrap !important; } 
 .cadviewer-core-styles .cvjs_coordinateY_menu {
   color: #000;
   font-family: Arial, Helvetica, sans-serif;
@@ -1375,7 +1376,7 @@
   vertical-align: top;
 }
 .cadviewer-core-styles .cvjs_floorPlanMagnifyingGlassEncapsulate {
-  z-index: 9000100;
+  z-index: 5000;
   border: 4px solid gray;
   width: 660px;
   /*7.3.26 */
@@ -1385,7 +1386,8 @@
   position: absolute;
 }
 .cadviewer-core-styles .cvjs_floorPlanMagnifyingGlassTop {
-  z-index: 9000000;
+  position: absolute;
+  z-index: 5000;
   border: 1px solid gray;
   width: 650px;
   /*7.3.26 */
@@ -1394,7 +1396,7 @@
   background-color: #DDDDDD;
 }
 .cadviewer-core-styles #cvjs_floorPlanInsertImageEncapsulate {
-  z-index: 9000000;
+  z-index: 5000;
   border: 4px solid gray;
   width: 656px;
   height: 480px;
@@ -1402,7 +1404,7 @@
   background-color: #fff;
 }
 .cadviewer-core-styles #cvjs_floorPlanInsertImage {
-  z-index: 9000000;
+  z-index: 5000;
   border: 1px solid gray;
   width: 648px;
   height: 454px;
@@ -1410,7 +1412,7 @@
   background-color: #fff;
 }
 .cadviewer-core-styles #cvjs_floorPlanInsertImageTop {
-  z-index: 9000000;
+  z-index: 5000;
   border: 1px solid gray;
   width: 648px;
   height: 22px;
