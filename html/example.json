@@ -1,0 +1,1196 @@
+{
+	"XData_Areas" : 
+	[
+		{
+		"Entity_Type": "INSERT",
+		"Block_Name": "$TelecSys$00000208",
+		"Layer": "TEL_HOLE",
+		"Handle": "32F",
+		"xData": 
+			[
+				{
+				"Code": 1001,
+				"Value": "HoleType"
+				},
+				{
+				"Code": 1000,
+				"Value": "楼板洞"
+				},
+				{
+				"Code": 1001,
+				"Value": "HoleStyle"
+				},
+				{
+				"Code": 1000,
+				"Value": "矩形洞"
+				},
+				{
+				"Code": 1001,
+				"Value": "HoleRadius"
+				},
+				{
+				"Code": 1000,
+				"Value": "1200"
+				},
+				{
+				"Code": 1001,
+				"Value": "HoleHorizen"
+				},
+				{
+				"Code": 1000,
+				"Value": "1200"
+				},
+				{
+				"Code": 1001,
+				"Value": "HoleVertical"
+				},
+				{
+				"Code": 1000,
+				"Value": "1200"
+				},
+				{
+				"Code": 1001,
+				"Value": "HoleHeight"
+				},
+				{
+				"Code": 1000,
+				"Value": "1.00"
+				},
+				{
+				"Code": 1001,
+				"Value": "HoleDimDist"
+				},
+				{
+				"Code": 1000,
+				"Value": "500"
+				},
+				{
+				"Code": 1001,
+				"Value": "name"
+				},
+				{
+				"Code": 1000,
+				"Value": "001"
+				},
+				{
+				"Code": 1001,
+				"Value": "group"
+				},
+				{
+				"Code": 1000,
+				"Value": "data1"
+				}
+			]
+		},
+		{
+		"Entity_Type": "INSERT",
+		"Block_Name": "$equip$00001160",
+		"Layer": "EQUIP-照明",
+		"Handle": "362",
+		"xData": 
+			[
+				{
+				"Code": 1001,
+				"Value": "light"
+				},
+				{
+				"Code": 1000,
+				"Value": "T"
+				},
+				{
+				"Code": 1001,
+				"Value": "bb"
+				},
+				{
+				"Code": 1000,
+				"Value": ""
+				},
+				{
+				"Code": 1001,
+				"Value": "cc"
+				},
+				{
+				"Code": 1000,
+				"Value": "2"
+				},
+				{
+				"Code": 1001,
+				"Value": "dd"
+				},
+				{
+				"Code": 1000,
+				"Value": "36"
+				},
+				{
+				"Code": 1001,
+				"Value": "ee"
+				},
+				{
+				"Code": 1000,
+				"Value": ""
+				},
+				{
+				"Code": 1001,
+				"Value": "ff"
+				},
+				{
+				"Code": 1000,
+				"Value": ""
+				},
+				{
+				"Code": 1001,
+				"Value": "ll"
+				},
+				{
+				"Code": 1000,
+				"Value": ""
+				},
+				{
+				"Code": 1001,
+				"Value": "gg"
+				},
+				{
+				"Code": 1000,
+				"Value": ""
+				},
+				{
+				"Code": 1001,
+				"Value": "name"
+				},
+				{
+				"Code": 1000,
+				"Value": "001"
+				},
+				{
+				"Code": 1001,
+				"Value": "group"
+				},
+				{
+				"Code": 1000,
+				"Value": "data2"
+				}
+			]
+		},
+		{
+		"Entity_Type": "INSERT",
+		"Block_Name": "$equip$00001160",
+		"Layer": "EQUIP-照明",
+		"Handle": "36D",
+		"xData": 
+			[
+				{
+				"Code": 1001,
+				"Value": "light"
+				},
+				{
+				"Code": 1000,
+				"Value": "T"
+				},
+				{
+				"Code": 1001,
+				"Value": "bb"
+				},
+				{
+				"Code": 1000,
+				"Value": ""
+				},
+				{
+				"Code": 1001,
+				"Value": "cc"
+				},
+				{
+				"Code": 1000,
+				"Value": "2"
+				},
+				{
+				"Code": 1001,
+				"Value": "dd"
+				},
+				{
+				"Code": 1000,
+				"Value": "36"
+				},
+				{
+				"Code": 1001,
+				"Value": "ee"
+				},
+				{
+				"Code": 1000,
+				"Value": ""
+				},
+				{
+				"Code": 1001,
+				"Value": "ff"
+				},
+				{
+				"Code": 1000,
+				"Value": ""
+				},
+				{
+				"Code": 1001,
+				"Value": "ll"
+				},
+				{
+				"Code": 1000,
+				"Value": ""
+				},
+				{
+				"Code": 1001,
+				"Value": "gg"
+				},
+				{
+				"Code": 1000,
+				"Value": ""
+				},
+				{
+				"Code": 1001,
+				"Value": "name"
+				},
+				{
+				"Code": 1000,
+				"Value": "002"
+				},
+				{
+				"Code": 1001,
+				"Value": "group"
+				},
+				{
+				"Code": 1000,
+				"Value": "data2"
+				}
+			]
+		},
+		{
+		"Entity_Type": "INSERT",
+		"Block_Name": "$equip$00001160",
+		"Layer": "EQUIP-照明",
+		"Handle": "370",
+		"xData": 
+			[
+				{
+				"Code": 1001,
+				"Value": "light"
+				},
+				{
+				"Code": 1000,
+				"Value": "T"
+				},
+				{
+				"Code": 1001,
+				"Value": "bb"
+				},
+				{
+				"Code": 1000,
+				"Value": ""
+				},
+				{
+				"Code": 1001,
+				"Value": "cc"
+				},
+				{
+				"Code": 1000,
+				"Value": "2"
+				},
+				{
+				"Code": 1001,
+				"Value": "dd"
+				},
+				{
+				"Code": 1000,
+				"Value": "36"
+				},
+				{
+				"Code": 1001,
+				"Value": "ee"
+				},
+				{
+				"Code": 1000,
+				"Value": ""
+				},
+				{
+				"Code": 1001,
+				"Value": "ff"
+				},
+				{
+				"Code": 1000,
+				"Value": ""
+				},
+				{
+				"Code": 1001,
+				"Value": "ll"
+				},
+				{
+				"Code": 1000,
+				"Value": ""
+				},
+				{
+				"Code": 1001,
+				"Value": "gg"
+				},
+				{
+				"Code": 1000,
+				"Value": ""
+				},
+				{
+				"Code": 1001,
+				"Value": "name"
+				},
+				{
+				"Code": 1000,
+				"Value": "003"
+				},
+				{
+				"Code": 1001,
+				"Value": "group"
+				},
+				{
+				"Code": 1000,
+				"Value": "data2"
+				}
+			]
+		},
+		{
+		"Entity_Type": "INSERT",
+		"Block_Name": "$equip$00001160",
+		"Layer": "EQUIP-照明",
+		"Handle": "373",
+		"xData": 
+			[
+				{
+				"Code": 1001,
+				"Value": "light"
+				},
+				{
+				"Code": 1000,
+				"Value": "T"
+				},
+				{
+				"Code": 1001,
+				"Value": "bb"
+				},
+				{
+				"Code": 1000,
+				"Value": ""
+				},
+				{
+				"Code": 1001,
+				"Value": "cc"
+				},
+				{
+				"Code": 1000,
+				"Value": "2"
+				},
+				{
+				"Code": 1001,
+				"Value": "dd"
+				},
+				{
+				"Code": 1000,
+				"Value": "36"
+				},
+				{
+				"Code": 1001,
+				"Value": "ee"
+				},
+				{
+				"Code": 1000,
+				"Value": ""
+				},
+				{
+				"Code": 1001,
+				"Value": "ff"
+				},
+				{
+				"Code": 1000,
+				"Value": ""
+				},
+				{
+				"Code": 1001,
+				"Value": "ll"
+				},
+				{
+				"Code": 1000,
+				"Value": ""
+				},
+				{
+				"Code": 1001,
+				"Value": "gg"
+				},
+				{
+				"Code": 1000,
+				"Value": ""
+				},
+				{
+				"Code": 1001,
+				"Value": "name"
+				},
+				{
+				"Code": 1000,
+				"Value": "006"
+				},
+				{
+				"Code": 1001,
+				"Value": "group"
+				},
+				{
+				"Code": 1000,
+				"Value": "data2"
+				}
+			]
+		},
+		{
+		"Entity_Type": "INSERT",
+		"Block_Name": "$equip$00001160",
+		"Layer": "EQUIP-照明",
+		"Handle": "376",
+		"xData": 
+			[
+				{
+				"Code": 1001,
+				"Value": "light"
+				},
+				{
+				"Code": 1000,
+				"Value": "T"
+				},
+				{
+				"Code": 1001,
+				"Value": "bb"
+				},
+				{
+				"Code": 1000,
+				"Value": ""
+				},
+				{
+				"Code": 1001,
+				"Value": "cc"
+				},
+				{
+				"Code": 1000,
+				"Value": "2"
+				},
+				{
+				"Code": 1001,
+				"Value": "dd"
+				},
+				{
+				"Code": 1000,
+				"Value": "36"
+				},
+				{
+				"Code": 1001,
+				"Value": "ee"
+				},
+				{
+				"Code": 1000,
+				"Value": ""
+				},
+				{
+				"Code": 1001,
+				"Value": "ff"
+				},
+				{
+				"Code": 1000,
+				"Value": ""
+				},
+				{
+				"Code": 1001,
+				"Value": "ll"
+				},
+				{
+				"Code": 1000,
+				"Value": ""
+				},
+				{
+				"Code": 1001,
+				"Value": "gg"
+				},
+				{
+				"Code": 1000,
+				"Value": ""
+				},
+				{
+				"Code": 1001,
+				"Value": "name"
+				},
+				{
+				"Code": 1000,
+				"Value": "005"
+				},
+				{
+				"Code": 1001,
+				"Value": "group"
+				},
+				{
+				"Code": 1000,
+				"Value": "data2"
+				}
+			]
+		},
+		{
+		"Entity_Type": "INSERT",
+		"Block_Name": "$equip$00001160",
+		"Layer": "EQUIP-照明",
+		"Handle": "379",
+		"xData": 
+			[
+				{
+				"Code": 1001,
+				"Value": "light"
+				},
+				{
+				"Code": 1000,
+				"Value": "T"
+				},
+				{
+				"Code": 1001,
+				"Value": "bb"
+				},
+				{
+				"Code": 1000,
+				"Value": ""
+				},
+				{
+				"Code": 1001,
+				"Value": "cc"
+				},
+				{
+				"Code": 1000,
+				"Value": "2"
+				},
+				{
+				"Code": 1001,
+				"Value": "dd"
+				},
+				{
+				"Code": 1000,
+				"Value": "36"
+				},
+				{
+				"Code": 1001,
+				"Value": "ee"
+				},
+				{
+				"Code": 1000,
+				"Value": ""
+				},
+				{
+				"Code": 1001,
+				"Value": "ff"
+				},
+				{
+				"Code": 1000,
+				"Value": ""
+				},
+				{
+				"Code": 1001,
+				"Value": "ll"
+				},
+				{
+				"Code": 1000,
+				"Value": ""
+				},
+				{
+				"Code": 1001,
+				"Value": "gg"
+				},
+				{
+				"Code": 1000,
+				"Value": ""
+				},
+				{
+				"Code": 1001,
+				"Value": "name"
+				},
+				{
+				"Code": 1000,
+				"Value": "004"
+				},
+				{
+				"Code": 1001,
+				"Value": "group"
+				},
+				{
+				"Code": 1000,
+				"Value": "data2"
+				}
+			]
+		},
+		{
+		"Entity_Type": "LWPOLYLINE",
+		"Layer": "WIRE-动力母线",
+		"Handle": "37D",
+		"xData": 
+			[
+				{
+				"Code": 1001,
+				"Value": "linenum"
+				},
+				{
+				"Code": 1000,
+				"Value": "WP8"
+				},
+				{
+				"Code": 1001,
+				"Value": "ltype"
+				},
+				{
+				"Code": 1000,
+				"Value": "BV"
+				},
+				{
+				"Code": 1001,
+				"Value": "ldm"
+				},
+				{
+				"Code": 1000,
+				"Value": "15"
+				},
+				{
+				"Code": 1001,
+				"Value": "lmeth"
+				},
+				{
+				"Code": 1000,
+				"Value": "SC"
+				},
+				{
+				"Code": 1001,
+				"Value": "linst"
+				},
+				{
+				"Code": 1000,
+				"Value": "WC"
+				},
+				{
+				"Code": 1001,
+				"Value": "lnoar"
+				},
+				{
+				"Code": 1000,
+				"Value": "3x2.5"
+				},
+				{
+				"Code": 1001,
+				"Value": "lnorm"
+				},
+				{
+				"Code": 1000,
+				"Value": "0"
+				},
+				{
+				"Code": 1001,
+				"Value": "weakwirenum"
+				},
+				{
+				"Code": 1000,
+				"Value": ""
+				}
+			]
+		},
+		{
+		"Entity_Type": "LWPOLYLINE",
+		"Layer": "WIRE-动力母线",
+		"Handle": "37F",
+		"xData": 
+			[
+				{
+				"Code": 1001,
+				"Value": "linenum"
+				},
+				{
+				"Code": 1000,
+				"Value": "WP8"
+				},
+				{
+				"Code": 1001,
+				"Value": "ltype"
+				},
+				{
+				"Code": 1000,
+				"Value": "BV"
+				},
+				{
+				"Code": 1001,
+				"Value": "ldm"
+				},
+				{
+				"Code": 1000,
+				"Value": "15"
+				},
+				{
+				"Code": 1001,
+				"Value": "lmeth"
+				},
+				{
+				"Code": 1000,
+				"Value": "SC"
+				},
+				{
+				"Code": 1001,
+				"Value": "linst"
+				},
+				{
+				"Code": 1000,
+				"Value": "WC"
+				},
+				{
+				"Code": 1001,
+				"Value": "lnoar"
+				},
+				{
+				"Code": 1000,
+				"Value": "3x2.5"
+				},
+				{
+				"Code": 1001,
+				"Value": "lnorm"
+				},
+				{
+				"Code": 1000,
+				"Value": "0"
+				},
+				{
+				"Code": 1001,
+				"Value": "weakwirenum"
+				},
+				{
+				"Code": 1000,
+				"Value": ""
+				}
+			]
+		},
+		{
+		"Entity_Type": "LWPOLYLINE",
+		"Layer": "WIRE-动力母线",
+		"Handle": "381",
+		"xData": 
+			[
+				{
+				"Code": 1001,
+				"Value": "linenum"
+				},
+				{
+				"Code": 1000,
+				"Value": "WP8"
+				},
+				{
+				"Code": 1001,
+				"Value": "ltype"
+				},
+				{
+				"Code": 1000,
+				"Value": "BV"
+				},
+				{
+				"Code": 1001,
+				"Value": "ldm"
+				},
+				{
+				"Code": 1000,
+				"Value": "15"
+				},
+				{
+				"Code": 1001,
+				"Value": "lmeth"
+				},
+				{
+				"Code": 1000,
+				"Value": "SC"
+				},
+				{
+				"Code": 1001,
+				"Value": "linst"
+				},
+				{
+				"Code": 1000,
+				"Value": "WC"
+				},
+				{
+				"Code": 1001,
+				"Value": "lnoar"
+				},
+				{
+				"Code": 1000,
+				"Value": "3x2.5"
+				},
+				{
+				"Code": 1001,
+				"Value": "lnorm"
+				},
+				{
+				"Code": 1000,
+				"Value": "0"
+				},
+				{
+				"Code": 1001,
+				"Value": "weakwirenum"
+				},
+				{
+				"Code": 1000,
+				"Value": ""
+				}
+			]
+		},
+		{
+		"Entity_Type": "LWPOLYLINE",
+		"Layer": "WIRE-动力母线",
+		"Handle": "383",
+		"xData": 
+			[
+				{
+				"Code": 1001,
+				"Value": "linenum"
+				},
+				{
+				"Code": 1000,
+				"Value": "WP8"
+				},
+				{
+				"Code": 1001,
+				"Value": "ltype"
+				},
+				{
+				"Code": 1000,
+				"Value": "BV"
+				},
+				{
+				"Code": 1001,
+				"Value": "ldm"
+				},
+				{
+				"Code": 1000,
+				"Value": "15"
+				},
+				{
+				"Code": 1001,
+				"Value": "lmeth"
+				},
+				{
+				"Code": 1000,
+				"Value": "SC"
+				},
+				{
+				"Code": 1001,
+				"Value": "linst"
+				},
+				{
+				"Code": 1000,
+				"Value": "WC"
+				},
+				{
+				"Code": 1001,
+				"Value": "lnoar"
+				},
+				{
+				"Code": 1000,
+				"Value": "3x2.5"
+				},
+				{
+				"Code": 1001,
+				"Value": "lnorm"
+				},
+				{
+				"Code": 1000,
+				"Value": "0"
+				},
+				{
+				"Code": 1001,
+				"Value": "weakwirenum"
+				},
+				{
+				"Code": 1000,
+				"Value": ""
+				}
+			]
+		},
+		{
+		"Entity_Type": "LWPOLYLINE",
+		"Layer": "WIRE-动力母线",
+		"Handle": "385",
+		"xData": 
+			[
+				{
+				"Code": 1001,
+				"Value": "linenum"
+				},
+				{
+				"Code": 1000,
+				"Value": "WP8"
+				},
+				{
+				"Code": 1001,
+				"Value": "ltype"
+				},
+				{
+				"Code": 1000,
+				"Value": "BV"
+				},
+				{
+				"Code": 1001,
+				"Value": "ldm"
+				},
+				{
+				"Code": 1000,
+				"Value": "15"
+				},
+				{
+				"Code": 1001,
+				"Value": "lmeth"
+				},
+				{
+				"Code": 1000,
+				"Value": "SC"
+				},
+				{
+				"Code": 1001,
+				"Value": "linst"
+				},
+				{
+				"Code": 1000,
+				"Value": "WC"
+				},
+				{
+				"Code": 1001,
+				"Value": "lnoar"
+				},
+				{
+				"Code": 1000,
+				"Value": "3x2.5"
+				},
+				{
+				"Code": 1001,
+				"Value": "lnorm"
+				},
+				{
+				"Code": 1000,
+				"Value": "0"
+				},
+				{
+				"Code": 1001,
+				"Value": "weakwirenum"
+				},
+				{
+				"Code": 1000,
+				"Value": ""
+				}
+			]
+		},
+		{
+		"Entity_Type": "LWPOLYLINE",
+		"Layer": "WIRE-动力母线",
+		"Handle": "386",
+		"xData": 
+			[
+				{
+				"Code": 1001,
+				"Value": "linenum"
+				},
+				{
+				"Code": 1000,
+				"Value": "WP8"
+				},
+				{
+				"Code": 1001,
+				"Value": "ltype"
+				},
+				{
+				"Code": 1000,
+				"Value": "BV"
+				},
+				{
+				"Code": 1001,
+				"Value": "ldm"
+				},
+				{
+				"Code": 1000,
+				"Value": "15"
+				},
+				{
+				"Code": 1001,
+				"Value": "lmeth"
+				},
+				{
+				"Code": 1000,
+				"Value": "SC"
+				},
+				{
+				"Code": 1001,
+				"Value": "linst"
+				},
+				{
+				"Code": 1000,
+				"Value": "WC"
+				},
+				{
+				"Code": 1001,
+				"Value": "lnoar"
+				},
+				{
+				"Code": 1000,
+				"Value": "3x2.5"
+				},
+				{
+				"Code": 1001,
+				"Value": "lnorm"
+				},
+				{
+				"Code": 1000,
+				"Value": "0"
+				},
+				{
+				"Code": 1001,
+				"Value": "weakwirenum"
+				},
+				{
+				"Code": 1000,
+				"Value": ""
+				}
+			]
+		},
+		{
+		"Entity_Type": "LWPOLYLINE",
+		"Layer": "WIRE-动力母线",
+		"Handle": "387",
+		"xData": 
+			[
+				{
+				"Code": 1001,
+				"Value": "linenum"
+				},
+				{
+				"Code": 1000,
+				"Value": "WP8"
+				},
+				{
+				"Code": 1001,
+				"Value": "ltype"
+				},
+				{
+				"Code": 1000,
+				"Value": "BV"
+				},
+				{
+				"Code": 1001,
+				"Value": "ldm"
+				},
+				{
+				"Code": 1000,
+				"Value": "15"
+				},
+				{
+				"Code": 1001,
+				"Value": "lmeth"
+				},
+				{
+				"Code": 1000,
+				"Value": "SC"
+				},
+				{
+				"Code": 1001,
+				"Value": "linst"
+				},
+				{
+				"Code": 1000,
+				"Value": "WC"
+				},
+				{
+				"Code": 1001,
+				"Value": "lnoar"
+				},
+				{
+				"Code": 1000,
+				"Value": "3x2.5"
+				},
+				{
+				"Code": 1001,
+				"Value": "lnorm"
+				},
+				{
+				"Code": 1000,
+				"Value": "0"
+				},
+				{
+				"Code": 1001,
+				"Value": "weakwirenum"
+				},
+				{
+				"Code": 1000,
+				"Value": ""
+				}
+			]
+		},
+		{
+		"Entity_Type": "LWPOLYLINE",
+		"Layer": "WIRE-动力母线",
+		"Handle": "388",
+		"xData": 
+			[
+				{
+				"Code": 1001,
+				"Value": "linenum"
+				},
+				{
+				"Code": 1000,
+				"Value": "WP8"
+				},
+				{
+				"Code": 1001,
+				"Value": "ltype"
+				},
+				{
+				"Code": 1000,
+				"Value": "BV"
+				},
+				{
+				"Code": 1001,
+				"Value": "ldm"
+				},
+				{
+				"Code": 1000,
+				"Value": "15"
+				},
+				{
+				"Code": 1001,
+				"Value": "lmeth"
+				},
+				{
+				"Code": 1000,
+				"Value": "SC"
+				},
+				{
+				"Code": 1001,
+				"Value": "linst"
+				},
+				{
+				"Code": 1000,
+				"Value": "WC"
+				},
+				{
+				"Code": 1001,
+				"Value": "lnoar"
+				},
+				{
+				"Code": 1000,
+				"Value": "3x2.5"
+				},
+				{
+				"Code": 1001,
+				"Value": "lnorm"
+				},
+				{
+				"Code": 1000,
+				"Value": "0"
+				},
+				{
+				"Code": 1001,
+				"Value": "weakwirenum"
+				},
+				{
+				"Code": 1000,
+				"Value": ""
+				}
+			]
+		}
+	]
+}
