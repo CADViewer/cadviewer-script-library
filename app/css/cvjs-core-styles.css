@@ -2505,7 +2505,7 @@ input[type=button_layer] {
 	font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
 	text-decoration: none;
 	font-weight: bold;
-	color:#FFF;
+	color:#444;
 	font-size: 12px;
 	line-height: 1;
 }
@@ -2516,7 +2516,7 @@ input[type=button_layer] {
     border-radius: 6px;
     border:none;
     display:inline-block;
-    color:#fff;
+	color:#444;
     text-decoration: none;
     background-color: #28a8e0;
     height:30px;
@@ -2629,7 +2629,7 @@ input[type=button_layer] {
 	font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
 	text-decoration: none;
 	font-weight: bold;
-	color:#FFF;
+	color:#444;
 	font-size: 12px;
 	line-height: 12px;
 	min-height: 22px;
@@ -4105,12 +4105,15 @@ table.printModalTable td {
 
 
 #cvjs_greyScaleLocation{
+
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-size: 13px !important;	
     width: 110px !important;     /* 6.1.27 increase   */
     height: 20px !important;   
     min-height: 20px !important;   
     position: absolute !important;   
     left: 32px !important;
-    top: 64px !important;
+    top: 64px ;
 }
 
 
