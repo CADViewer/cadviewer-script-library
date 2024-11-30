@@ -522,6 +522,21 @@ function cvjs_loadStickyNotesRedlinesUser(){
 */
 
 
+
+	if (graphicalObject.toLowerCase().indexOf('redline')>-1 && type.toLowerCase().indexOf('create')==0 ){
+		// let's check the number of objects inside the redline created
+		//window.alert("here "+spaceID);
+
+		testProcessRectDirect(spaceID);
+	}
+
+
+
+
+
+
+
+
 		if (type == 'Create' && graphicalObject.toLowerCase().indexOf("space")>-1 && graphicalObject.toLowerCase().indexOf("circle")==-1){
 				
             /*
@@ -620,7 +635,7 @@ function cvjs_mouseenter(id, handle, entity){
 //	cvjs_mouseenter_handleObjectStyles("#a0a000", 4.0, 1.0, id, handle);
 //	cvjs_mouseenter_handleObjectStyles("#ffcccb", 5.0, 0.7, true, id, handle);
 
-	cvjs_mouseenter_handleObjectStyles("#F00", 10.0, 1.0, true, id, handle);	
+// 	cvjs_mouseenter_handleObjectStyles("#F00", 10.0, 1.0, true, id, handle);	
 }
 
 
@@ -698,6 +713,23 @@ function cvjs_mouseleave(id, handle, entity){
 
 
 
+// NEW METHOD TO EXTRACT HANDLES FROM REDLINE!!!! 
+
+function testProcessRectDirect(redID){
+
+// I enter the ID of the redline, for ecxample "1", this can also be found directly from the cvjs_graphicalObjectOnChange() methods
+//var redID = jQuery("#space_id").val();
+
+var processtext = false;
+
+var handleArray =cvjs_processHandleObjectsRedlineRect("floorPlan",redID, processtext);
+
+console.log("testProcess number of handles:"+handleArray.length);
+
+console.log("handle list:"+JSON.stringify(handleArray));
+
+
+}
 
 
 

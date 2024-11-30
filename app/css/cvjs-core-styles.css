@@ -510,7 +510,7 @@ map area{
 	 border : 1px solid gray;
 	 background-color : #fff;
 	 color:#333;
-	 z-index: 100000000;
+	 z-index: 10000;
 	 
      	 border-radius: 10px;
      	 border: 2px solid #19A5DE;

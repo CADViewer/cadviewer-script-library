@@ -433,7 +433,7 @@
   border: 1px solid gray;
   background-color: #fff;
   color: #333;
-  z-index: 100000000;
+  z-index: 10000;
   border-radius: 10px;
   border: 2px solid #19A5DE;
   padding: 10px;
@@ -3810,7 +3810,7 @@
 }
 .cadviewer-core-styles #cvjs_compare_button1 {
   position: absolute;
-  top: 30px !important;
+  top: 50px !important;
   left: 300px !important;
   width: 144px !important;
   height: 20px !important;
@@ -3830,7 +3830,7 @@
 .cadviewer-core-styles #cvjs_compare_button2 {
   cursor: pointer;
   position: absolute;
-  top: 54px !important;
+  top: 74px !important;
   left: 300px !important;
   width: 144px !important;
   height: 20px !important;
