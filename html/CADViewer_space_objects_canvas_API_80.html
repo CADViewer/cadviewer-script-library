@@ -94,6 +94,9 @@
 
 		
 
+		cvjs_setCADViewerSkin("light-skin"); //dark-skin, light-skin, lightgray, black, deepblue  // method can be omitted, alternative is "deepblue" , "nextcloud"
+
+
 		// IF CADVIEWER IS OPENED WITH A URL  http://localhost/cadviewer/html/CADViewer_sample_610.html?drawing_name=../content/drawings/dwg/hq17.dwg
 		//  or CADViewer_sample_610.html?drawing_name=http://localhost/cadviewer/content/drawings/dwg/hq17.dwg
 		//  this code segment will pass over the drawing_name to FileName for load of drawing
@@ -750,23 +753,6 @@ function display_all_objects(){
   window.alert("The spaces with area (id,area): "+myString);
 
 }
-
-
-
-
-var allSpaceObjects = cvjs_returnAllSpaceObjects();
-
-var myString = "";
-for (var spc in allSpaceObjects.SpaceObjects){
-  console.log(spc);
-  myString += "("+allSpaceObjects.SpaceObjects[spc].id+", "+allSpaceObjects.SpaceObjects[spc].name+")";
-}
-
-window.alert("The spaces with area (id,area): "+myString);
-
-}
-
-
 
 
 

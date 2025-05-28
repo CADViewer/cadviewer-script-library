@@ -95,7 +95,7 @@
 
 
 		cvjs_setCADViewerInterfaceVersion(8);
-		cvjs_setCADViewerSkin("black"); // lightgray, black, deepblue  // method can be omitted, alternative is "deepblue" , "nextcloud"
+		cvjs_setCADViewerSkin("light-skin"); //dark-skin, light-skin, lightgray, black, deepblue  // method can be omitted, alternative is "deepblue" , "nextcloud"
 	
 		
 		cvjs_PrintToPDFWindowRelativeSize(0.8);
@@ -268,7 +268,12 @@
 		cvjs_conversion_clearAXconversionParameters();
 		cvjs_conversion_addAXconversionParameter("last", "");		 
 		cvjs_conversion_addAXconversionParameter("extents", "");
-		
+
+		// new stuff
+		cvjs_conversion_addAXconversionParameter("rsvg", "");
+		cvjs_conversion_addAXconversionParameter("size", "8000");
+
+
 //        cvjs_conversion_addAXconversionParameter("ia", "");		 
 //		cvjs_conversion_addAXconversionParameter("ak", "*");		 
 		
@@ -282,6 +287,16 @@
 		
 	
 		// NOTE ABOVE: THESE SETTINGS ARE FOR SERVER CONTROLS FOR CONVERTING DWG, DXF, DWF files
+
+
+		cvjs_conversion_clearAXconversionParameters();
+		cvjs_conversion_addAXconversionParameter("last", "");		 
+		cvjs_conversion_addAXconversionParameter("extents", "");
+
+		// 
+		//cvjs_conversion_addAXconversionParameter("rsvg", "");
+		//cvjs_conversion_addAXconversionParameter("size", "8000");
+
 
 
 		// Load file - needs the svg div name and name and path of file to load
