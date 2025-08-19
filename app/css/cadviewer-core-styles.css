@@ -1843,6 +1843,7 @@
   /* 7.3.7*/
 }
 .cadviewer-core-styles #cvjs_layer_settings_button1 {
+  cursor: pointer;
   position: relative;
   top: 5px !important;
   left: 20 !important;
@@ -1884,6 +1885,7 @@
   /* 7.3.7*/
 }
 .cadviewer-core-styles #cvjs_layer_settings_button3 {
+  cursor: pointer;
   position: relative;
   top: 5px !important;
   left: 160 !important;

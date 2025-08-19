@@ -2397,6 +2397,7 @@ input[type=button_layer] {
 
 /* 7.3.7*/
 #cvjs_layer_settings_button1{
+	  cursor: pointer;
     position: relative;
     top: 5px !important;
     left: 20 !important;
@@ -2418,7 +2419,8 @@ input[type=button_layer] {
 
 /* 7.3.7*/
 #cvjs_layer_settings_button2{
-    position: relative;
+    cursor: pointer;
+	position: relative;
     top: 5px !important;
     left: 100 !important;
     width: 115px !important;
@@ -2440,7 +2442,8 @@ input[type=button_layer] {
 
 /* 7.3.7*/
 #cvjs_layer_settings_button3{
-    position: relative;
+    cursor: pointer;
+	position: relative;
     top: 5px !important;
     left: 160 !important;
     width: 115px !important;
