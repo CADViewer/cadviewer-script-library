@@ -2196,6 +2196,7 @@ input[type=button_layer] {
 
 #cvjs_updateChangeSpaceObjects{
 
+	cursor: pointer;
     position: absolute;
     top: 90px;
     left: 80px;
@@ -2219,6 +2220,7 @@ input[type=button_layer] {
 
 #cvjs_unlinkChangeSpaceObjects{
 
+	cursor: pointer;
     position: absolute;
     top: 90px;
     left: 240px;
@@ -3304,13 +3306,20 @@ table.info_messageModal_2Table td {
 	line-height: 12px;
 }
 
+#cvjs_calibrate_checkbox4 {
+  position: absolute;
+  top: 62px;
+  left: 10px;
+  height: 16px;
+  min-height: 16px !important;
+}
 
 .calibrateModal{
 	/* 7.3.14*/
 
    	z-index:1000;
 	width: 370px !important;   /*7.6.5 */
-	height: 260px;
+	height: 264px;   /*!important;*/
 	border-radius: 3px;
 	background-color: #FFFFFF;
 	border: 2px solid gray;
@@ -3427,6 +3436,19 @@ table.calibrateModalTable td {
 
 }
 
+
+
+#cvjs_checkboxCalibrateAll{
+
+    position: absolute;
+    top: 67px;
+    left: 30px;
+    height: 16px;
+    min-height: 16px !important;
+	font-size: 12px;
+	line-height: 12px;
+
+}
 
 
 
@@ -4581,6 +4603,93 @@ table.ellipseModalTable td {
 	vertical-align:top;
 
 }
+
+
+
+
+
+.selectCalibrateModal{
+	/* 7.3.14*/
+
+   	z-index:1000;
+	width: 300px; 
+	height: 85px;
+	border-radius: 3px;
+	background-color: #FFFFFF;
+	border: 2px solid gray;
+	position: absolute;
+	cursor:default;
+
+	 font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	 font-size: 14px;
+	 /* line-height: 1.42857143; */
+	 color: #333
+	
+
+}
+
+table.selectCalibrateModalTable {
+	width: 275px  ;
+	height: 80px ;
+   	z-index:1000;
+	padding: 0px !important;
+	border-spacing: 0px;
+	border-collapse: separate;
+	text-align: left;
+
+		
+}
+
+
+#cvjs_selectCalibration_button {
+  cursor: pointer;
+  position: absolute;
+  top: 55px !important;
+  left: 5px !important;
+  width: 140px !important;
+  height: 20px !important;
+  min-height: 20px !important;
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  padding: 1px 1px;
+  margin-bottom: 10px;
+  font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000000;
+  font-size: 12px;
+  background: #F0F0F0;
+  line-height: 12px;
+
+}
+
+
+#cvjs_selectMeasurement_button {
+  cursor: pointer;
+  position: absolute;
+  top: 55px !important;
+  left: 150px !important;
+  width: 140px !important;
+  height: 20px !important;
+  min-height: 20px !important;
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  padding: 1px 1px;
+  margin-bottom: 10px;
+  font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000000;
+  font-size: 12px;
+  background: #F0F0F0;
+  line-height: 12px;
+
+}
+
+
+
+
+
 
 
 
@@ -8910,7 +9019,7 @@ table.settingsModalTable td {
 	position: absolute; 
 	left : 86px;
 	top : 58px    ;
-    width: 90px;
+    width: 100px;  /*10.84.5 */
 	font-size: 13px;
 
 	height: 20px !important;
@@ -8937,7 +9046,7 @@ table.settingsModalTable td {
 	position: absolute; 
 	left : 310px;
 	top : 58px;    
-    width: 90px;
+    width: 100px;  /*10.84.5 */
 	font-size: 13px;
 
 	height: 20px !important;

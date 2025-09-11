@@ -1707,6 +1707,7 @@
   line-height: 1;
 }
 .cadviewer-core-styles #cvjs_updateChangeSpaceObjects {
+  cursor: pointer;
   position: absolute;
   top: 90px;
   left: 80px;
@@ -1723,6 +1724,7 @@
   min-height: 20px !important;
 }
 .cadviewer-core-styles #cvjs_unlinkChangeSpaceObjects {
+  cursor: pointer;
   position: absolute;
   top: 90px;
   left: 240px;
@@ -2587,7 +2589,7 @@
   width: 370px !important;
   /*7.6.5 height: 260px;*/
 /*8.45.2 */
-  height: 264px !important;
+  height: 264px;  /* 10.83.7 */
 
   border-radius: 3px;
   background-color: #FFFFFF;
@@ -2667,6 +2669,34 @@
   background: #F0F0F0;
 
 }
+
+.cadviewer-core-styles #cvjs_calibrate_button4 {
+  cursor: pointer;
+  position: absolute;
+  top: 64px;
+  right: 10px;
+  width: 40px;
+  height: 20px;
+  min-height: 20px !important;
+  padding: 1px;
+  z-index: 1000;
+  margin: 0px;
+  text-indent: 1px;
+  text-align: center;
+  font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000000;
+  font-size: 12px;
+  line-height: 1;
+  background: #F0F0F0;
+
+  /* 7.4.42 */
+}
+
+
+
+
 .cadviewer-core-styles #cvjs_calibrate_button2 {
   cursor: pointer;
   position: absolute;
@@ -2751,6 +2781,28 @@
   height: 16px;
   min-height: 16px !important;
 }
+
+.cadviewer-core-styles #cvjs_checkboxCalibrateAll{
+    position: absolute;
+    top: 67px;
+    left: 30px;
+    height: 16px;
+    min-height: 16px !important;
+	font-size: 12px;
+	line-height: 12px;
+
+}
+
+
+
+.cadviewer-core-styles #cvjs_calibrate_checkbox4 {
+  position: absolute;
+  top: 62px;
+  left: 10px;
+  height: 16px;
+  min-height: 16px !important;
+}
+
 .cadviewer-core-styles #cvjs_calibrate_checkbox3 {
   position: absolute;
   top: 123px;
@@ -3699,6 +3751,87 @@
   vertical-align: top;
   /* 8.4.1  8.6.4 below */
 }
+.cadviewer-core-styles .selectCalibrateModal {
+  /* 7.3.14*/
+  z-index: 1000;
+  width: 300px;
+  height: 85px;
+  border-radius: 3px;
+  background-color: #FFFFFF;
+  border: 2px solid gray;
+  position: absolute;
+  cursor: default;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  /* line-height: 1.42857143; */
+  color: #333;
+}
+
+.cadviewer-core-styles table.selectCalibrateModalTable {
+	width: 275px  ;
+	height: 80px ;
+   	z-index:1000;
+	padding: 0px !important;
+	border-spacing: 0px;
+	border-collapse: separate;
+	text-align: left;
+
+		
+}
+
+
+.cadviewer-core-styles #cvjs_selectCalibration_button {
+  cursor: pointer;
+  position: absolute;
+  top: 55px !important;
+  left: 5px !important;
+  width: 140px !important;
+  height: 20px !important;
+  min-height: 20px !important;
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  padding: 1px 1px;
+  margin-bottom: 10px;
+  font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000000;
+  font-size: 12px;
+  background: #F0F0F0;
+  line-height: 12px;
+
+}
+
+
+.cadviewer-core-styles #cvjs_selectMeasurement_button {
+  cursor: pointer;
+  position: absolute;
+  top: 55px !important;
+  left: 150px !important;
+  width: 140px !important;
+  height: 20px !important;
+  min-height: 20px !important;
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  padding: 1px 1px;
+  margin-bottom: 10px;
+  font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000000;
+  font-size: 12px;
+  background: #F0F0F0;
+  line-height: 12px;
+
+}
+
+
+
+
+
+
+
+
 .cadviewer-core-styles .compareModalHeader {
   z-index: 1100;
   position: absolute;
@@ -7180,7 +7313,7 @@
   position: absolute;
   left: 86px;
   top: 58px;
-  width: 90px;
+  width: 100px;  /*10.84.5 */
   font-size: 13px;
   height: 20px !important;
   min-height: 20px !important;
@@ -7200,7 +7333,7 @@
   position: absolute;
   left: 310px;
   top: 58px;
-  width: 90px;
+  width: 100px;  /*10.84.5 */
   font-size: 13px;
   height: 20px !important;
   min-height: 20px !important;
