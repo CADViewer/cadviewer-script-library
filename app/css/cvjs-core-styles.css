@@ -336,6 +336,17 @@ foreignObject{ white-space:pre-wrap !important; }
 }
 
 
+
+.cvjs_modal_styles
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	width: 300px;
+	max-width: 400px;
+}
+
+
+
 .cvjs_modal_header_stickynote_info_2
 {
 	font-family: Arial, Helvetica, sans-serif;
@@ -355,6 +366,9 @@ foreignObject{ white-space:pre-wrap !important; }
 	margin: 0;
 	padding: 1px;
 }
+
+
+
 
 
 .cvjs_callback_modal_1 {
@@ -2048,6 +2062,20 @@ input[type=button_layer] {
 
 
 
+#cvjs_spaceobjectchangesettingsNameSpaceId{
+    position: absolute;
+    top: 90px;
+    left: 5px;
+    text-indent: 1px;
+    text-align:center;
+	font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-weight: none;
+	color:#000000;
+	font-size: 13px;
+	line-height: 1;
+
+}
 
 
 
@@ -2066,7 +2094,7 @@ input[type=button_layer] {
 #cvjs_spaceobjectchangesettingsTextSpaceId{
 
     position: absolute;
-    top: 64px;
+    top: 63px;
     left: 5px;
     text-indent: 1px;
     text-align:center;
@@ -2082,7 +2110,7 @@ input[type=button_layer] {
 #cvjs_spaceobjectchangesettingsTextType{
 
     position: absolute;
-    top: 64px;
+    top: 63px;
     left: 200px;
     text-indent: 1px;
     text-align:center;
@@ -2099,7 +2127,7 @@ input[type=button_layer] {
     position: absolute;
     top: 58px;
     left: 300px;
-    width: 100px;
+    width: 180px;
     text-indent: 1px;
     text-align:center;
 	font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
@@ -2157,6 +2185,34 @@ input[type=button_layer] {
 }
 
 
+#cvjs_spaceobjectchangeNameFromModal{
+
+    position: absolute;
+    top: 84px;
+    left: 120px;
+    width: 200px;
+    text-indent: 1px;
+    text-align:center;
+	font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-weight: none;
+	color:#000000;
+	font-size: 13px;
+	line-height: 1;
+    height: 20px;
+    min-height: 20px !important;
+
+
+
+}
+
+
+
+
+
+
+
+
 #cvjs_spaceobjectchangesettingsTextLayer{
 
     position: absolute;
@@ -2178,7 +2234,7 @@ input[type=button_layer] {
 
     position: absolute;
     width: 400px;
-    top: 116px;
+    top: 135px;
     left: 5px;
     text-indent: 1px;
     text-align: left;
@@ -2198,8 +2254,8 @@ input[type=button_layer] {
 
 	cursor: pointer;
     position: absolute;
-    top: 90px;
-    left: 80px;
+    top: 110px;
+    left: 110px;
     width: 120px;
     text-indent: 1px;
     text-align:center;
@@ -2222,8 +2278,8 @@ input[type=button_layer] {
 
 	cursor: pointer;
     position: absolute;
-    top: 90px;
-    left: 240px;
+    top: 110px;
+    left: 270px;
     width: 120px;
     text-indent: 1px;
     text-align:center;
@@ -2919,8 +2975,8 @@ table.textsearchModalTable td {
 	/* 7.3.14*/
 
    	z-index:1000;
-	width: 420px; 
-	height: 145px;
+	width: 500px; 
+	height: 166px;
 	border-radius: 3px;
 	background-color: #FFFFFF;
 	border: 2px solid gray;
@@ -3091,6 +3147,35 @@ table.info_messageModal_2Table td {
 	line-height: 1;
 	 
 }
+
+
+
+#cvjs_spaceobjectsettingsTextCreate {
+  cursor: pointer;
+  position: absolute;
+  top: 58px;
+  right: 10px;
+  width: 60px;
+  height: 20px;
+  min-height: 20px !important;
+  /*10.89.2 */
+  padding: 1px;
+  z-index: 1000;
+  margin: 0px;
+  text-indent: 1px;
+  text-align: center;
+  font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000000;
+  font-size: 12px;
+  line-height: 1;
+  background: #F0F0F0;
+
+}
+
+
+
 
 
 /*7.3.8*/
@@ -4644,8 +4729,8 @@ table.selectCalibrateModalTable {
 #cvjs_selectCalibration_button {
   cursor: pointer;
   position: absolute;
-  top: 55px !important;
-  left: 5px !important;
+  top: 55px;
+  left: 5px;
   width: 140px !important;
   height: 20px !important;
   min-height: 20px !important;
@@ -4686,6 +4771,28 @@ table.selectCalibrateModalTable {
 
 }
 
+
+#cvjs_cancelMeasurement_button {
+  cursor: pointer;
+  position: absolute;
+  top: 55px !important;
+  left: 296px !important;
+  width: 60px !important;
+  height: 20px !important;
+  min-height: 20px !important;
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  padding: 1px 1px;
+  margin-bottom: 10px;
+  font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000000;
+  font-size: 12px;
+  background: #F0F0F0;
+  line-height: 12px;
+
+}
 
 
 
@@ -5210,6 +5317,42 @@ table.publishPDFModalTable td {
 	line-height: 1;
 }
 
+
+
+#cvjs_spaceobjectcolor_button {
+  cursor: pointer;
+  width: 40px;
+  height: 20px !important;
+  min-height: 20px !important;
+  padding: 1px;
+  z-index: 1000;
+  margin: 0px;
+  text-indent: 1px;
+  text-align: center;
+  font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000000;
+  font-size: 12px;
+  line-height: 1;
+  position: absolute;
+  left: 10px;
+  top: 160px;
+  /*7.6.19 */
+  background: #F0F0F0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
 #cvjs_redlinecolor_button{
 	cursor: pointer;
 	width: 40px;
@@ -5276,6 +5419,21 @@ table.publishPDFModalTable td {
 }
 
 
+#cvjs_select_calibration_type{
+
+    position: absolute;
+    top: 34px;
+    left: 5px;
+    text-indent: 1px;
+    text-align: left;
+	font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-weight: none;
+	color:#000000;
+	font-size: 13px;
+	line-height: 1;
+
+}
 
 
 
