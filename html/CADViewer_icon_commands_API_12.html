@@ -1496,15 +1496,27 @@ function cvjs_mouseenter(id, handle, entity){
 		<canvas id="dummy" width="10" height="10"></canvas>
 		</td>
 		<td>
-        <h4>	<a href="https://cadviewer.com/cadviewertechdocs"><img src="https://cadviewer.com/images/cadviewer/cv-logo.gif" width="120" height="30" alt="Tailor Made logo" /></a>
-        <b>CADViewer: Icon Commands API - Click Icon to call Command, Click Function for API docs</b> <font size="-1"> - Read more: <strong><a href="https://cadviewer.com/cadviewertechdocs">Tech Docs</a></strong>, <strong><a href="https://cadviewer.com/cadviewerproapi/global.html">API</a></strong>. Contact: <a href="mailto:developer@tailormade.com">developer@tailormade.com</a>.</font></h4>
+        </td>
+		<td>
+			<a href="https://cadviewer.com/cadviewertechdocs"><img src="../app/images/cadviewer-primary-logo.svg" height="60" alt="CADViewer Logo" /></a>
+		</td>
+		<td>
+			<canvas id="dummy" width="10" height="10"></canvas>
+		</td>
+		<td valign="top">
+        <h4><span style="font-size: 16px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-weight: bold; margin-left: 15px; float: right;">
+  <a href="https://github.com/CADViewer/cadviewer-script-library" target="_blank" style="text-decoration: none; color: #0366d6; background-color: #f6f8fa; padding: 4px 10px; border-radius: 6px; border: 1px solid #d1d5da; display: inline-block;">
+    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="20" height="20" alt="GitHub Logo" style="vertical-align: middle;"/>
+    <span style="vertical-align: middle; margin-left: 5px;">Pull or clone from GitHub</span>
+  </a>
+</span>
+<b style="font-size: 24px;">CADViewer: <img src="../app/images/xampp-logo.svg" height="32" alt="XAMPP" style="vertical-align: middle; margin: 0 6px;" /><img src="../app/images/php-logo.svg" height="32" alt="PHP" style="vertical-align: middle; margin: 0 6px;" /> VanillaJS  Icon Commands API</b><br><b style="font-size: 16px;">- Click Icon to call Command, Click Function for API docs</b> <font size="-1"> - Read more: <strong><a href="https://cadviewer.com/cadviewertechdocs">Tech Docs</a></strong>, <strong><a href="https://cadviewer.com/cadviewerproapi/global.html">API</a></strong>. Contact: <a href="mailto:developer@cadviewer.com">developer@cadviewer.com</a>.</font></h4>
         </td>
     </tr>        
 	</table>
 
     <font size="-1"> 
 	<table cellspacing="0" border-spacing="0" id="commandTable">
-        <tr style="background-color:rgb(255,255,255)" >
 <!-- command  
 
 
@@ -1516,108 +1528,13 @@ function cvjs_mouseenter(id, handle, entity){
     if (commands[i] == "cvjs_openFileLoadToServer"){ cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_005", "cvjs_openFileLoadToServer", floorplan_div, "cvjsIcon_dra_p1_5_1_FileLoad.png", languageTable.languages[cvjs_currentLanguage].IconPage_p1_8.FileLoad );   continue;} 
     if (commands[i] == "cvjs_openFileLoadToServerSpace"){ cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_072", "cvjs_openFileLoadToServer", floorplan_div, "cvjsIcon_dra_p5_2_1_LoadPreProcessSpaceObjects.png", languageTable.languages[cvjs_currentLanguage].IconPage_p1_8.FileLoad );   continue;} 
  
--->            
-<td>
-    <canvas id="dummy" width="10" height="10" scale="0.8"></canvas>
-    </td>
-    <td>
-        <a href="javascript:cvjs_LayerList('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p1_1_1_LayerList.png"  height="24px"/></a>
-    </td>
-    <td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_LayerList">cvjs_LayerList()</a>             
-</td>
-<!-- command  "cvjs_Print"){ cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_002", "cvjs_Print", floorplan_div, "cvjsIcon_dra_p1_1_2_Print.png", languageTable.languages[cvjs_currentLanguage].IconPage_p1_8.Print );  continue;} -->            
-<td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="javascript:cvjs_Print('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p1_1_2_Print.png" height="24px" /></a>
-    </td>
-    <td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_Print">cvjs_Print()</a>             
-</td>
-<!-- command  "cvjs_toggleBlackWhite"){ cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_003", "cvjs_toggleBlackWhite", floorplan_div, "cvjsIcon_dra_p1_4_1_ToggleBlackWhite.png", languageTable.languages[cvjs_currentLanguage].IconPage_p1_8.Toggle );   continue;} -->            
-<td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="javascript:cvjs_toggleBlackWhite('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p1_4_1_ToggleBlackWhite.png" height="24px" /></a>
-    </td>
-    <td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_toggleBlackWhite">cvjs_toggleBlackWhite()</a>             
-</td>
-<!-- command  "cvjs_setBackgroundColor"){ cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_004", "cvjs_setBackgroundColor", floorplan_div, "cvjsIcon_dra_p1_4_2_BackgroundColor.png", languageTable.languages[cvjs_currentLanguage].IconPage_p1_8.Background );   continue;} -->            
-<td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="javascript:cvjs_setBackgroundColor('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p1_4_2_BackgroundColor.png" height="24px" /></a>
-    </td>
-    <td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_setBackgroundColor">cvjs_setBackgroundColor()</a>             
-    </td>
-
-
-<!-- command  "cvjs_openFileLoadToServer"){ cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_072", "cvjs_openFileLoadToServer", floorplan_div, "cvjsIcon_dra_p5_2_1_LoadPreProcessSpaceObjects.png", languageTable.languages[cvjs_currentLanguage].IconPage_p1_8.FileLoad );   continue;} -->            
-<td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="javascript:cvjs_openFileLoadToServer('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p1_5_1_FileLoad.png" height="24px" /></a>
-    </td>
-    <td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-    <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_openFileLoadToServer">cvjs_openFileLoadToServer()</a>             
-</td>
-
-<!-- command  "cvjs_interactiveSearchText"){ cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_006", "cvjs_interactiveSearchText", floorplan_div, "cvjsIcon_dra_p1_5_2_SearchText.png", languageTable.languages[cvjs_currentLanguage].IconPage_p1_8.Search ); continue;} -->            
-<td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="javascript:cvjs_interactiveSearchText('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p1_5_2_SearchText.png" height="24px" /></a>
-    </td>
-    <td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_interactiveSearchText">cvjs_interactiveSearchText()</a>             
-</td>
-
-<!-- command  "cvjs_interactiveSearchText"){ cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_006", "cvjs_interactiveSearchText", floorplan_div, "cvjsIcon_dra_p1_5_2_SearchText.png", languageTable.languages[cvjs_currentLanguage].IconPage_p1_8.Search ); continue;} -->            
-<td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="javascript:cvjs_interactiveSearchText('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p1_5_2_SearchText.png" height="24px" /></a>
-    </td>
-    <td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_interactiveSearchText">cvjs_interactiveSearchText()</a>             
-</td>
-
-
-</tr>        
-
-
-<tr style="background-color:rgb(255,255,255)" >            
-
+-->
+<!-- command  "cvjs_Print"){ cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_002", "cvjs_Print", floorplan_div, "cvjsIcon_dra_p1_1_2_Print.png", languageTable.languages[cvjs_currentLanguage].IconPage_p1_8.Print );  continue;} -->
+<!-- command  "cvjs_toggleBlackWhite"){ cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_003", "cvjs_toggleBlackWhite", floorplan_div, "cvjsIcon_dra_p1_4_1_ToggleBlackWhite.png", languageTable.languages[cvjs_currentLanguage].IconPage_p1_8.Toggle );   continue;} -->
+<!-- command  "cvjs_setBackgroundColor"){ cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_004", "cvjs_setBackgroundColor", floorplan_div, "cvjsIcon_dra_p1_4_2_BackgroundColor.png", languageTable.languages[cvjs_currentLanguage].IconPage_p1_8.Background );   continue;} -->
+<!-- command  "cvjs_openFileLoadToServer"){ cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_072", "cvjs_openFileLoadToServer", floorplan_div, "cvjsIcon_dra_p5_2_1_LoadPreProcessSpaceObjects.png", languageTable.languages[cvjs_currentLanguage].IconPage_p1_8.FileLoad );   continue;} -->
+<!-- command  "cvjs_interactiveSearchText"){ cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_006", "cvjs_interactiveSearchText", floorplan_div, "cvjsIcon_dra_p1_5_2_SearchText.png", languageTable.languages[cvjs_currentLanguage].IconPage_p1_8.Search ); continue;} -->
+<!-- command  "cvjs_interactiveSearchText"){ cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_006", "cvjs_interactiveSearchText", floorplan_div, "cvjsIcon_dra_p1_5_2_SearchText.png", languageTable.languages[cvjs_currentLanguage].IconPage_p1_8.Search ); continue;} -->
 <!---    
     if (commands[i] == "cvjs_About"){ about=true; cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_007", "cvjs_displayInformationModal_Mode", 0, "cvjsIcon_dra_p1_6_1_Information.png", languageTable.languages[cvjs_currentLanguage].IconPage_p1_8.About );  continue;} 
     if (commands[i] == "cvjs_Settings"){ cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_008", "cvjs_Settings", floorplan_div, "cvjsIcon_dra_p1_12_1_Settings.png", languageTable.languages[cvjs_currentLanguage].IconPage_p1_8.Settings );  continue;} 
@@ -1629,112 +1546,13 @@ function cvjs_mouseenter(id, handle, entity){
     if (commands[i] == "cvjs_calibrateMeasurement"){  cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_013", "cvjs_calibrateMeasurement", floorplan_div, "cvjsIcon_dra_p1_8_2_CalibrateMeasurement.png", languageTable.languages[cvjs_currentLanguage].IconPage_p1_8.Calibrate ); continue;} 
 
 -->
-
-
 <!-- command  "cvjs_Settings"){ cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_008", "cvjs_Settings", floorplan_div, "cvjsIcon_dra_p1_12_1_Settings.png", languageTable.languages[cvjs_currentLanguage].IconPage_p1_8.Settings );  continue;} -->
-<td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="javascript:cvjs_Settings('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p1_12_1_Settings.png" height="24px" /></a>
-    </td>
-    <td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-    <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_Settings">cvjs_Settings()</a>             
-</td>
-
-<!-- command  "cvjs_About"){ about=true; cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_007", "cvjs_displayInformationModal_Mode", 0, "cvjsIcon_dra_p1_6_1_Information.png", languageTable.languages[cvjs_currentLanguage].IconPage_p1_8.About );  continue;}  -->            
-<td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="javascript:cvjs_displayInformationModal_Mode(0)"><img src="../app/images/singleIcons/cvjsIcon_dra_p1_6_1_Information.png" height="24px" /></a>
-    </td>
-    <td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_displayInformationModal_Mode">cvjs_About()</a>             
-</td>
-
-<!-- command  "cvjs_interactiveLayerOff"){ cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_009", "cvjs_interactiveLayerOff", floorplan_div, "cvjsIcon_dra_p1_6_2_LayerOff.png", languageTable.languages[cvjs_currentLanguage].IconPage_p1_8.LayerOff );  continue;}   -->            
-<td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="javascript:cvjs_interactiveLayerOff('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p1_6_2_LayerOff.png" height="24px" /></a>
-    </td>
-    <td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_interactiveLayerOff">cvjs_interactiveLayerOff()</a>             
-</td>
-
-<!-- command  "cvjs_swapLayersInDrawing"){ cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_010", "cvjs_swapLayersInDrawing", floorplan_div, "cvjsIcon_dra_p1_7_1_SwapLayers.png", languageTable.languages[cvjs_currentLanguage].IconPage_p1_8.SwapLayers );  continue;}   -->            
-<td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="javascript:cvjs_swapLayersInDrawing('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p1_7_1_SwapLayers.png" height="24px" /></a>
-    </td>
-    <td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-    <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_swapLayersInDrawing">cvjs_swapLayersInDrawing()</a>             
-</td>
-
-<!-- command  "cvjs_allLayersInDrawingOn"){ cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_011", "cvjs_allLayersInDrawingOn", floorplan_div, "cvjsIcon_dra_p1_7_2_LayerOn.png", languageTable.languages[cvjs_currentLanguage].IconPage_p1_8.AllLayersOn );  continue;}  -->            
-<td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="javascript:cvjs_allLayersInDrawingOn('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p1_7_2_LayerOn.png" height="24px" /></a>
-    </td>
-    <td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_allLayersInDrawingOn">cvjs_allLayersInDrawingOn()</a>             
-</td>
-
-<!-- command  "cvjs_Measurement"){ cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_012", "cvjs_Measurement", floorplan_div, "cvjsIcon_dra_p1_8_1_Measurement.png", languageTable.languages[cvjs_currentLanguage].IconPage_p1_8.Measurement );   continue;}   -->            
-<td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="javascript:cvjs_Measurement('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p1_8_1_Measurement.png" height="24px" /></a>
-    </td>
-    <td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_Measurement">cvjs_Measurement()</a>             
-</td>
-
-<!-- command  "cvjs_calibrateMeasurement"){  cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_013", "cvjs_calibrateMeasurement", floorplan_div, "cvjsIcon_dra_p1_8_2_CalibrateMeasurement.png", languageTable.languages[cvjs_currentLanguage].IconPage_p1_8.Calibrate ); continue;}   -->            
-<td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="javascript:cvjs_calibrateMeasurement('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p1_8_2_CalibrateMeasurement.png" height="24px" /></a>
-    </td>
-    <td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_calibrateMeasurement">cvjs_calibrateMeasurement()</a>             
-</td>
-
-</tr>        
-
-
-
-<tr style="background-color:rgb(255,255,255)" >
-
+<!-- command  "cvjs_About"){ about=true; cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_007", "cvjs_displayInformationModal_Mode", 0, "cvjsIcon_dra_p1_6_1_Information.png", languageTable.languages[cvjs_currentLanguage].IconPage_p1_8.About );  continue;}  -->
+<!-- command  "cvjs_interactiveLayerOff"){ cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_009", "cvjs_interactiveLayerOff", floorplan_div, "cvjsIcon_dra_p1_6_2_LayerOff.png", languageTable.languages[cvjs_currentLanguage].IconPage_p1_8.LayerOff );  continue;}   -->
+<!-- command  "cvjs_swapLayersInDrawing"){ cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_010", "cvjs_swapLayersInDrawing", floorplan_div, "cvjsIcon_dra_p1_7_1_SwapLayers.png", languageTable.languages[cvjs_currentLanguage].IconPage_p1_8.SwapLayers );  continue;}   -->
+<!-- command  "cvjs_allLayersInDrawingOn"){ cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_011", "cvjs_allLayersInDrawingOn", floorplan_div, "cvjsIcon_dra_p1_7_2_LayerOn.png", languageTable.languages[cvjs_currentLanguage].IconPage_p1_8.AllLayersOn );  continue;}  -->
+<!-- command  "cvjs_Measurement"){ cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_012", "cvjs_Measurement", floorplan_div, "cvjsIcon_dra_p1_8_1_Measurement.png", languageTable.languages[cvjs_currentLanguage].IconPage_p1_8.Measurement );   continue;}   -->
+<!-- command  "cvjs_calibrateMeasurement"){  cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_013", "cvjs_calibrateMeasurement", floorplan_div, "cvjsIcon_dra_p1_8_2_CalibrateMeasurement.png", languageTable.languages[cvjs_currentLanguage].IconPage_p1_8.Calibrate ); continue;}   -->
 <!-- 
     if (commands[i] == "cvjs_mergeDXFDWG"){ cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_016", "cvjs_mergeDXFDWG", floorplan_div, "cvjsIcon_dra_p2_9_1_MergeRedline.png", languageTable.languages[cvjs_currentLanguage].IconPage_p2_8.MergeAsDXF );  continue;} 
     if (commands[i] == "cvjs_publishPDF"){ cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_017", "cvjs_publishPDF", floorplan_div, "cvjsIcon_dra_p2_9_2_PublishPDF.png", languageTable.languages[cvjs_currentLanguage].IconPage_p2_8.PublishAsPDF );  continue;} 
@@ -1746,104 +1564,7 @@ function cvjs_mouseenter(id, handle, entity){
     if (commands[i] == "cvjs_saveStickyNotesRedlinesUser"){ cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_019", "cvjs_saveStickyNotesRedlinesUser", floorplan_div, "cvjsIcon_dra_p2_1_1_SaveRedline.png", languageTable.languages[cvjs_currentLanguage].IconPage_p2_8.SaveRedline );   continue;} 
     if (commands[i] == "cvjs_setRedlineColor"){ cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_020", "cvjs_setRedlineColor", floorplan_div, "cvjsIcon_dra_p2_3_1_RedlineColor.png", languageTable.languages[cvjs_currentLanguage].IconPage_p2_8.Color );  continue;} 
 
-    -->            
-<td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="javascript:cvjs_mergeDXFDWG('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p2_9_1_MergeRedline.png" height="24px" /></a>
-    </td>
-    <td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_mergeDXFDWG">cvjs_mergeDXFDWG()</a>             
-</td>
-
-<td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="javascript:cvjs_publishPDF('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p2_9_2_PublishPDF.png" height="24px" /></a>
-    </td>
-    <td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-    <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_publishPDF">cvjs_publishPDF()</a>             
-</td>
-
-<td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="javascript:cvjs_displayMagnifyingGlass('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p1_9_1_ToggleBirdsEyeWindow.png" height="24px" /></a>
-    </td>
-    <td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-    <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_displayMagnifyingGlass">cvjs_displayMagnifyingGlass()</a>             
-</td>
-
-<td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="javascript:cvjs_activateLineThicknessModal('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p1_9_2_AdjustLineThickness.png" height="24px" /></a>
-    </td>
-    <td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_activateLineThicknessModal">cvjs_activateLineThicknessModal()</a>             
-</td>
-
-<td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="javascript:cvjs_loadStickyNotesRedlinesUser('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p2_1_2_LoadRedline.png" height="24px" /></a>
-    </td>
-    <td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_loadStickyNotesRedlinesUser">cvjs_loadStickyNotesRedlinesUser()</a>             
-</td>
-
-<td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="javascript:cvjs_saveStickyNotesRedlinesUser('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p2_1_1_SaveRedline.png" height="24px" /></a>
-    </td>
-    <td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="https://cadviewer.com/cadviewerproapi/global.html#ccvjs_saveStickyNotesRedlinesUser">cvjs_saveStickyNotesRedlinesUser()</a>             
-</td>
-
-<td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="javascript:cvjs_setRedlineColor('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p2_3_1_RedlineColor.png" height="24px" /></a>
-    </td>
-    <td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_setRedlineColor">cvjs_setRedlineColor()</a>             
-</td>
-
-
-</tr>        
-
-
-<tr style="background-color:rgb(255,255,255)" >
-
+    -->
 <!-- 
     
     if (commands[i] == "cvjs_drawStickyNote"){ cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_022", "cvjs_drawStickyNote", floorplan_div, "cvjsIcon_dra_p2_4_1_StickyNote.png", languageTable.languages[cvjs_currentLanguage].IconPage_p2_8.StickyNote );							  continue;} 
@@ -1855,97 +1576,7 @@ function cvjs_mouseenter(id, handle, entity){
     if (commands[i] == "cvjs_drawRedlineFilledPolygon"){ cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_026", "cvjs_drawRedlineFilledPolygon", floorplan_div, "cvjsIcon_dra_p2_6_1_RedlineFilledPolygon.png", languageTable.languages[cvjs_currentLanguage].IconPage_p2_8.FilledPolygon );   continue;} 
     if (commands[i] == "cvjs_drawRedlinePolyline"){ cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_027", "cvjs_drawRedlinePolyline", floorplan_div, "cvjsIcon_dra_p2_6_2_RedlinePolygon.png", languageTable.languages[cvjs_currentLanguage].IconPage_p2_8.Polyline );   continue;} 
 
--->            
-<td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="javascript:cvjs_drawStickyNote('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p2_4_1_StickyNote.png" height="24px" /></a>
-    </td>
-    <td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-    <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_drawStickyNote">cvjs_drawStickyNote()</a>             
-</td>
-<td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="javascript:cvjs_drawRedlineText('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p2_8_2_RedlineText.png" height="24px" /></a>
-    </td>
-    <td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_drawRedlineText">cvjs_drawRedlineText()</a>             
-</td>
-<td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="javascript:cvjs_setRedlineThickness('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p2_3_2_RedlineThickness.png" height="24px" /></a>
-    </td>
-    <td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_setRedlineThickness">cvjs_setRedlineThickness()</a>             
-</td>
-<td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="javascript:cvjs_drawRedline_Freehand('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p2_5_1_FreehandRedline.png" height="24px" /></a>
-    </td>
-    <td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_drawRedline_Freehand">cvjs_drawRedline_Freehand()</a>             
-</td>
-<td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="javascript:cvjs_drawRedlineEllipseCloud('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p2_5_2_RedlineCloud.png" height="24px" /></a>
-    </td>
-    <td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_drawRedlineEllipseCloud">cvjs_drawRedlineEllipseCloud()</a>             
-</td>
-<td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="javascript:cvjs_drawRedlineFilledPolygon('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p2_6_1_RedlineFilledPolygon.png" height="24px" /></a>
-    </td>
-    <td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="https://cadviewer.com/cadviewerproapi/global.html#ccvjs_drawRedlineFilledPolygon">cvjs_drawRedlineFilledPolygon()</a>             
-</td>
-<td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="javascript:cvjs_drawRedlinePolyline('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p2_6_2_RedlinePolygon.png" height="24px" /></a>
-    </td>
-    <td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-    <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_drawRedlinePolyline">cvjs_drawRedlinePolyline()</a>             
-</td>
-
-</tr>        
-    
-    
-<tr style="background-color:rgb(255,255,255)" >
-
+-->
 <!-- 
     if (commands[i] == "cvjs_drawRedlineArrow"){ cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_030", "cvjs_drawRedlineArrow", floorplan_div, "cvjsIcon_dra_p2_8_1_RedlineArrow.png", languageTable.languages[cvjs_currentLanguage].IconPage_p2_8.Arrow );  continue;} 
     if (commands[i] == "cvjs_PinMarker"){ cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_034", "cvjs_PinMarker", floorplan_div, "cvjsIcon_dra_p6_1_1_PinMarker.png", languageTable.languages[cvjs_currentLanguage].IconPage_p6_1.PinMarker );		   continue;} 
@@ -1957,97 +1588,7 @@ function cvjs_mouseenter(id, handle, entity){
     if (commands[i] == "cvjs_clearCurrentRedline"){ cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_033", "cvjs_clearCurrentRedline", floorplan_div, "cvjsIcon_dra_p2_4_2_ClearRedlines.png", languageTable.languages[cvjs_currentLanguage].IconPage_p2_8.ClearAll );		   continue;} 
     // 3.3.02d
     
-    -->            
-<td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="javascript:cvjs_drawRedlineArrow('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p2_8_1_RedlineArrow.png" height="24px" /></a>
-    </td>
-    <td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-    <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_drawRedlineArrow">cvjs_drawRedlineArrow()</a>             
-</td>
-<td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="javascript:cvjs_PinMarker('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p6_1_1_PinMarker.png" height="24px" /></a>
-    </td>
-    <td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-    <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_PinMarker">cvjs_PinMarker()</a>             
-</td>
-<td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="javascript:cvjs_drawRedlineFilledRectangle('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p2_7_1_RedlineFilledRect.png" height="24px" /></a>
-    </td>
-    <td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_drawRedlineFilledRectangle">cvjs_drawRedlineFilledRectangle()</a>             
-</td>
-<td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="javascript:cvjs_drawRedlineRectangle('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p2_7_2_RedlineRect.png" height="24px" /></a>
-    </td>
-    <td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_drawRedlineRectangle">cvjs_drawRedlineRectangle()</a>             
-</td>
-<td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="javascript:cvjs_deleteSingleRedline('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p2_2_1_DeleteSingleRedline.png" height="24px" /></a>
-    </td>
-    <td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-    <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_deleteSingleRedline">cvjs_deleteSingleRedline()</a>             
-</td>
-<td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="javascript:cvjs_deleteLastRedline('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p2_2_2_DeleteLastRedline.png" height="24px" /></a>
-    </td>
-    <td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_deleteLastRedline">cvjs_deleteLastRedline()</a>             
-</td>
-<td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="javascript:cvjs_clearCurrentRedline('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p2_4_2_ClearRedlines.png" height="24px" /></a>
-    </td>
-    <td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-    <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_clearCurrentRedline">cvjs_clearCurrentRedline()</a>             
-</td>
-
-</tr>        
-        
-        
-<tr style="background-color:rgb(255,255,255)" >
-
+    -->
 <!-- 
     if (commands[i] == "cvjs_quickCount"){ cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_039", "cvjs_quickCount", floorplan_div, "cvjsIcon_dra_p3_4_1_QuickCount.png", languageTable.languages[cvjs_currentLanguage].IconPage_p3_8.QuickCount );   continue;} 
     if (commands[i] == "cvjs_showMeCounts"){ cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_040", "cvjs_showMeCounts", floorplan_div, "cvjsIcon_dra_p3_4_2_SummaryQuickCount.png", languageTable.languages[cvjs_currentLanguage].IconPage_p3_8.CountSum );		   continue;} 
@@ -2057,106 +1598,7 @@ function cvjs_mouseenter(id, handle, entity){
     if (commands[i] == "cvjs_saveAllImageLinks"){ cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_037", "cvjs_saveAllImageLinks", floorplan_div, "cvjsIcon_dra_p3_3_1_SaveImageLinks.png", languageTable.languages[cvjs_currentLanguage].IconPage_p3_8.SaveLink );   continue;} 
     if (commands[i] == "cvjs_clearAllImageLinks"){ cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_038", "cvjs_clearAllImageLinks", floorplan_div, "cvjsIcon_dra_p3_3_2_ClearImageLinks.png", languageTable.languages[cvjs_currentLanguage].IconPage_p3_8.ClearLink );   continue;} 
     
-    -->            
-
-    <td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="javascript:cvjs_quickCount('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p3_4_1_QuickCount.png" height="24px" /></a>
-    </td>
-    <td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_quickCount">cvjs_quickCount()</a>             
-</td>
-
-<td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="javascript:cvjs_showMeCounts('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p3_4_2_SummaryQuickCount.png" height="24px" /></a>
-    </td>
-    <td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_showMeCounts">cvjs_showMeCounts()</a>             
-</td>
-
-<td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="javascript:cvjs_clearQuickCounts('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p3_5_1_ClearQuickCount.png" height="24px" /></a>
-    </td>
-    <td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_clearQuickCounts">cvjs_clearQuickCounts()</a>             
-</td>
-
-<td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="javascript:cvjs_insertImageLink('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p3_2_2_InsertImageLink.png" height="24px" /></a>
-    </td>
-    <td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_insertImageLink">cvjs_insertImageLink()</a>             
-</td>
-
-<td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="javascript:cvjs_loadAllImageLinks('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p3_2_1_LoadImageLinks.png" height="24px" /></a>
-    </td>
-    <td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-    <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_loadAllImageLinks">cvjs_loadAllImageLinks()</a>             
-</td>
-
-<td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="javascript:cvjs_saveAllImageLinks('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p3_3_1_SaveImageLinks.png" height="24px" /></a>
-    </td>
-    <td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_saveAllImageLinks">cvjs_saveAllImageLinks()</a>             
-</td>
-
-<td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="javascript:cvjs_clearAllImageLinks('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p3_3_2_ClearImageLinks.png" height="24px" /></a>
-    </td>
-    <td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_clearAllImageLinks">cvjs_clearAllImageLinks()</a>             
-</td>
-
-
-</tr>        
-
-            
-                        
-<tr style="background-color:rgb(255,255,255)" >
-
+    -->
 <!-- 
 
     if (commands[i] == "cvjs_spaceObjectSettings") {cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_046", "cvjs_spaceObjectSettings", floorplan_div, "cvjsIcon_dra_p5_1_1_Settings.png", languageTable.languages[cvjs_currentLanguage].IconPage_p5_8.Settings );   continue;}
@@ -2168,99 +1610,9 @@ function cvjs_mouseenter(id, handle, entity){
     if (commands[i] == "cvjs_changeSpaceObjectDisplayMode") {cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_047", "cvjs_changeSpaceObjectDisplayMode", floorplan_div, "cvjsIcon_dra_p5_1_2_SpaceObjectEditMode.png", languageTable.languages[cvjs_currentLanguage].IconPage_p5_8.Mode );   continue;}
     if (commands[i] == "cvjs_loadDrawingsWithSpaceObjects") {cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_048", "cvjs_loadDrawingsWithSpaceObjects", floorplan_div, "cvjsIcon_dra_p5_2_1_LoadPreProcessSpaceObjects.png", languageTable.languages[cvjs_currentLanguage].IconPage_p5_8.Load );   continue;}
     
-    -->            
-<td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="javascript:cvjs_spaceObjectSettings('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p5_1_1_Settings.png" height="24px" /></a>
-    </td>
-    <td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_spaceObjectSettings">cvjs_spaceObjectSettings()</a>             
-</td>
-<td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="javascript:cvjs_exitCompareDrawings('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p4_2_2_ExitCompare.png" height="24px" /></a>
-    </td>
-    <td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_exitCompareDrawings">cvjs_exitCompareDrawings()</a>             
-</td>
-<td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="javascript:cvjs_compareDrawings_LoadSecondDrawing('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p4_1_1_LoadSecondCompare.png" height="24px" /></a>
-    </td>
-    <td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_compareDrawings_LoadSecondDrawing">cvjs_compareDrawings_LoadSecondDrawing()</a>             
-</td>
-
+    -->
 <!-- change pos 3-->
-
-
-<td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="javascript:cvjs_saveSpaceObjectsUser('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p5_6_2_DownloadProcessedSpaceObjects.png" height="24px" /></a>
-    </td>
-    <td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_saveSpaceObjectsUser">cvjs_saveSpaceObjectsUser()</a>             
-</td>
-
-
-
-
 <!-- change pos 1-->
-
-
-<td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="javascript:cvjs_LayerListSpaceObject('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p5_2_2_SpaceObjectsLayerList.png" height="24px" /></a>
-    </td>
-    <td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_LayerListSpaceObject">cvjs_LayerListSpaceObject()</a>             
-</td>
-
-
-<td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="javascript:cvjs_changeSpaceObjectDisplayMode('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p5_1_2_SpaceObjectEditMode.png" height="24px" /></a>
-    </td>
-    <td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_changeSpaceObjectDisplayMode">cvjs_changeSpaceObjectDisplayMode()</a>             
-</td>
-
-</tr>        
-    
-    
-
-<tr style="background-color:rgb(255,255,255)" >
-
 <!-- 
 
     if (commands[i] == "cvjs_deleteSpaceObject") {cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_054", "cvjs_deleteSpaceObject", floorplan_div, "cvjsIcon_dra_p5_5_1_DeleteSpaceObject.png", languageTable.languages[cvjs_currentLanguage].IconPage_p5_8.Delete );   continue;}
@@ -2272,110 +1624,9 @@ function cvjs_mouseenter(id, handle, entity){
 
     if (commands[i] == "cvjs_copyCircleSpaceObject") {cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_053", "cvjs_copyCircleSpaceObject", floorplan_div, "cvjsIcon_dra_p5_4_2_CopyCircleSpaceObject.png", languageTable.languages[cvjs_currentLanguage].IconPage_p5_8.CopyCircle );   continue;}
 
--->            
-    
-    <td>
-        <canvas id="dummy" width="10" height="10"></canvas>
-        </td>
-        <td>
-            <a href="javascript:cvjs_deleteSpaceObject('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p5_5_1_DeleteSpaceObject.png" height="24px" /></a>
-        </td>
-        <td>
-        <canvas id="dummy" width="10" height="10"></canvas>
-        </td>
-        <td>
-            <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_deleteSpaceObject">cvjs_deleteSpaceObject()</a>             
-    </td>
-    <td>
-        <canvas id="dummy" width="10" height="10"></canvas>
-        </td>
-        <td>
-            <a href="javascript:cvjs_clearSpaceObjects('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p7_4_2_ClearSpaceObjects.png" height="24px" /></a>
-        </td>
-        <td>
-        <canvas id="dummy" width="10" height="10"></canvas>
-        </td>
-        <td>
-            <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_clearSpaceObjects">cvjs_clearSpaceObjects()</a>             
-    </td>
-
-
+-->
 <!--   change pos-->
-
-<td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="javascript:cvjs_compareDrawings_ToggleDrawingOverlay('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p4_2_1_ToggleCompareOverlaid.png" height="24px" /></a>
-    </td>
-    <td>
-    <canvas id="dummy" width="10" height="10"></canvas>
-    </td>
-    <td>
-        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_compareDrawings_ToggleDrawingOverlay">cvjs_compareDrawings_ToggleDrawingOverlay()</a>             
-</td>
-
-
-    <td>
-        <canvas id="dummy" width="10" height="10"></canvas>
-        </td>
-        <td>
-            <a href="javascript:cvjs_addRectangleSpaceObject('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p5_3_1_RectangleSpaceObject.png" height="24px" /></a>
-        </td>
-        <td>
-        <canvas id="dummy" width="10" height="10"></canvas>
-        </td>
-        <td>
-            <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_addRectangleSpaceObject">cvjs_addRectangleSpaceObject()</a>             
-    </td>
-    <td>
-        <canvas id="dummy" width="10" height="10"></canvas>
-        </td>
-        <td>
-            <a href="javascript:cvjs_addPolygonSpaceObject('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p5_3_2_PolygonSpaceObject.png" height="24px" /></a>
-        </td>
-        <td>
-        <canvas id="dummy" width="10" height="10"></canvas>
-        </td>
-        <td>
-            <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_addPolygonSpaceObject">cvjs_addPolygonSpaceObject()</a>             
-    </td>
-    <td>
-        <canvas id="dummy" width="10" height="10"></canvas>
-        </td>
-        <td>
-            <a href="javascript:cvjs_addCircleSpaceObject('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p5_4_1_CircleSpaceObject.png" height="24px" /></a>
-        </td>
-        <td>
-        <canvas id="dummy" width="10" height="10"></canvas>
-        </td>
-        <td>
-            <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_addCircleSpaceObject">cvjs_addCircleSpaceObject()</a>             
-    </td>
-
-    <td>
-        <canvas id="dummy" width="10" height="10"></canvas>
-        </td>
-        <td>
-            <a href="javascript:cvjs_copyCircleSpaceObject('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p5_4_2_CopyCircleSpaceObject.png" height="24px" /></a>
-        </td>
-        <td>
-        <canvas id="dummy" width="10" height="10"></canvas>
-        </td>
-        <td>
-            <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_copyCircleSpaceObject">cvjs_copyCircleSpaceObject()</a>             
-    </td>
-    
-
-
-
-
-</tr>        
-        
-        
-<tr style="background-color:rgb(255,255,255)" >
-
-    <!-- 
+<!-- 
     
     if (commands[i] == "cvjs_setSpacePolygonOnLayer") {cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_055", "cvjs_setSpacePolygonOnLayer", floorplan_div, "cvjsIcon_dra_p5_5_2_MakeSpaceObjectOnPolygon.png", languageTable.languages[cvjs_currentLanguage].IconPage_p5_8.SelectPolygon );   continue;}
     if (commands[i] == "cvjs_displaySpaceObjectsStructure") {cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_056", "cvjs_displaySpaceObjectsStructure", floorplan_div, "cvjsIcon_dra_p5_6_1_SpaceObjectDisplayMode.png", languageTable.languages[cvjs_currentLanguage].IconPage_p5_8.Publish );   continue;}
@@ -2388,188 +1639,852 @@ function cvjs_mouseenter(id, handle, entity){
     // 3.3.07a
     if (commands[i] == "cvjs_loadSpaceObjectsUser"){cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_059", "cvjs_loadSpaceObjectsUser", floorplan_div, "cvjsIcon_dra_p5_7_1_LoadSpaceOverlay.png", languageTable.languages[cvjs_currentLanguage].IconPage_p5_8.LoadSpaceObjects );  continue;}	
     
-    -->          
-    
-    <td>
-        <canvas id="dummy" width="10" height="10"></canvas>
-        </td>
-        <td>
-        </td>
-        <td>
-        <canvas id="dummy" width="10" height="10"></canvas>
-        </td>
-        <td>
-    </td>
-
-
-        
-        <td>
-            <canvas id="dummy" width="10" height="10"></canvas>
-            </td>
-            <td>
-                <a href="javascript:cvjs_mergeQR('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p6_2_1_MergeQR.png" height="24px" /></a>
-            </td>
-            <td>
-            <canvas id="dummy" width="10" height="10"></canvas>
-            </td>
-            <td>
-                <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_mergeQR">cvjs_mergeQR()</a>             
-        </td>
-    
-
+    -->
 <!--   change pos with 3-->
-        <td>
-            <canvas id="dummy" width="10" height="10"></canvas>
-            </td>
-            <td>
-                <a href="javascript:cvjs_compareDrawings_ToggleDrawings('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p4_1_2_ToggleCompareIndividually.png" height="24px" /></a>
-            </td>
-            <td>
-            <canvas id="dummy" width="10" height="10"></canvas>
-            </td>
-            <td>
-                <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_compareDrawings_ToggleDrawings">cvjs_compareDrawings_ToggleDrawings()</a>             
-        </td>
-        
-        <td>
-            <canvas id="dummy" width="10" height="10"></canvas>
-            </td>
-            <td>
-                <a href="javascript:cvjs_resizeSpaceObject('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p7_3_1_ResizeSpaceImageObject.png" height="24px" /></a>
-            </td>
-            <td>
-            <canvas id="dummy" width="10" height="10"></canvas>
-            </td>
-            <td>
-            <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_resizeSpaceObject">cvjs_resizeSpaceObject()</a>             
-        </td>
-        
-        <td>
-            <canvas id="dummy" width="10" height="10"></canvas>
-            </td>
-            <td>
-                <a href="javascript:cvjs_moveSpaceObject('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p7_3_3_DragSpaceObject.png" height="24px" /></a>
-            </td>
-            <td>
-            <canvas id="dummy" width="10" height="10"></canvas>
-            </td>
-            <td>
-                <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_moveSpaceObject">cvjs_moveSpaceObject()</a>             
-        </td>
-        
-        <td>
-            <canvas id="dummy" width="10" height="10"></canvas>
-            </td>
-            <td>
-                <a href="javascript:cvjs_rotateSpaceObject('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p7_3_5_RotateSpaceObject.png" height="24px" /></a>
-            </td>
-            <td>
-            <canvas id="dummy" width="10" height="10"></canvas>
-            </td>
-            <td>
-                <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_rotateSpaceObject">cvjs_rotateSpaceObject()</a>             
-        </td>
-
-        <td>
-            <canvas id="dummy" width="10" height="10"></canvas>
-            </td>
-            <td>
-                <a href="javascript:cvjs_rotateSpaceObject('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p7_3_5_RotateSpaceObject.png" height="24px" /></a>
-            </td>
-            <td>
-            <canvas id="dummy" width="10" height="10"></canvas>
-            </td>
-            <td>
-                <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_rotateSpaceObject">cvjs_rotateSpaceObject()</a>             
-        </td>
-                        
-    </tr>        
-                        
-
-    <tr style="background-color:rgb(255,255,255)" >
-
-        <!-- 
+<!-- 
     if (commands[i] == "cvjs_customCommand_01") {cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_custom_01", "cvjs_customCommand_01", floorplan_div, "cvjs_customCommand_01", cvjs_customCommandText[0] );   continue;}
     if (commands[i] == "cvjs_customCommand_20") {cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_custom_02", "cvjs_customCommand_02", floorplan_div, "cvjsIcon_customCommand_02.png", cvjs_customCommandText[1] );   continue;}
     if (commands[i] == "cvjs_mergeQR") {cvjs_insertSingleIconImage(floorplan_div,"topIconMenu_placeholder_1" , "cvjs_cmd_069", "cvjs_mergeQR", floorplan_div, "cvjsIcon_dra_p6_2_1_MergeQR.png", languageTable.languages[cvjs_currentLanguage].IconPage_p2_8.MergeWithQR );   continue;}
                 
-        -->            
-            
-        <td>
-            <canvas id="dummy" width="10" height="10"></canvas>
-            </td>
-            <td>
-            </td>
-            <td>
-            <canvas id="dummy" width="10" height="10"></canvas>
-            </td>
-            <td>
-        </td>
-     
-        <td>
-            <canvas id="dummy" width="10" height="10"></canvas>
-            </td>
-            <td>
-            </td>
-            <td>
-            <canvas id="dummy" width="10" height="10"></canvas>
-            </td>
-            <td>
-        </td>
-          
-            <td>
-                <canvas id="dummy" width="10" height="10"></canvas>
-                </td>
-                <td>
-                    <a href="javascript:cvjs_customCommand_01('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_customCommand_01.png" height="24px" /></a>
-                </td>
-                <td>
-                <canvas id="dummy" width="10" height="10"></canvas>
-                </td>
-                <td>
-                    <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_customCommand_01">cvjs_customCommand_01() .. through...</a>             
-            </td>
-            <td>
-                <canvas id="dummy" width="10" height="10"></canvas>
-                </td>
-                <td>
-                    <a href="javascript:cvjs_customCommand_20('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_customCommand_01.png" height="24px" /></a>
-                </td>
-                <td>
-                <canvas id="dummy" width="10" height="10"></canvas>
-                </td>
-                <td>
-                    <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_customCommand_20">cvjs_customCommand_20()</a>             
-                   
-        <td>
-            <canvas id="dummy" width="10" height="10"></canvas>
-            </td>
-            <td>
-                <a href="javascript:cvjs_setSpacePolygonOnLayer('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p5_5_2_MakeSpaceObjectOnPolygon.png" height="24px" /></a>
-            </td>
-            <td>
-            <canvas id="dummy" width="10" height="10"></canvas>
-            </td>
-            <td>
-                <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_setSpacePolygonOnLayer">cvjs_setSpacePolygonOnLayer()</a>             
-        </td>
-
-        <td>
-            <canvas id="dummy" width="10" height="10"></canvas>
-            </td>
-            <td>
-                <a href="javascript:cvjs_loadDrawingsWithSpaceObjects('floorPlan')"><img src="../app/images/singleIcons/cvjsIcon_dra_p5_2_1_LoadPreProcessSpaceObjects.png" height="24px" /></a>
-            </td>
-            <td>
-            <canvas id="dummy" width="10" height="10"></canvas>
-            </td>
-            <td>
-                <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_loadDrawingsWithSpaceObjects">cvjs_loadDrawingsWithSpaceObjects()</a>             
-        </td>
-    
-    
-    </tr>        
-
+        -->
+<tr style="background-color:rgb(255,255,255)">
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_LayerList('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#layers"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#layers"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_LayerList">cvjs_LayerList()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_Print('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#print"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#print"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_Print">cvjs_Print()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_toggleBlackWhite('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#blackwhite"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#blackwhite"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_toggleBlackWhite">cvjs_toggleBlackWhite()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_setBackgroundColor('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#background"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#background"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_setBackgroundColor">cvjs_setBackgroundColor()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_openFileLoadToServer('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#fileload"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#fileload"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_openFileLoadToServer">cvjs_openFileLoadToServer()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_interactiveSearchText('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#search"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#search"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_interactiveSearchText">cvjs_interactiveSearchText()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_interactiveSearchText('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#search"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#search"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_interactiveSearchText">cvjs_interactiveSearchText()</a>
+    </td>
+</tr>
+<tr style="background-color:rgb(255,255,255)">
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_Settings('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#settings"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#settings"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_Settings">cvjs_Settings()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_displayInformationModal_Mode(0)"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#about"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#about"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_displayInformationModal_Mode">cvjs_About()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_interactiveLayerOff('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#layeroff"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#layeroff"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_interactiveLayerOff">cvjs_interactiveLayerOff()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_swapLayersInDrawing('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#swaplayers"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#swaplayers"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_swapLayersInDrawing">cvjs_swapLayersInDrawing()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_allLayersInDrawingOn('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#alllayerson"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#alllayerson"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_allLayersInDrawingOn">cvjs_allLayersInDrawingOn()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_Measurement('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#measure"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#measure"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_Measurement">cvjs_Measurement()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_calibrateMeasurement('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#calibrate"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#calibrate"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_calibrateMeasurement">cvjs_calibrateMeasurement()</a>
+    </td>
+</tr>
+<tr style="background-color:rgb(255,255,255)">
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_mergeDXFDWG('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#merge"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#merge"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_mergeDXFDWG">cvjs_mergeDXFDWG()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_publishPDF('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#savepdf"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#savepdf"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_publishPDF">cvjs_publishPDF()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_displayMagnifyingGlass('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#birdseye"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#birdseye"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_displayMagnifyingGlass">cvjs_displayMagnifyingGlass()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_activateLineThicknessModal('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#adjustlineweight"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#adjustlineweight"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_activateLineThicknessModal">cvjs_activateLineThicknessModal()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_loadStickyNotesRedlinesUser('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#loadredlines"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#loadredlines"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_loadStickyNotesRedlinesUser">cvjs_loadStickyNotesRedlinesUser()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_saveStickyNotesRedlinesUser('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#floppyredlines"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#floppyredlines"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#ccvjs_saveStickyNotesRedlinesUser">cvjs_saveStickyNotesRedlinesUser()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_setRedlineColor('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#redlinecolor"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#redlinecolor"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_setRedlineColor">cvjs_setRedlineColor()</a>
+    </td>
+</tr>
+<tr style="background-color:rgb(255,255,255)">
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_drawStickyNote('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#redlinestickynote"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#redlinestickynote"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_drawStickyNote">cvjs_drawStickyNote()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_drawRedlineText('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#redlinetext"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#redlinetext"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_drawRedlineText">cvjs_drawRedlineText()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_setRedlineThickness('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#adjustredlineweight"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#adjustredlineweight"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_setRedlineThickness">cvjs_setRedlineThickness()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_drawRedline_Freehand('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#freehand"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#freehand"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_drawRedline_Freehand">cvjs_drawRedline_Freehand()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_drawRedlineEllipseCloud('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#ellipsecloud"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#ellipsecloud"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_drawRedlineEllipseCloud">cvjs_drawRedlineEllipseCloud()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_drawRedlineFilledPolygon('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#redlinefilledpolygon"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#redlinefilledpolygon"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#ccvjs_drawRedlineFilledPolygon">cvjs_drawRedlineFilledPolygon()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_drawRedlinePolyline('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#redlinepolyline"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#redlinepolyline"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_drawRedlinePolyline">cvjs_drawRedlinePolyline()</a>
+    </td>
+</tr>
+<tr style="background-color:rgb(255,255,255)">
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_drawRedlineArrow('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#redlinearrow"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#redlinearrow"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_drawRedlineArrow">cvjs_drawRedlineArrow()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_drawRedlineFilledRectangle('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#redlinefilledrectangle"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#redlinefilledrectangle"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_drawRedlineFilledRectangle">cvjs_drawRedlineFilledRectangle()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_drawRedlineRectangle('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#redlinerectangle"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#redlinerectangle"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_drawRedlineRectangle">cvjs_drawRedlineRectangle()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_deleteSingleRedline('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#deletesingleredline"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#deletesingleredline"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_deleteSingleRedline">cvjs_deleteSingleRedline()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_deleteLastRedline('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#undolastredline"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#undolastredline"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_deleteLastRedline">cvjs_deleteLastRedline()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_clearCurrentRedline('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#clearallredlines"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#clearallredlines"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_clearCurrentRedline">cvjs_clearCurrentRedline()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_clearAllImageLinks('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#clearimagelinks"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#clearimagelinks"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_clearAllImageLinks">cvjs_clearAllImageLinks()</a>
+    </td>
+</tr>
+<tr style="background-color:rgb(255,255,255)">
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_quickCount('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#quickcount"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#quickcount"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_quickCount">cvjs_quickCount()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_showMeCounts('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#quickcountsummary"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#quickcountsummary"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_showMeCounts">cvjs_showMeCounts()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_clearQuickCounts('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#clearquickcounts"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#clearquickcounts"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_clearQuickCounts">cvjs_clearQuickCounts()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_insertImageLink('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#insertimage"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#insertimage"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_insertImageLink">cvjs_insertImageLink()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_loadAllImageLinks('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#loadallimagelinks"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#loadallimagelinks"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_loadAllImageLinks">cvjs_loadAllImageLinks()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_saveAllImageLinks('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#saveallimagelinks"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#saveallimagelinks"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_saveAllImageLinks">cvjs_saveAllImageLinks()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_copyCircleSpaceObject('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#copycirclespaceobject"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#copycirclespaceobject"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_copyCircleSpaceObject">cvjs_copyCircleSpaceObject()</a>
+    </td>
+</tr>
+<tr style="background-color:rgb(255,255,255)">
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_spaceObjectSettings('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#settings"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#settings"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_spaceObjectSettings">cvjs_spaceObjectSettings()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_exitCompareDrawings('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#loadseconddrawing"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#loadseconddrawing"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_exitCompareDrawings">cvjs_exitCompareDrawings()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_compareDrawings_LoadSecondDrawing('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#loadseconddrawing"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#loadseconddrawing"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_compareDrawings_LoadSecondDrawing">cvjs_compareDrawings_LoadSecondDrawing()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_saveSpaceObjectsUser('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#savespaceobjects"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#savespaceobjects"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_saveSpaceObjectsUser">cvjs_saveSpaceObjectsUser()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_LayerListSpaceObject('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#layers"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#layers"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_LayerListSpaceObject">cvjs_LayerListSpaceObject()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_changeSpaceObjectDisplayMode('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#togglespace"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#togglespace"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_changeSpaceObjectDisplayMode">cvjs_changeSpaceObjectDisplayMode()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_rotateSpaceObject('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#rotatespaceobject"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#rotatespaceobject"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_rotateSpaceObject">cvjs_rotateSpaceObject()</a>
+    </td>
+</tr>
+<tr style="background-color:rgb(255,255,255)">
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_deleteSpaceObject('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#deletespaceobject"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#deletespaceobject"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_deleteSpaceObject">cvjs_deleteSpaceObject()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_clearSpaceObjects('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#clearall"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#clearall"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_clearSpaceObjects">cvjs_clearSpaceObjects()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_compareDrawings_ToggleDrawingOverlay('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#loadseconddrawing"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#loadseconddrawing"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_compareDrawings_ToggleDrawingOverlay">cvjs_compareDrawings_ToggleDrawingOverlay()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_addRectangleSpaceObject('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#rectanglespaceobject"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#rectanglespaceobject"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_addRectangleSpaceObject">cvjs_addRectangleSpaceObject()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_addPolygonSpaceObject('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#polygonspaceobject"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#polygonspaceobject"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_addPolygonSpaceObject">cvjs_addPolygonSpaceObject()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_addCircleSpaceObject('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#circlespaceobject"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#circlespaceobject"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_addCircleSpaceObject">cvjs_addCircleSpaceObject()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_mergeQR('floorPlan')"><span style="white-space: nowrap;"><img src="../app/images/singleIcons/cvjsIcon_dra_p6_2_1_MergeQR.png" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px; background-color: white;" />&nbsp;<img src="../app/images/singleIcons/cvjsIcon_dra_p6_2_1_MergeQR.png" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px; background-color: #333;" /></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_mergeQR">cvjs_mergeQR()</a>
+    </td>
+</tr>
+<tr style="background-color:rgb(255,255,255)">
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_compareDrawings_ToggleDrawings('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#loadseconddrawing"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#loadseconddrawing"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_compareDrawings_ToggleDrawings">cvjs_compareDrawings_ToggleDrawings()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_resizeSpaceObject('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#resizespaceobject"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#resizespaceobject"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_resizeSpaceObject">cvjs_resizeSpaceObject()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_moveSpaceObject('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#movespaceobject"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#movespaceobject"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_moveSpaceObject">cvjs_moveSpaceObject()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_rotateSpaceObject('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#rotatespaceobject"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#rotatespaceobject"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_rotateSpaceObject">cvjs_rotateSpaceObject()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+</td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+</td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_setSpacePolygonOnLayer('floorPlan')"><span style="white-space: nowrap;"><img src="../app/images/singleIcons/cvjsIcon_dra_p5_5_2_MakeSpaceObjectOnPolygon.png" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px; background-color: white;" />&nbsp;<img src="../app/images/singleIcons/cvjsIcon_dra_p5_5_2_MakeSpaceObjectOnPolygon.png" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px; background-color: #333;" /></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_setSpacePolygonOnLayer">cvjs_setSpacePolygonOnLayer()</a>
+    </td>
+</tr>
+<tr style="background-color:rgb(255,255,255)">
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_customCommand_01('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px; background-color: white;"></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px; background-color: #333;"></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_customCommand_01">cvjs_customCommand_01() .. through...</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_customCommand_20('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px; background-color: white;"></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px; background-color: #333;"></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_customCommand_20">cvjs_customCommand_20()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="javascript:cvjs_loadDrawingsWithSpaceObjects('floorPlan')"><span style="white-space: nowrap;"><svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid #d0d0d0; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/light-skin/sprite.svg#fileload"/></svg>&nbsp;<svg viewBox="0 0 90 90" style="width: 24px; height: 24px; display: inline-block; border: 1px solid transparent; box-sizing: content-box; vertical-align: middle; border-radius: 4px;"><use href="../app/images/singleIcons/svg/dark-skin/sprite.svg#fileload"/></svg></span></a>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+        <a href="https://cadviewer.com/cadviewerproapi/global.html#cvjs_loadDrawingsWithSpaceObjects">cvjs_loadDrawingsWithSpaceObjects()</a>
+    </td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+</td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+</td>
+<td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+    </td>
+    <td>
+    <canvas id="dummy" width="10" height="10"></canvas>
+    </td>
+    <td>
+</td>
+</tr>
 
 </table>
     
