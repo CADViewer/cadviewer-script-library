@@ -19,7 +19,7 @@ The back-end converters can be used on Windows and Linux.
 
 1: CADViewer script library  - in its preferred folder structure
 
-2: AutoXchange AX2024 Converter , Linklist 2024 Extractor and DWG Merge 2024 Converter, in their preferred folder structure.  **NOTE:** Each converter will have two subfolders /windows/ and /linux/ where the executable for the corresponding platform is located. 
+2: AutoXchange AX2026 Converter , Linklist 2026 Extractor and DWG Merge 2026 Converter, in their preferred folder structure.  **NOTE:** Each converter will have two subfolders /windows/ and /linux/ where the executable for the corresponding platform is located. 
 
 3: All structures for file-conversion, sample drawings, redlines, print folders etc. 
 
@@ -28,7 +28,7 @@ The back-end converters can be used on Windows and Linux.
 
 ## This package does not contains
 
-5: The folder structure for script handlers for communication between CADViewer and the back-end AutoXchange 2024. Install these separately!
+5: The folder structure for script handlers for communication between CADViewer and the back-end AutoXchange 2026. Install these separately!
 
 **NOTE:** With this download, the **PHP handlers** will work as-is, download the PHP handlers from: https://github.com/CADViewer/cadviewer-php-scripts, install under /cadviewer/php/.
 
@@ -37,9 +37,9 @@ The back-end converters can be used on Windows and Linux.
 
 6: If on Linux ensure the following: 
 
-6A: The executable /cadviewer/ax2024/linux/ax2023_L64__xx_yy_zz has full read, write and execute permissions for the owner  (chmod 755 or chmod 777)
+6A: The executable /cadviewer/autoxchange/linux/ax2026_L64__xx_yy_zz has full read, write and execute permissions for the owner  (chmod 755 or chmod 777)
 
-6B: The executable /cadviewer/ax2024/linux/ has full read, write permissions for the owner  (chmod 777)
+6B: The executable /cadviewer/autoxchange/linux/ has full read, write permissions for the owner  (chmod 777)
 
 6C: The php scripts in /cadviewer/php/ has full rights  (chmod 755)
 
@@ -92,8 +92,8 @@ Please refer to the general Documentation above, for the back-end handlers, ther
 
 This repository should contain the latest converters, but in case you need to update any of the back-end converters please follow: 
 
-* [Download **AutoXchange**](/download/) (and other converters), install (unzip) AX2024 in **cadviewer/converters/ax2024/windows** or **cadviewer/converters/ax2024/linux** or in the designated folder structure.
-* Read the sections on installing and handling [Fonts](https://tailormade.com/ax2020techdocs/installation/fonts/) in [AutoXchange 2024 TechDocs](https://tailormade.com/ax2020techdocs/) and [TroubleShooting](https://tailormade.com/ax2020techdocs/troubleshooting/).
+* [Download **AutoXchange**](/download/) (and other converters), install (unzip) AX2026 in **cadviewer/converters/autoxchange/windows** or **cadviewer/converters/autoxchange/linux** or in the designated folder structure.
+* Read the sections on installing and handling [Fonts](https://cadviewer.com/autoxchangetechdocs/installation/fonts/) in [AutoXchange 2026 TechDocs](https://cadviewer.com/autoxchangetechdocs/) and [TroubleShooting](https://cadviewer.com/autoxchangetechdocs/troubleshooting/).
 
 * Try out the samples and build your own application!
  
