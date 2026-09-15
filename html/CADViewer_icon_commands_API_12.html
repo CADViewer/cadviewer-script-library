@@ -61,6 +61,7 @@
     <script src="../app/js/jspdf.umd.min.js"></script>
 
 
+	<script src="../app/js/svg2pdf.umd.min.js"></script>
 
 
 	<script type="text/javascript">
@@ -357,6 +358,13 @@
 //		window.alert(graphicalObject);
 
 	}
+
+
+        function cvjs_processCompleted(process) {
+            console.log("cvjs_processCompleted: " + process);
+
+        }
+
 
 
 	function cvjs_popupTitleClick(myclick){

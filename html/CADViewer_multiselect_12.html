@@ -59,7 +59,8 @@
     <script src="../app/js/html2canvas.min.js"></script>
     <script src="../app/js/jspdf.umd.min.js"></script>
 
-	
+	<script src="../app/js/svg2pdf.umd.min.js"></script>
+
 	<script type="text/javascript">
 
 	// PATH and FILE to be loaded, can be in formats DWG, DXF, DWF, SVG , JS, DGN, PCF, JPG, GIF, PNG
@@ -288,6 +289,12 @@
 	function cvjs_change_space(){
 
 	}
+
+	// generic callback method, tells which process has been completed
+        function cvjs_processCompleted(process) {
+            console.log("cvjs_processCompleted: " + process);
+
+        }
 
 	function cvjs_graphicalObjectCreated(graphicalObject){
 

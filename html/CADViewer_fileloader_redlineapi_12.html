@@ -61,6 +61,9 @@
     <script src="../app/js/jspdf.umd.min.js"></script>
 
 	
+	<script src="../app/js/svg2pdf.umd.min.js"></script>
+
+
 	<script type="text/javascript">
 
 		// Location of installation folders
@@ -360,6 +363,17 @@
 
 
 	}
+
+	
+
+        function cvjs_processCompleted(process) {
+            console.log("cvjs_processCompleted: " + process);
+
+        }
+
+
+
+
 
 
 	// generic callback method, tells which FM object has been clicked

@@ -72,6 +72,7 @@
 	<script src="../app/js/html2canvas.min.js"></script>
 	<script src="../app/js/jspdf.umd.min.js"></script>
 
+	<script src="../app/js/svg2pdf.umd.min.js"></script>
 
 	<script type="text/javascript">
 
@@ -299,6 +300,12 @@
 
 		}
 
+
+		// generic callback method, tells which process has been completed
+        function cvjs_processCompleted(process) {
+            console.log("cvjs_processCompleted: " + process);
+
+        }
 
 		/// NOTE: THESE METHODS ABOVE ARE JS SCRIPT CALLBACK METHODS FROM CADVIEWER JS, THEY NEED TO BE IMPLEMENTED BUT CAN BE EMPTY
 

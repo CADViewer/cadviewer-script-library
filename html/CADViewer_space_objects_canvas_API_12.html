@@ -59,6 +59,10 @@
     <script src="../app/js/jspdf.umd.min.js"></script>
 
 
+	<script src="../app/js/svg2pdf.umd.min.js"></script>
+
+
+
 	<script type="text/javascript">
 
 	// Location of installation folders
@@ -519,6 +523,13 @@
 	function cvjs_change_space(){
 
 	}
+
+
+	// generic callback method, tells which process has been completed
+        function cvjs_processCompleted(process) {
+            console.log("cvjs_processCompleted: " + process);
+
+        }
 
 	function cvjs_graphicalObjectCreated(graphicalObject){
 

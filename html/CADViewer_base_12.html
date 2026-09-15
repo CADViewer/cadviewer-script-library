@@ -59,6 +59,7 @@
 	<script src="../app/js/html2canvas.min.js"></script>
 	<script src="../app/js/jspdf.umd.min.js"></script>
 
+	<script src="../app/js/svg2pdf.umd.min.js"></script>
 
 
 	<script type="text/javascript">
@@ -263,6 +264,13 @@
 			cvjs_setStickyNoteRedlineUrl(v1);
 			cvjs_setStickyNoteSaveRedlineUrl(v2);
 		}
+
+
+
+        function cvjs_processCompleted(process) {
+            console.log("cvjs_processCompleted: " + process);
+
+        }
 
 
 
