@@ -1,0 +1,6 @@
+.git
+**/.git
+converters/*/windows
+converters/files/*
+!converters/files/.gitkeep
+php/logs/*
