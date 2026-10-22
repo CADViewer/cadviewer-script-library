@@ -1,0 +1,18 @@
+# Les demos CADViewer sont les pages /cadviewer/html/CADViewer_*_12.html,
+# listees sur la page d'accueil : elles restent crawlables.
+#
+# Tout le reste est de la mecanique que Googlebot n'a aucune raison
+# d'explorer, et qui pollue Search Console (voir Trello #245) :
+#
+#  - /cadviewer/php/ : des endpoints d'API. Appeles sans parametres par un
+#    crawler ils terminent en erreur fatale PHP, remontee en "Server error
+#    (5xx)" : load-file.php, mail-dwg-redline.php,
+#    getVisualQuery_MySQL_public_demo.php. Le reste du repertoire repond 403.
+#
+#  - /cadviewer/converters/ : binaires de conversion (403) et sorties de
+#    conversion sous files/ (PDF, SVGZ, polices .SHX). Ces fichiers sont
+#    generes a la demande, portent des noms aleatoires et se sont retrouves
+#    en masse dans l'index.
+User-agent: *
+Disallow: /cadviewer/php/
+Disallow: /cadviewer/converters/
