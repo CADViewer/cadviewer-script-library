@@ -1,18 +1,20 @@
-# Les demos CADViewer sont les pages /cadviewer/html/CADViewer_*_12.html,
-# listees sur la page d'accueil : elles restent crawlables.
+# The CADViewer demos are the /cadviewer/html/CADViewer_*_12.html pages
+# listed on the home page: those stay crawlable.
 #
-# Tout le reste est de la mecanique que Googlebot n'a aucune raison
-# d'explorer, et qui pollue Search Console (voir Trello #245) :
+# Everything below is machinery Googlebot has no reason to explore, and
+# which was polluting Search Console (Trello #245):
 #
-#  - /cadviewer/php/ : des endpoints d'API. Appeles sans parametres par un
-#    crawler ils terminent en erreur fatale PHP, remontee en "Server error
-#    (5xx)" : load-file.php, mail-dwg-redline.php,
-#    getVisualQuery_MySQL_public_demo.php. Le reste du repertoire repond 403.
+#  - /cadviewer/php/ holds API endpoints. Called without parameters, as a
+#    crawler does, they used to end in a PHP fatal error reported as
+#    "Server error (5xx)": load-file.php, mail-dwg-redline.php,
+#    getVisualQuery_MySQL_public_demo.php. They now answer 400/503, but
+#    there is still nothing to index there. The rest of the directory
+#    returns 403.
 #
-#  - /cadviewer/converters/ : binaires de conversion (403) et sorties de
-#    conversion sous files/ (PDF, SVGZ, polices .SHX). Ces fichiers sont
-#    generes a la demande, portent des noms aleatoires et se sont retrouves
-#    en masse dans l'index.
+#  - /cadviewer/converters/ holds the converter binaries (403) and the
+#    conversion output under files/ (PDF, SVGZ, .SHX fonts). Those files
+#    are generated on demand under random names and ended up in the index
+#    by the hundred.
 User-agent: *
 Disallow: /cadviewer/php/
 Disallow: /cadviewer/converters/
