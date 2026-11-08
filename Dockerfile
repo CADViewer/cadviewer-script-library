@@ -12,6 +12,10 @@ RUN apt-get update \
 COPY docker/apache.conf /etc/apache2/sites-available/000-default.conf
 COPY docker/php.ini /usr/local/etc/php/conf.d/cadviewer.ini
 
+# The host shipped no robots.txt, so Googlebot crawled the PHP endpoints
+# (the 500s reported in Search Console) and the conversion output.
+COPY docker/robots.txt /var/www/html/robots.txt
+
 WORKDIR /var/www/html/cadviewer
 COPY . .
 
