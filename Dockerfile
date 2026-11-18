@@ -6,7 +6,9 @@ FROM php:8.3-apache-bookworm
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends xz-utils libfontconfig1 libfreetype6 libexpat1 libpng16-16 \
+        mariadb-server \
     && rm -rf /var/lib/apt/lists/* \
+    && docker-php-ext-install mysqli \
     && a2enmod rewrite headers
 
 COPY docker/apache.conf /etc/apache2/sites-available/000-default.conf
@@ -15,6 +17,9 @@ COPY docker/php.ini /usr/local/etc/php/conf.d/cadviewer.ini
 # The host shipped no robots.txt, so Googlebot crawled the PHP endpoints
 # (the 500s reported in Search Console) and the conversion output.
 COPY docker/robots.txt /var/www/html/robots.txt
+
+# The demo database of the Visual Query and handles samples: see the script.
+COPY docker/entrypoint.sh /usr/local/bin/cadviewer-entrypoint
 
 WORKDIR /var/www/html/cadviewer
 COPY . .
@@ -33,5 +38,6 @@ RUN test -f php/call-Api_Conversion.php \
     && chown -R www-data:www-data /var/www/html/cadviewer/converters/files /var/www/html/cadviewer/content/redlines /var/www/html/cadviewer/php/logs
 
 EXPOSE 80
+ENTRYPOINT ["cadviewer-entrypoint"]
 HEALTHCHECK --interval=30s --timeout=5s --start-period=20s --retries=3 \
     CMD curl -fsS -o /dev/null http://localhost/ || exit 1
