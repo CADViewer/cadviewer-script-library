@@ -84,9 +84,9 @@
 			cvjs_debugMode(true);
 
 			// Pass over the location of the installation, will update the internal paths
-			cvjs_setServerLocationURL(ServerLocation, ServerUrl);
-			cvjs_setServerBackEndUrl(ServerBackEndUrl);
-			cvjs_setHandlerSettings("PHP", "floorPlan");  // remove for nodejs server
+			// The paths and the PHP handlers in one call, as the other samples do:
+			// the conversion request is then posted, which is what php/ expects.
+			cvjs_setAllServerPaths_and_Handlers(ServerBackEndUrl, ServerUrl, ServerLocation, "PHP", "JavaScript", "floorPlan");
 
 
 			cvjs_PrintToPDFWindowRelativeSize(0.8);
